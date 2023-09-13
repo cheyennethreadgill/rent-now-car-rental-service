@@ -1,0 +1,7 @@
+.car-filter_color-input {
+    &_red {
+        input[type="checkbox"] {
+            accent-color: red;
+        }
+    }
+}

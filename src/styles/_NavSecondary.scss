@@ -1,0 +1,15 @@
+.nav-info {
+    &_contact {
+        
+        a {
+            font-size: $font-size-comp-info;
+        }
+
+        &_icon {
+            color: $primary;
+        }
+    }
+    &_socials {
+        color: $primary;
+    }
+}

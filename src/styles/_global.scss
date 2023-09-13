@@ -1,0 +1,29 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body, button {
+    color: white;
+}
+h1 {
+    font-size: 3.5rem;
+}
+
+h1, h2, h3, h4, h5, a {
+    font-family: $font-family-heading;
+    font-weight: $font-weight-body;
+}
+
+p {
+    font-family: $font-family-body;
+}
+
+a {
+    color: white !important;
+}
+
+.border-bottom {
+    border-bottom: solid .5px rgba(134, 134, 134, 0.395) !important;
+}
+

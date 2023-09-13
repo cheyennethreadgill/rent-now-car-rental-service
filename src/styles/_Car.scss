@@ -1,0 +1,51 @@
+.car {
+
+    .jumbotron {
+        background-image: url('https://demo.kitthemes.com/html/rentnow/assets/images/single-car-thumb.jpg');
+        width: 100%;
+        height: 90vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        z-index: -3;
+        
+        
+        &::after {
+            content: '';
+            background-color: $blue-opacity-5;
+            width: inherit;
+            height: 90vh;
+            position: absolute;
+            top: 0;
+        }
+    }
+
+    .jumbotron_info {
+        padding-top: 18rem;
+    }
+
+    &_info {
+        padding-top: 34.2em;
+
+        // .row {
+        //     position: relative;
+        //     z-index: 2;
+        // }
+
+        &_btn {
+            margin-top: -2rem;
+        }
+
+        .check {
+            margin-top: -9rem;
+
+            .card {
+                
+                filter: drop-shadow(0rem 1rem 0.9rem rgba(128, 128, 128, 0.221));
+            }
+
+            .share {
+                margin-top: 2.8em;
+            }
+        }
+    }
+}
