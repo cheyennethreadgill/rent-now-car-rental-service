@@ -6,9 +6,15 @@ const Footer = () => {
   return (
     <section className="footer pt-5">
       <div className="container w-75">
-        <div className="row border-bottom py-5 d-flex justify-content-between">
-          <div className="col-lg-5 footer_about">
+        <div className="row border-bottom py-5 d-flex justify-content-between gap-5">
+          <div className="col-lg-5 footer_about d-flex flex-column gap-2">
             <h4 className="pb-4"> About Us</h4>
+
+            <img
+              src={Logo}
+              alt="Rent now logo"
+              width="170"
+            />
 
             <p className="mt-3">
               Sed sit amet ligula ac nulla finibus euismod nec nec diam. Lorem
@@ -22,7 +28,7 @@ const Footer = () => {
             <h4 className="pb-4"> Quick Links</h4>
 
             <div className="row">
-              <div className="col d-flex flex-column">
+              <div className="col d-flex flex-column gap-2">
                 <a
                   className="text-decoration-none"
                   href="#"
@@ -39,7 +45,6 @@ const Footer = () => {
                   className="text-decoration-none"
                   href="#"
                 >
-                  {" "}
                   Support
                 </a>
                 <a
@@ -61,7 +66,7 @@ const Footer = () => {
                   Marketplace
                 </a>
               </div>
-              <div className="col d-flex flex-column">
+              <div className="col d-flex flex-column gap-2">
                 <a
                   className="text-decoration-none"
                   href="#"
@@ -78,7 +83,6 @@ const Footer = () => {
                   className="text-decoration-none"
                   href="#"
                 >
-                  {" "}
                   Press
                 </a>
                 <a
@@ -97,17 +101,21 @@ const Footer = () => {
             </div>
           </div>
           <div className="col footer_contact">
-            <h4 className="pb-4"> Contact Us</h4>
+            <h4 className="pb-4 "> Contact Us</h4>
             <div className="row">
-              <div className="col d-flex flex-column justify-content-around">
+              <div className="col d-flex flex-column justify-content-between">
                 <i class="fa-solid fa-envelope-open"></i>
                 <i class="fa-solid fa-square-phone"></i>
                 <i class="fa-solid fa-location-dot"></i>
               </div>
               <div className="col-lg-10">
-                support@exapmple.com <br></br> (909)555-5555 <br></br>
-                support@exapmple.com <br></br> (909)555-5555 <br></br>
-                support@exapmple.com <br></br> (909)555-5555 <br></br>
+                <p>
+                  support@exapmple.com <br></br>
+                </p>
+                <p>
+                  (909) 555-5555 <br></br>
+                </p>
+                <p>1425 Pointe Lane, Miami Florida – 33169, USA</p>
               </div>
             </div>
           </div>

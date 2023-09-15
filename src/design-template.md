@@ -1,17 +1,17 @@
 socials
-<i class="fa fa-facebook"></i>
+<i className="fa fa-facebook"></i>
 
-<i class="fa fa-twitter"></i>
-<i class="fa fa-instagram"></i>
-<i class="fa fa-linkedin"></i>
+<i className="fa fa-twitter"></i>
+<i className="fa fa-instagram"></i>
+<i className="fa fa-linkedin"></i>
 
 <!-- company details -->
-<i class="fa-solid fa-square-phone"></i>
-<i class="fa-solid fa-envelope-open"></i>
-<i class="fa-solid fa-location-dot"></i>
+<i className="fa-solid fa-square-phone"></i>
+<i className="fa-solid fa-envelope-open"></i>
+<i className="fa-solid fa-location-dot"></i>
 
 <!-- cta -->
-<i class="fa-solid fa-magnifying-glass"></i>
+<i className="fa-solid fa-magnifying-glass"></i>
 
 
 
@@ -21,15 +21,15 @@ https://demo.kitthemes.com/html/rentnow/assets/images/payments@2x.png
 <!-- Car cards/ info icons -->
 
 <!-- rating -->
-<i class="fa-solid fa-star"></i>
+<i className="fa-solid fa-star"></i>
 <!-- rating empty -->
-<i class="fa-light fa-star"></i>
+<i className="fa-light fa-star"></i>
 
 <!-- passengers -->
-<i class="fa-light fa-car-side"></i>
+<i className="fa-light fa-car-side"></i>
 
 <!-- gas -->
-<i class="fa-light fa-gas-pump"></i>
+<i className="fa-light fa-gas-pump"></i>
 
 <!-- doors -->
-<i class="fa-light fa-door-closed"></i>
+<i className="fa-light fa-door-closed"></i>

@@ -5,7 +5,7 @@
  */
 /* FONT PATH
  * -------------------------- */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 @font-face {
   font-family: "FontAwesome";
   src: url("../src/font-awesome-4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0");
@@ -15019,6 +15019,29 @@ a {
   border-bottom: solid 0.5px rgba(134, 134, 134, 0.395) !important;
 }
 
+input[type=time] {
+  background: transparent !important;
+  border: solid white 0.1px;
+  color: white;
+}
+
+.input-group .input-group-text {
+  background-color: transparent;
+  border: solid 0.1px white;
+  color: white;
+}
+.input-group .form-control {
+  border: solid 0.1px white;
+  background: transparent;
+  color: white;
+}
+.input-group .form-control::-moz-placeholder {
+  color: white;
+}
+.input-group .form-control::placeholder {
+  color: white;
+}
+
 .nav-info_contact a {
   font-size: 0.82857rem;
 }
@@ -15040,7 +15063,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(17, 46, 59, 0.5607843137);
+  background-color: rgba(17, 46, 59, 0.6745098039);
 }
 
 .page-header {
@@ -15063,7 +15086,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(17, 46, 59, 0.5607843137);
+  background-color: rgba(17, 46, 59, 0.6745098039);
   z-index: -2;
 }
 
@@ -15081,7 +15104,7 @@ a {
 }
 .car .jumbotron::after {
   content: "";
-  background-color: rgba(17, 46, 59, 0.5607843137);
+  background-color: rgba(17, 46, 59, 0.6745098039);
   width: inherit;
   height: 90vh;
   position: absolute;
@@ -15106,8 +15129,93 @@ a {
   margin-top: 2.8em;
 }
 
-.car-filter_color-input_red input[type=checkbox] {
-  accent-color: red;
+.car-filter_color-input input[type=checkbox]:focus {
+  border: 3px solid rgb(0, 0, 0);
+}
+.car-filter_color-input_white input[type=checkbox] {
+  cursor: pointer;
+  moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  outline: 0;
+  background: white;
+  height: 16px;
+  width: 16px;
+  border: 2px solid rgba(34, 34, 34, 0.225);
+  color: white;
+  border-radius: 10rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.car-filter_color-input_blue input[type=checkbox] {
+  cursor: pointer;
+  moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  outline: 0;
+  background: blue;
+  height: 16px;
+  width: 16px;
+  border: 2px solid rgba(34, 34, 34, 0.225);
+  color: white;
+  border-radius: 10rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.car-filter_color-input_gray input[type=checkbox] {
+  cursor: pointer;
+  moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  outline: 0;
+  background: grey;
+  height: 16px;
+  width: 16px;
+  border: 2px solid rgba(34, 34, 34, 0.225);
+  color: white;
+  border-radius: 10rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.car-filter_color-input_black input[type=checkbox] {
+  cursor: pointer;
+  moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  outline: 0;
+  background: black;
+  height: 16px;
+  width: 16px;
+  border: 2px solid rgba(34, 34, 34, 0.225);
+  color: white;
+  border-radius: 10rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+i {
+  color: #00D231;
+}
+
+.input-group .input-group-text {
+  background-color: transparent;
+  border-bottom: solid 0.1px rgba(106, 106, 106, 0.33);
+  border-top: solid 0.1px rgba(106, 106, 106, 0.33);
+  border-left: solid 0.1px rgba(106, 106, 106, 0.33);
+  color: rgb(106, 106, 106);
+}
+.input-group .form-control {
+  border-top: solid 0.1px rgba(106, 106, 106, 0.33);
+  border-right: solid 0.1px rgba(106, 106, 106, 0.33);
+  border-bottom: solid 0.1px rgba(106, 106, 106, 0.33);
+  background: transparent;
+  color: white;
+}
+.input-group .form-control::-moz-placeholder {
+  color: rgba(106, 106, 106, 0.74);
+}
+.input-group .form-control::placeholder {
+  color: rgba(106, 106, 106, 0.74);
 }
 
 .footer {

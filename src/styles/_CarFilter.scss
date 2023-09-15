@@ -1,7 +1,80 @@
 .car-filter_color-input {
-    &_red {
         input[type="checkbox"] {
-            accent-color: red;
+            &:focus {
+                border: 3px solid rgb(0, 0, 0);
+            }
+    }
+
+    &_white {
+        
+        input[type="checkbox"] {
+            cursor: pointer;
+            moz-appearance:none;
+            -webkit-appearance:none;
+            -o-appearance:none;
+            outline: 0;
+            background: white;
+            height: 16px;
+            width: 16px;
+            border: 2px solid rgba(34, 34, 34, 0.225);
+            color: white;
+            border-radius: 10rem;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+    &_blue {
+        
+        input[type="checkbox"] {
+            cursor: pointer;
+            moz-appearance:none;
+            -webkit-appearance:none;
+            -o-appearance:none;
+            outline: 0;
+            background: blue;
+            height: 16px;
+            width: 16px;
+            border: 2px solid rgba(34, 34, 34, 0.225);
+            color: white;
+            border-radius: 10rem;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+    &_gray {
+        
+        input[type="checkbox"] {
+            cursor: pointer;
+            moz-appearance:none;
+            -webkit-appearance:none;
+            -o-appearance:none;
+            outline: 0;
+            background: grey;
+            height: 16px;
+            width: 16px;
+            border: 2px solid rgba(34, 34, 34, 0.225);
+            color: white;
+            border-radius: 10rem;
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+    }
+    &_black {
+        
+        input[type="checkbox"] {
+            cursor: pointer;
+            moz-appearance:none;
+            -webkit-appearance:none;
+            -o-appearance:none;
+            outline: 0;
+            background: black;
+            height: 16px;
+            width: 16px;
+            border: 2px solid rgba(34, 34, 34, 0.225);
+            color: white;
+            border-radius: 10rem;
+            width: 2.5rem;
+            height: 2.5rem;
         }
     }
 }

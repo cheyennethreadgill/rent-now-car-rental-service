@@ -27,3 +27,30 @@ a {
     border-bottom: solid .5px rgba(134, 134, 134, 0.395) !important;
 }
 
+
+
+input[type="time"] {
+    background: transparent !important;
+    border:  solid white 0.1px;
+    color: white;
+}
+
+
+.input-group {
+
+    .input-group-text {
+        background-color: transparent;
+        border: solid 0.1px white;
+        color: white;
+    }
+    
+    .form-control {
+        border: solid 0.1px white;
+        background: transparent;
+        color: white;
+    
+        &::placeholder {
+            color: white;
+        }
+    }
+}

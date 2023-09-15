@@ -20,24 +20,24 @@ function Contact() {
         <div className="container contact py-5 w-75">
           <div className="row gap-4 ">
             <div className="col contact_message">
-              <h4 className="mb-4">Send Message</h4>
+              <h4 className="mb-4 fw-medium">Send Message</h4>
               <div className="row">
                 <div className="col ">
-                  <div className="input-group">
-                    <i class="fa-regular fa-user input-group-text"></i>
+                  <div className="input-group d-flex ">
+                    <i class="fa-regular fa-user input-group-text align-self-center py-3"></i>
                     <input
                       type="text"
-                      className="form-control"
+                      className="rounded-1 form-control"
                       placeholder="Enter username..."
                     />
                   </div>
                 </div>
                 <div className="col">
-                  <div className="input-group">
-                    <i class="fa-regular fa-envelope input-group-text"></i>
+                  <div className="input-group d-flex">
+                    <i class="fa-regular fa-envelope input-group-text align-self-center py-3"></i>
                     <input
                       type="text"
-                      className="form-control"
+                      className="rounded-1 form-control"
                       placeholder="Enter email..."
                     />
                   </div>
@@ -45,8 +45,8 @@ function Contact() {
               </div>
               <div className="row col mt-3">
                 <div className="col">
-                  <div className="input-group">
-                    <i class="fa-regular fa-message input-group-text"></i>
+                  <div className="input-group d-flex">
+                    <i class="fa-regular fa-message input-group-text align-self-start pb-5"></i>
                     <textarea
                       type="text"
                       className="form-control"
@@ -56,30 +56,46 @@ function Contact() {
                 </div>
               </div>
               <div className="col d-flex justify-content-end">
-                <Button className="btn btn-primary text-white mt-4 px-5 py-3">
+                <Button
+                  type="submit"
+                  className="btn btn-primary text-white mt-4 px-5 py-2 fs-5 rounded-1"
+                >
                   Send Message
                 </Button>
               </div>
             </div>
             {/* Message Ends--------------- */}
             <div className="col contact_info pb-5">
-              <h4>Contact Info</h4>
+              <h4 className="fw-medium">Contact Info</h4>
               <div className="row">
-                <div className="col mt-4 ">
-                  <h5>Head Office</h5>
-                  125 Main St
+                <div className="col d-flex mt-4 gap-3">
+                  <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                  </span>
+                  <div>
+                    <h5 className="fw-medium">Head Office</h5>
+                    <p>125 Main St</p>
+                  </div>
                 </div>
-                <div className="col">
-                  <h5>Email</h5>
-                  <p>rentnow@main.com</p>
+                <div className="col d-flex mt-4 gap-3">
+                  <span>
+                    <i class="fa-solid fa-envelope-open"></i>
+                  </span>
+                  <div>
+                    <h5 className="fw-medium">Email</h5>
+                    <p>rentnow@main.com</p>
+                  </div>
                 </div>
               </div>
               <div className="row">
-                <div className="col mt-4 ">
-                  <div className="d-flex gap-5">
-                    <h5>Phone</h5>
+                <div className="col d-flex mt-4 gap-3 mt-4 ">
+                  <span>
+                    <i class="fa-solid fa-square-phone"></i>
+                  </span>
+                  <div className="">
+                    <h5 className="fw-medium">Phone</h5>
+                    <p>(901) 111-1111</p>
                   </div>
-                  <p>(901) 111-1111</p>
                 </div>
               </div>
             </div>

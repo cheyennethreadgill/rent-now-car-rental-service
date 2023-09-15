@@ -8,6 +8,7 @@ import { useState } from "react";
 import siteImages from "../Global/siteImages";
 import CCards from "./CCards";
 import pageList from "../Global/pageList";
+import productList from "../Products/productList";
 
 function CarSearch() {
   const [searchImg, setsearchImg] = useState(siteImages);
@@ -20,7 +21,7 @@ function CarSearch() {
       />
       <SearchInput />
       <CarFilter />
-      <CCards />
+      {/* <CCards /> */}
       <Footer />
     </section>
   );

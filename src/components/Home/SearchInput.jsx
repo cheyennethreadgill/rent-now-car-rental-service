@@ -1,6 +1,3 @@
-import { Button } from "react-bootstrap";
-// import { Form } from "react-bootstrap"
-// import { input } from "react-bootstrap"
 import { Link } from "react-router-dom";
 
 const SearchInput = () => {
@@ -10,7 +7,7 @@ const SearchInput = () => {
         <h2 className="mb-5">Search & Hire Cars</h2>
         <div className="car-search-form row">
           <div className="input-group col">
-            <i class="input-group-text fa-solid fa-location-dot"></i>
+            <i class="input-group-text h-100 fa-solid fa-location-dot"></i>
             <input
               className="form-control"
               type="text"
@@ -19,7 +16,7 @@ const SearchInput = () => {
           </div>
 
           <div className="input-group col">
-            <i class="input-group-text fa-solid fa-location-dot"></i>
+            <i class="input-group-text h-100 fa-solid fa-location-dot"></i>
 
             <input
               className="form-control"

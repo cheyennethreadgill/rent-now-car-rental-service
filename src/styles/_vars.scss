@@ -4,21 +4,19 @@ $secondary: #fba707;
 $green: #82b44064;
 $black: #212529;
 $blue: #112e3b;
-$blue-opacity-5: #112e3b8f;
+$blue-opacity-5: #112e3bac;
+
+
 
 
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
 // Typography
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 $font-family-heading: 'Raleway', sans-serif;
 $font-family-body: 'Open-Sans', sans-serif;
 
-$font-weight-body: 400;
-$font-weight-h3: 600;
-$font-weight-body-cta: 600;
-$font-weight-h1-h2: 700;
 
 $font-size-comp-info: 0.82857rem;
 $font-size-body-footer-normal: 1rem;
@@ -27,3 +25,4 @@ $font-size-body-cta-h3: 1.28571rem;
 $font-size-card-header-2: 1.28571rem;
 $font-size-card-footer-header: 1.5rem;
 $font-size-price: 1.78571rem;
+

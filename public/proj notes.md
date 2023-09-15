@@ -17,5 +17,26 @@
             add props in params
             call rendered comp property name
 
-<!-- CarSearch CCards -->
-finish cards
+<!-- Car Filter in car search page (WATCH FREE CODE CAMP VID TODAY) -->
+
+when color is clicked consolelog the value
+    grab the value of the checkbox 
+    
+    onclick, display the value in console
+
+When color is clicked, show the
+car that contains that color
+
+when blue is clicked, loop through the ccards and find the
+cars that contains the blue color
+
+<!-- filter component -->
+    Grab categories from product list
+	Set categories with use state
+onClick on button
+	Add filter function and pass a filter option in the parameters
+Create filter function
+	Add filterinput in param
+Set const tocategories and filter (each catItem) and return  the catItem that’s equal to the filterinput 
+
+update the state in the cards component based on the filter result

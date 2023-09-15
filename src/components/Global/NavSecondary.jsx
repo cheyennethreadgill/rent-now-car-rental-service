@@ -82,7 +82,7 @@ function NavSecondary() {
         </nav>
       </section>
     </section>
-  )
+  );
 }
 
 export default NavSecondary
