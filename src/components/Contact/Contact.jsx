@@ -20,11 +20,11 @@ function Contact() {
         <div className="container contact py-5 w-75">
           <div className="row gap-4 ">
             <div className="col contact_message">
-              <h4 className="mb-4 fw-medium">Send Message</h4>
+              <h4 className="mb-4 ">Send Message</h4>
               <div className="row">
                 <div className="col ">
                   <div className="input-group d-flex ">
-                    <i class="fa-regular fa-user input-group-text align-self-center py-3"></i>
+                    {/* <i class="fa-regular fa-user input-group-text align-self-center py-3"></i> */}
                     <input
                       type="text"
                       className="rounded-1 form-control"
@@ -34,7 +34,7 @@ function Contact() {
                 </div>
                 <div className="col">
                   <div className="input-group d-flex">
-                    <i class="fa-regular fa-envelope input-group-text align-self-center py-3"></i>
+                    {/* <i class="fa-regular fa-envelope input-group-text align-self-center py-3"></i> */}
                     <input
                       type="text"
                       className="rounded-1 form-control"
@@ -46,7 +46,7 @@ function Contact() {
               <div className="row col mt-3">
                 <div className="col">
                   <div className="input-group d-flex">
-                    <i class="fa-regular fa-message input-group-text align-self-start pb-5"></i>
+                    {/* <i class="fa-regular fa-message input-group-text align-self-start pb-5"></i> */}
                     <textarea
                       type="text"
                       className="form-control"
@@ -66,23 +66,23 @@ function Contact() {
             </div>
             {/* Message Ends--------------- */}
             <div className="col contact_info pb-5">
-              <h4 className="fw-medium">Contact Info</h4>
+              <h4 className="">Contact Info</h4>
               <div className="row">
                 <div className="col d-flex mt-4 gap-3">
                   <span>
-                    <i class="fa-solid fa-location-dot"></i>
+                    {/* <i class="fa-solid fa-location-dot"></i> */}
                   </span>
                   <div>
-                    <h5 className="fw-medium">Head Office</h5>
+                    <h5 className="">Head Office</h5>
                     <p>125 Main St</p>
                   </div>
                 </div>
                 <div className="col d-flex mt-4 gap-3">
                   <span>
-                    <i class="fa-solid fa-envelope-open"></i>
+                    {/* <i class="fa-solid fa-envelope-open"></i> */}
                   </span>
                   <div>
-                    <h5 className="fw-medium">Email</h5>
+                    <h5 className="">Email</h5>
                     <p>rentnow@main.com</p>
                   </div>
                 </div>
@@ -90,10 +90,10 @@ function Contact() {
               <div className="row">
                 <div className="col d-flex mt-4 gap-3 mt-4 ">
                   <span>
-                    <i class="fa-solid fa-square-phone"></i>
+                    {/* <i class="fa-solid fa-square-phone"></i> */}
                   </span>
                   <div className="">
-                    <h5 className="fw-medium">Phone</h5>
+                    <h5 className="">Phone</h5>
                     <p>(901) 111-1111</p>
                   </div>
                 </div>

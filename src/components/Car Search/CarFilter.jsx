@@ -6,13 +6,13 @@ function CarFilter() {
   const [products, setProducts] = useState(cars);
   // console.log(products);
 
-  const filterProducts = (filterValue) => {
-    const result = products.filter((product) => {
-      return product.color === filterValue;
+  const filterProducts = (catValue) => {
+    const filterResult = products.filter((product) => {
+      return product.color === catValue;
     });
-    setProducts(result);
+    setProducts(filterResult);
     // console.log("filter done");
-    console.log(result);
+    // console.log(filterResult);
   };
 
   const [newProduct, setnewProducts] = useState(cars);
@@ -61,7 +61,7 @@ function CarFilter() {
                     name=""
                     id=""
                     type="checkbox"
-                    value="blue"
+                    // value="blue"
                     onClick={() => filterProducts("blue")}
                   ></input>
                 </div>
@@ -71,7 +71,7 @@ function CarFilter() {
                     name=""
                     id=""
                     type="checkbox"
-                    value=""
+                    // value="white"
                     onClick={() => filterProducts("white")}
                   ></input>
                 </div>
@@ -81,7 +81,7 @@ function CarFilter() {
                     name=""
                     id=""
                     type="checkbox"
-                    value=""
+                    // value="gray"
                     onClick={() => filterProducts("gray")}
                   ></input>
                 </div>
@@ -91,7 +91,7 @@ function CarFilter() {
                     name=""
                     id=""
                     type="checkbox"
-                    value=""
+                    // value="black"
                     onClick={() => filterProducts("black")}
                   ></input>
                 </div>

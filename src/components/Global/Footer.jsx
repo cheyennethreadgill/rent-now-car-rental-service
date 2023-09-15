@@ -22,7 +22,7 @@ const Footer = () => {
               semper, risus eget ornare maximus, ipsum ante semper.
             </p>
 
-            <Socials />
+            {/* <Socials /> */}
           </div>
           <div className="col footer_quick-links">
             <h4 className="pb-4"> Quick Links</h4>
@@ -104,9 +104,9 @@ const Footer = () => {
             <h4 className="pb-4 "> Contact Us</h4>
             <div className="row">
               <div className="col d-flex flex-column justify-content-between">
-                <i class="fa-solid fa-envelope-open"></i>
+                {/* <i class="fa-solid fa-envelope-open"></i>
                 <i class="fa-solid fa-square-phone"></i>
-                <i class="fa-solid fa-location-dot"></i>
+                <i class="fa-solid fa-location-dot"></i> */}
               </div>
               <div className="col-lg-10">
                 <p>

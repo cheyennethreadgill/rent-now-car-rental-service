@@ -7,10 +7,10 @@ function NavSecondary() {
   return (
     <section className="container position-absolute z-2 top-0 start-50 translate-middle-x">
       <div className="row nav-info border-bottom pb-3">
-        <Socials />
+        {/* <Socials /> */}
         <div className="col row nav-info_contact">
           <div className="col d-flex align-items-center gap-3">
-            <i class="fa-solid fa-2x fa-square-phone nav-info_contact_icon"></i>
+            {/* <i class="fa-solid fa-2x fa-square-phone nav-info_contact_icon"></i> */}
             <a
               href="#"
               className="nav-info_contact_info text-decoration-none"
@@ -20,7 +20,7 @@ function NavSecondary() {
             </a>
           </div>
           <div className="col d-flex align-items-center gap-3">
-            <i class="fa-solid fa-2x fa-envelope-open nav-info_contact_icon"></i>
+            {/* <i class="fa-solid fa-2x fa-envelope-open nav-info_contact_icon"></i> */}
             <a
               href="#"
               className="nav-info_contact_info text-decoration-none"
@@ -30,7 +30,7 @@ function NavSecondary() {
             </a>
           </div>
           <div className="col d-flex align-items-center gap-3">
-            <i class="fa-solid fa-2x fa-location-dot nav-info_contact_icon"></i>
+            {/* <i class="fa-solid fa-2x fa-location-dot nav-info_contact_icon"></i> */}
             <a
               href="#"
               className="nav-info_contact_info text-decoration-none"
