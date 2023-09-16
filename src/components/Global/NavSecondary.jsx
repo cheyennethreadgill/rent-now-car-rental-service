@@ -5,47 +5,47 @@ import { Button } from "react-bootstrap"
 
 function NavSecondary() {
   return (
-    <section className="container position-absolute z-2 top-0 start-50 translate-middle-x">
-      <div className="row nav-info border-bottom pb-3">
-        {/* <Socials /> */}
+    <section className="position-absolute z-2 w-100">
+      <div className="row nav-info py-3 container m-0 m-auto">
+        <Socials />
         <div className="col row nav-info_contact">
           <div className="col d-flex align-items-center gap-3">
-            {/* <i class="fa-solid fa-2x fa-square-phone nav-info_contact_icon"></i> */}
-            <a
+            <i class="fa-solid fa-2x fa-square-phone nav-info_contact_icon"></i>
+            <address
               href="#"
-              className="nav-info_contact_info text-decoration-none"
+              className="nav-info_contact_info text-decoration-none fs-6"
             >
               (954) 555-5555 <br></br>
               (954) 555-6565
-            </a>
+            </address>
           </div>
           <div className="col d-flex align-items-center gap-3">
-            {/* <i class="fa-solid fa-2x fa-envelope-open nav-info_contact_icon"></i> */}
-            <a
+            <i class="fa-solid fa-2x fa-envelope-open nav-info_contact_icon"></i>
+            <address
               href="#"
-              className="nav-info_contact_info text-decoration-none"
+              className="nav-info_contact_info text-decoration-none fs-6"
             >
               support@example.coms <br />
               sale@example.com
-            </a>
+            </address>
           </div>
           <div className="col d-flex align-items-center gap-3">
-            {/* <i class="fa-solid fa-2x fa-location-dot nav-info_contact_icon"></i> */}
-            <a
+            <i class="fa-solid fa-2x fa-location-dot nav-info_contact_icon"></i>
+            <address
               href="#"
-              className="nav-info_contact_info text-decoration-none"
+              className="nav-info_contact_info text-decoration-none fs-6"
             >
-              <br />
               1425 Pointe Lane, Miami Florida – 33169, USA
-            </a>
+            </address>
           </div>
         </div>
       </div>
+      <div className="border-bottom"></div>
       {/* Main Navigation---------------------- */}
       <section className="container pt-3">
         <nav className="row primary-nav">
           <div className="col logo">
-            <a
+            <address
               href="#"
               className="text-decoration-none"
             >
@@ -53,30 +53,28 @@ function NavSecondary() {
                 src={logo}
                 alt="Rent Now Logo"
               />
-            </a>
+            </address>
           </div>
           <ul className="col">
             <li className="list-unstyled d-flex align-items-center justify-content-end gap-5">
               <Link
                 to="/"
-                className="text-decoration-none"
+                className="fs-4 text-decoration-none"
               >
                 Home
               </Link>
               <Link
                 to="/CarSearch"
-                className="text-decoration-none"
+                className="fs-4 text-decoration-none"
               >
                 Search Cars
               </Link>
-              <Button>
-                <Link
-                  to="/Contact"
-                  className="text-decoration-none"
-                >
-                  Contact
-                </Link>
-              </Button>
+              <Link
+                to="/Contact"
+                className="fs-4 text-decoration-none btn btn-primary rounded-1"
+              >
+                Contact
+              </Link>
             </li>
           </ul>
         </nav>

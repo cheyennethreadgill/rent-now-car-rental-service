@@ -8,7 +8,7 @@ const Footer = () => {
       <div className="container w-75">
         <div className="row border-bottom py-5 d-flex justify-content-between gap-5">
           <div className="col-lg-5 footer_about d-flex flex-column gap-2">
-            <h4 className="pb-4"> About Us</h4>
+            <h4 className="pb-4 fs-3 fw-semibold"> About Us</h4>
 
             <img
               src={Logo}
@@ -16,19 +16,19 @@ const Footer = () => {
               width="170"
             />
 
-            <p className="mt-3">
+            <p className="mt-3 fs-5">
               Sed sit amet ligula ac nulla finibus euismod nec nec diam. Lorem
               ipsum dolor sit amet, consectetur adipiscing elit. Praesent
               semper, risus eget ornare maximus, ipsum ante semper.
             </p>
 
-            {/* <Socials /> */}
+            <Socials />
           </div>
           <div className="col footer_quick-links">
-            <h4 className="pb-4"> Quick Links</h4>
+            <h4 className="pb-4 fs-3 fw-semibold"> Quick Links</h4>
 
-            <div className="row">
-              <div className="col d-flex flex-column gap-2">
+            <div className="row fs-6">
+              <div className="col d-flex flex-column gap-2 ">
                 <a
                   className="text-decoration-none"
                   href="#"
@@ -100,30 +100,30 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col footer_contact">
-            <h4 className="pb-4 "> Contact Us</h4>
+          <div className="col footer_contact fs-6">
+            <h4 className="pb-4 fs-3 fw-semibold "> Contact Us </h4>
             <div className="row">
               <div className="col d-flex flex-column justify-content-between">
-                {/* <i class="fa-solid fa-envelope-open"></i>
-                <i class="fa-solid fa-square-phone"></i>
-                <i class="fa-solid fa-location-dot"></i> */}
+                <i className="fs-4 fa-solid fa-envelope-open"></i>
+                <i className="fs-4 fa-solid fa-square-phone"></i>
+                <i className="fs-4 fa-solid fa-location-dot"></i>
               </div>
               <div className="col-lg-10">
-                <p>
+                <address>
                   support@exapmple.com <br></br>
-                </p>
-                <p>
+                </address>
+                <address>
                   (909) 555-5555 <br></br>
-                </p>
-                <p>1425 Pointe Lane, Miami Florida – 33169, USA</p>
+                </address>
+                <address>1425 Pointe Lane, Miami Florida – 33169, USA</address>
               </div>
             </div>
           </div>
         </div>
         {/* Copyright -------------------*/}
-        <div className="row copyright py-4 d-flex align-items-center">
+        <div className="row copyright py-4 d-flex align-items-center fs-6">
           <div className="col col-lg-8">
-            <p>Copyright © RentNow 2023. All rights reserved.</p>
+            <p className="">Copyright © RentNow 2023. All rights reserved.</p>
           </div>
           <div className="col ">
             <p>We Accept</p>

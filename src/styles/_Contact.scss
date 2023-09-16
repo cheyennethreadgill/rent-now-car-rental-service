@@ -1,5 +1,11 @@
 
 .contact {
+
+    &_info {
+        i {
+            color: $primary;
+        }
+    }
     .input-group {
 
         .input-group-text {
@@ -15,10 +21,10 @@
             border-right: solid 0.1px rgba(106, 106, 106, 0.33);
             border-bottom: solid 0.1px rgba(106, 106, 106, 0.33);
             background: transparent;
-            color: white;
+            color: black;
         
             &::placeholder {
-                color: rgba(106, 106, 106, 0.74);;
+                color: black;
             }
         }
     }

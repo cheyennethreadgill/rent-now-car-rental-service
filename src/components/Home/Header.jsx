@@ -15,13 +15,13 @@ function Header() {
             alt="Slide 1"
           />
           <div className="carousel-caption translate-middle-y z-2">
-            <h1 classname="fw-bolder">#1 Car Rent Service In Your City</h1>
-            <p>
+            <h1 className="fw-semibold"> #1 Car Rent Service In Your City </h1>
+            <p className="">
               Maecenas viverra porta eros, id tincidunt lorem rhoncus eget.
               Aliquam erat volutpat. Sed ultricies elementum egestas.
             </p>
-            <Button className="btn btn-lg btn-primary text-white px-5 py-2">
-              Book Now{" "}
+            <Button className="fw-semibold fs-4 btn btn-lg btn-primary text-white px-5 py-2 rounded-1 ">
+              Book Now
             </Button>
           </div>
         </Carousel.Item>
@@ -32,14 +32,13 @@ function Header() {
             alt="Slide 2"
           />
           <div className="carousel-caption translate-middle-y z-2">
-            <h1 classname="fw-bolder">#1 Car Rent Service In Your City</h1>
+            <h1 className="fw-semibold">24/7 Customer Support Guarantee</h1>
             <p>
               Maecenas viverra porta eros, id tincidunt lorem rhoncus eget.
               Aliquam erat volutpat. Sed ultricies elementum egestas.
             </p>
-            <Button className="btn btn-lg btn-primary text-white px-5 py-2">
-              {" "}
-              Book Now{" "}
+            <Button className=" fw-semibold fs-4 btn btn-lg btn-primary text-white px-5 py-2 rounded-1">
+              Book Now
             </Button>
           </div>
         </Carousel.Item>
@@ -50,12 +49,12 @@ function Header() {
             alt="Slide 3"
           />
           <div className="carousel-caption translate-middle-y z-2">
-            <h1 classname="fw-bolder">#1 Car Rent Service In Your City</h1>
+            <h1 className="fw-semibold">Quality Cars with Unlimited Miles</h1>
             <p>
               Maecenas viverra porta eros, id tincidunt lorem rhoncus eget.
               Aliquam erat volutpat. Sed ultricies elementum egestas.
             </p>
-            <Button className="btn btn-lg text-white btn-primary px-5 py-2">
+            <Button className=" fw-semibold fs-4 btn btn-lg text-white btn-primary px-5 py-2 rounded-1">
               Book Now
             </Button>
           </div>

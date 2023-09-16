@@ -10,6 +10,15 @@
         }
     }
     &_socials {
-        color: $primary;
+        color: white;
+
+        i {
+            
+            &:hover {
+                color: $primary;
+                cursor: pointer;
+            }
+        }
+
     }
 }

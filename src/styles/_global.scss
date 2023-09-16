@@ -7,12 +7,10 @@ body, button {
     color: white;
 }
 h1 {
-    font-size: 3.5rem;
+    font-size: 3.57143rem;
 }
-
 h1, h2, h3, h4, h5, a {
     font-family: $font-family-heading;
-    // font-weight: $font-weight-body;
 }
 
 p {
@@ -27,30 +25,66 @@ a {
     border-bottom: solid .5px rgba(134, 134, 134, 0.395) !important;
 }
 
+.price {
+    font-size: 2rem;
 
-
-input[type="time"] {
-    background: transparent !important;
-    border:  solid white 0.1px;
-    color: white;
+    span {
+        font-size: initial;
+    }
 }
 
 
-.input-group {
 
+.input-group {
+    
     .input-group-text {
         background-color: transparent;
-        border: solid 0.1px white;
+        border-bottom: solid 0.1px white;
+        border-top: solid 0.1px white;
+        border-right: none;
+        border-left: solid 0.1px white;
         color: white;
     }
     
     .form-control {
-        border: solid 0.1px white;
+        border-bottom: solid 0.1px white;
+        border-top: solid 0.1px white;
+        border-left: solid 0.1px white;
+        border-right: solid 0.1px white;
         background: transparent;
-        color: white;
-    
+        color: rgba(255, 255, 255, 0.638);
+        
         &::placeholder {
-            color: white;
+            color: white !important;
         }
     }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    border-radius: 4px;
+    margin-right: 2px;
+    filter: invert(100%);
+
+}
+input[type="date"] 
+.form-control {
+    border-bottom: solid 0.1px white;
+    border-top: solid 0.1px white;
+    border-left:  none;
+    border-right: none;
+    background: transparent;
+    color: rgba(255, 255, 255, 0.638);
+}
+  
+  
+input[type="time"] {
+    background: transparent !important;
+    border:  solid white 0.1px;
+    color: white;
+
+    
+}
+
+input[type="time"]::-webkit-datetime-edit {
+    color: white !important;
 }

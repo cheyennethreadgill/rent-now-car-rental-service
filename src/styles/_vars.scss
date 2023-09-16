@@ -1,4 +1,4 @@
-// Custom overrides-----
+// Custom variable overrides-----
 $primary: #00D231;
 $secondary: #fba707;
 $green: #82b44064;
@@ -8,10 +8,9 @@ $blue-opacity-5: #112e3bac;
 
 
 
-
 @import '../../node_modules/bootstrap/scss/bootstrap';
 
-// Typography
+// Typography class overrides------
 
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 $font-family-heading: 'Raleway', sans-serif;
@@ -25,4 +24,26 @@ $font-size-body-cta-h3: 1.28571rem;
 $font-size-card-header-2: 1.28571rem;
 $font-size-card-footer-header: 1.5rem;
 $font-size-price: 1.78571rem;
+
+
+.fs-1 {
+    font-size: 8.57143rem !important;
+}
+.fs-2 {
+    font-size: 2 !important;
+}
+.fs-3 {
+    font-size: 1.5rem !important;
+}
+.fs-4 {
+    font-size: 1.14286rem !important;
+}
+.fs-5 {
+    font-size: 1rem !important;
+}
+.fs-6 {
+    font-size: 0.82857rem !important;
+}
+
+
 

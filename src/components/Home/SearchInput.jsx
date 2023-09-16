@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 const SearchInput = () => {
   return (
     <section className="bg-primary p-5 text-center row">
-      <div className="container">
-        <h2 className="mb-5">Search & Hire Cars</h2>
+      <div className="container-fluid">
+        <h2 className="mb-5 fs-2 fw-semibold">Search & Hire Cars</h2>
         <div className="car-search-form row">
           <div className="input-group col">
             <i class="input-group-text h-100 fa-solid fa-location-dot"></i>
@@ -53,9 +53,8 @@ const SearchInput = () => {
         {/* Row End */}
         <Link
           to="/CarSearch"
-          className="btn btn-secondary px-5 py-3 mt-4"
+          className="btn btn-secondary px-5 py-3 mt-4 fw-semibold fs-4"
         >
-          <i class="fa-solid fa-magnifying-glass mr-2 "></i>
           Find Now
         </Link>
       </div>

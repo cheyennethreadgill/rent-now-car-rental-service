@@ -24,7 +24,7 @@ function Contact() {
               <div className="row">
                 <div className="col ">
                   <div className="input-group d-flex ">
-                    {/* <i class="fa-regular fa-user input-group-text align-self-center py-3"></i> */}
+                    <i class="fa-regular fa-user input-group-text align-self-center py-3"></i>
                     <input
                       type="text"
                       className="rounded-1 form-control"
@@ -34,7 +34,7 @@ function Contact() {
                 </div>
                 <div className="col">
                   <div className="input-group d-flex">
-                    {/* <i class="fa-regular fa-envelope input-group-text align-self-center py-3"></i> */}
+                    <i class="fa-regular fa-envelope input-group-text align-self-center py-3"></i>
                     <input
                       type="text"
                       className="rounded-1 form-control"
@@ -46,7 +46,7 @@ function Contact() {
               <div className="row col mt-3">
                 <div className="col">
                   <div className="input-group d-flex">
-                    {/* <i class="fa-regular fa-message input-group-text align-self-start pb-5"></i> */}
+                    <i class="fa-regular fa-message input-group-text align-self-start pb-5"></i>
                     <textarea
                       type="text"
                       className="form-control"
@@ -70,7 +70,7 @@ function Contact() {
               <div className="row">
                 <div className="col d-flex mt-4 gap-3">
                   <span>
-                    {/* <i class="fa-solid fa-location-dot"></i> */}
+                    <i class="fs-4 fa-solid fa-location-dot"></i>
                   </span>
                   <div>
                     <h5 className="">Head Office</h5>
@@ -79,7 +79,7 @@ function Contact() {
                 </div>
                 <div className="col d-flex mt-4 gap-3">
                   <span>
-                    {/* <i class="fa-solid fa-envelope-open"></i> */}
+                    <i class="fs-4 fa-solid fa-envelope-open"></i>
                   </span>
                   <div>
                     <h5 className="">Email</h5>
@@ -90,7 +90,7 @@ function Contact() {
               <div className="row">
                 <div className="col d-flex mt-4 gap-3 mt-4 ">
                   <span>
-                    {/* <i class="fa-solid fa-square-phone"></i> */}
+                    <i class="fs-4 fa-solid fa-square-phone"></i>
                   </span>
                   <div className="">
                     <h5 className="">Phone</h5>

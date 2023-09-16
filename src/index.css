@@ -11972,6 +11972,30 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.fs-1 {
+  font-size: 8.57143rem !important;
+}
+
+.fs-2 {
+  font-size: 2 !important;
+}
+
+.fs-3 {
+  font-size: 1.5rem !important;
+}
+
+.fs-4 {
+  font-size: 1.14286rem !important;
+}
+
+.fs-5 {
+  font-size: 1rem !important;
+}
+
+.fs-6 {
+  font-size: 0.82857rem !important;
+}
+
 *, ::before, ::after {
   box-sizing: border-box;
   margin: 0;
@@ -11983,7 +12007,7 @@ body, button {
 }
 
 h1, .h1 {
-  font-size: 3.5rem;
+  font-size: 3.57143rem;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, a {
@@ -12002,27 +12026,59 @@ a {
   border-bottom: solid 0.5px rgba(134, 134, 134, 0.395) !important;
 }
 
+.price {
+  font-size: 2rem;
+}
+.price span {
+  font-size: initial;
+}
+
+.input-group .input-group-text {
+  background-color: transparent;
+  border-bottom: solid 0.1px white;
+  border-top: solid 0.1px white;
+  border-right: none;
+  border-left: solid 0.1px white;
+  color: white;
+}
+.input-group .form-control {
+  border-bottom: solid 0.1px white;
+  border-top: solid 0.1px white;
+  border-left: solid 0.1px white;
+  border-right: solid 0.1px white;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.638);
+}
+.input-group .form-control::-moz-placeholder {
+  color: white !important;
+}
+.input-group .form-control::placeholder {
+  color: white !important;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  border-radius: 4px;
+  margin-right: 2px;
+  filter: invert(100%);
+}
+
+input[type=date] .form-control {
+  border-bottom: solid 0.1px white;
+  border-top: solid 0.1px white;
+  border-left: none;
+  border-right: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.638);
+}
+
 input[type=time] {
   background: transparent !important;
   border: solid white 0.1px;
   color: white;
 }
 
-.input-group .input-group-text {
-  background-color: transparent;
-  border: solid 0.1px white;
-  color: white;
-}
-.input-group .form-control {
-  border: solid 0.1px white;
-  background: transparent;
-  color: white;
-}
-.input-group .form-control::-moz-placeholder {
-  color: white;
-}
-.input-group .form-control::placeholder {
-  color: white;
+input[type=time]::-webkit-datetime-edit {
+  color: white !important;
 }
 
 .nav-info_contact a {
@@ -12032,11 +12088,31 @@ input[type=time] {
   color: #00D231;
 }
 .nav-info_socials {
+  color: white;
+}
+.nav-info_socials i:hover {
   color: #00D231;
+  cursor: pointer;
 }
 
 .primary-nav a {
   font-size: 1.14286rem;
+}
+
+.home .people-like-us li {
+  list-style-type: none;
+}
+.home .people-like-us .col {
+  float: right;
+}
+.home .people-like-us .dot {
+  content: "";
+  background-color: #00D231;
+  width: 0.1rem;
+  height: 0.2rem;
+  border-radius: 10rem;
+  float: left;
+  display: inline;
 }
 
 .home-header::after {
@@ -12047,6 +12123,9 @@ input[type=time] {
   top: 0;
   left: 0;
   background-color: rgba(17, 46, 59, 0.6745098039);
+}
+.home-header .carousel-indicators {
+  display: none;
 }
 
 .page-header {
@@ -12110,6 +12189,17 @@ input[type=time] {
 }
 .car_info .check .share {
   margin-top: 2.8em;
+}
+
+.product .card {
+  width: 26.5rem;
+}
+.product .card img {
+  width: 100%;
+}
+
+li {
+  font-size: 0.85rem;
 }
 
 .car-filter_color-input input[type=checkbox]:focus {
@@ -12176,6 +12266,9 @@ input[type=time] {
   height: 2.5rem;
 }
 
+.contact_info i {
+  color: #00D231;
+}
 .contact .input-group .input-group-text {
   background-color: transparent;
   border-bottom: solid 0.1px rgba(106, 106, 106, 0.33);
@@ -12188,13 +12281,13 @@ input[type=time] {
   border-right: solid 0.1px rgba(106, 106, 106, 0.33);
   border-bottom: solid 0.1px rgba(106, 106, 106, 0.33);
   background: transparent;
-  color: white;
+  color: black;
 }
 .contact .input-group .form-control::-moz-placeholder {
-  color: rgba(106, 106, 106, 0.74);
+  color: black;
 }
 .contact .input-group .form-control::placeholder {
-  color: rgba(106, 106, 106, 0.74);
+  color: black;
 }
 
 .footer {

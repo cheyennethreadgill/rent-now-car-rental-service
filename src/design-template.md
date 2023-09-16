@@ -33,3 +33,11 @@ https://demo.kitthemes.com/html/rentnow/assets/images/payments@2x.png
 
 <!-- doors -->
 <i className="fa-light fa-door-closed"></i>
+
+fs6 0.92857rem
+fs5 1rem
+fs4 1.14286rem
+fs3 1.5rem
+fs2 2.21429rem
+fs 1 2.92857rem
+h1 3.57143rem
