@@ -81,7 +81,7 @@ function CarFilter() {
             </div>
 
             <div className="col d-flex align-items-center justify-content-end gap-2 p-0">
-              <p className=" m-0 ">Color</p>
+              <p className=" m-0">Color</p>
               <div className="car-filter_color-input d-flex justify-content-between gap-2">
                 <div className="d-flex car-filter_color-input_blue">
                   <input
@@ -167,9 +167,16 @@ function CarFilter() {
                               <p className=" card-text">
                                 Lorem ipsum, dolor sit amet consectetur.
                               </p>
-                              <p className=" passengers">
-                                {product.passengers} Passengers
+
+                              <p>
+                                <strong>Color:</strong> {product.color}
                               </p>
+                              <div className="d-flex gap-2">
+                                <i className="d-inline-block fa-solid fa-door-closed"></i>
+                                <p className=" passengers">
+                                  {product.passengers} Passengers
+                                </p>
+                              </div>
                             </div>
                             <div className="col-lg-3 d-flex flex-column justify-content-end text-center">
                               <p className="d-flex price m-0 align-items-center justify-content-center fw-medium">

@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom"
 import logo from "../../../src/images/logo.svg"
-import Socials from "../Global/SocialIcons"
-import { Button } from "react-bootstrap"
+import Socials from "../Global/SocialIcons";
 
 function NavSecondary() {
   return (

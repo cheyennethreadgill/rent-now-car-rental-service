@@ -12191,13 +12191,6 @@ input[type=time]::-webkit-datetime-edit {
   margin-top: 2.8em;
 }
 
-.product .card {
-  width: 26.5rem;
-}
-.product .card img {
-  width: 100%;
-}
-
 li {
   font-size: 0.85rem;
 }

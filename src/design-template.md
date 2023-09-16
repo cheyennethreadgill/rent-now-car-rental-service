@@ -21,7 +21,7 @@ https://demo.kitthemes.com/html/rentnow/assets/images/payments@2x.png
 <!-- Car cards/ info icons -->
 
 <!-- rating -->
-<i className="fa-solid fa-star"></i>
+<i class="fa-regular fa-star"></i>
 <!-- rating empty -->
 <i className="fa-light fa-star"></i>
 
