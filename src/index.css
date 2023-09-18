@@ -12122,7 +12122,7 @@ input[type=time]::-webkit-datetime-edit {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(17, 46, 59, 0.6745098039);
+  background-color: rgba(17, 46, 59, 0.8078431373);
 }
 .home-header .carousel-indicators {
   display: none;
@@ -12148,7 +12148,7 @@ input[type=time]::-webkit-datetime-edit {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(17, 46, 59, 0.6745098039);
+  background-color: rgba(17, 46, 59, 0.8078431373);
   z-index: -2;
 }
 
@@ -12169,7 +12169,7 @@ input[type=time]::-webkit-datetime-edit {
 }
 .car .jumbotron::after {
   content: "";
-  background-color: rgba(17, 46, 59, 0.6745098039);
+  background-color: rgba(17, 46, 59, 0.8078431373);
   width: inherit;
   height: 90vh;
   position: absolute;
@@ -12185,10 +12185,10 @@ input[type=time]::-webkit-datetime-edit {
   z-index: -100;
 }
 .car .jumbotron_info {
-  padding-top: 18rem;
+  padding-top: 23.5rem;
 }
 .car_info {
-  padding-top: 34.2em;
+  padding-top: 41.2em;
 }
 .car_info_btn {
   margin-top: -2rem;
@@ -12247,6 +12247,15 @@ input[type=time]::-webkit-datetime-edit {
 }
 .car_info .check .share {
   margin-top: 2.8em;
+}
+.car .facilities ul li {
+  list-style-type: none;
+}
+.car .facilities i {
+  margin-right: 1rem;
+}
+.car .facilities .fa-xmark {
+  color: red !important;
 }
 
 li {

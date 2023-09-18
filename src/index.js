@@ -19,6 +19,10 @@ root.render(
           element={<Car />}
         ></Route>
         <Route
+          path="/CarSearch/Products/:productId"
+          element={<Car />}
+        ></Route>
+        <Route
           path="/"
           element={<Home />}
         />

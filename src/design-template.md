@@ -18,6 +18,7 @@ socials
 <!-- payments -->
 https://demo.kitthemes.com/html/rentnow/assets/images/payments@2x.png
 
+
 <!-- Car cards/ info icons -->
 
 <!-- rating -->
@@ -26,13 +27,17 @@ https://demo.kitthemes.com/html/rentnow/assets/images/payments@2x.png
 <i className="fa-light fa-star"></i>
 
 <!-- passengers -->
-<i className="fa-light fa-car-side"></i>
+<i className="fa-solid fa-car-side"></i>
 
 <!-- gas -->
-<i className="fa-light fa-gas-pump"></i>
+<i className="fa-solid fa-gas-pump"></i>
 
 <!-- doors -->
 <i className="fa-solid fa-door-closed"></i>
+
+<!-- facilities -->
+<i class="fa-solid fa-check"></i>
+<i class="fa-solid fa-xmark"></i>
 
 fs6 0.92857rem
 fs5 1rem

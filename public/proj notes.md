@@ -46,3 +46,8 @@ https://www.youtube.com/watch?v=oVE6cx3UEpM
 
    > products
    > car
+
+<!-- displaying facilities -->
+
+if car has certain facility, show check symbol
+if car doesnt have a certain facility, show x

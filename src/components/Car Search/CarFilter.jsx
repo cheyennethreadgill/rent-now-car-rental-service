@@ -1,19 +1,11 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import CCards from "./CCards";
 import cars from "../Products/productList";
 
 function CarFilter() {
   const [products, setProducts] = useState(cars);
   // console.log(cars);
-
-  const filterColor = (colorValue) => {
-    let filterResult = cars.filter((car) => {
-      return car.color === colorValue;
-    });
-    setProducts(filterResult);
-    // console.log(filterResult);
-    // console.log("filter done");
-  };
 
   const filterBrand = (brandValue) => {
     let brandResult = cars.filter((car) => {
@@ -30,11 +22,13 @@ function CarFilter() {
     console.log(passResult);
   };
 
-  const filterAll = (value) => {
-    let allProducts = cars.filter((car) => {
-      return cars === value;
+  const filterColor = (colorValue) => {
+    let filterResult = cars.filter((car) => {
+      return car.color === colorValue;
     });
-    setProducts(allProducts);
+    setProducts(filterResult);
+    // console.log(filterResult);
+    // console.log("filter done");
   };
 
   return (
@@ -66,12 +60,7 @@ function CarFilter() {
                 id=""
                 className="pr-4 px-2 py-2 passenger-select"
               >
-                <option
-                  onChange={(e) => filterAll(e.target.value)}
-                  value="All"
-                >
-                  All
-                </option>
+                <option value="All">All</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -132,76 +121,88 @@ function CarFilter() {
         <div className="container w-75 pb-5">
           {products.map((product, key) => {
             return (
-              <div
-                key={product.id}
-                className="col"
-              >
-                <div className="row pb-5">
-                  <div className="card">
-                    <div className="row">
-                      <div className="col d-flex align-items-center">
-                        <img
-                          src={product.img}
-                          alt=""
-                          className="card-img "
-                        />
-                      </div>
+              <Link to={`/CarSearch/Products/${product.id}`}>
+                <div
+                  key={product.id}
+                  className="col"
+                >
+                  <div className="row pb-5">
+                    <div className="card">
+                      <div className="row">
+                        <div className="col d-flex align-items-center">
+                          <img
+                            src={product.img}
+                            alt=""
+                            className="card-img "
+                          />
+                        </div>
 
-                      {/* column 1 */}
-                      <div className="col-lg-9 py-4">
-                        <div className="card-body">
-                          <div className="row">
-                            <div className="col">
-                              <h4 className="card-title">{product.brand}</h4>
-                              <div className="d-flex gap-5">
-                                <div className="">
-                                  <i className="fa-solid fa-star"></i>
-                                  <i className="fa-solid fa-star"></i>
-                                  <i className="fa-solid fa-star"></i>
-                                  <i className="fa-solid fa-star"></i>
+                        {/* column 1 */}
+                        <div className="col-lg-9 py-4">
+                          <div className="card-body">
+                            <div className="row">
+                              <div className="col">
+                                <h4 className="card-title">{product.brand}</h4>
+                                <div className="d-flex gap-5">
+                                  <div className="">
+                                    <i className="fa-solid fa-star"></i>
+                                    <i className="fa-solid fa-star"></i>
+                                    <i className="fa-solid fa-star"></i>
+                                    <i className="fa-solid fa-star"></i>
+                                  </div>
+                                  <div className="">
+                                    <p className=" rating">3 Reviews</p>
+                                  </div>
                                 </div>
-                                <div className="">
-                                  <p className=" rating">3 Reviews</p>
-                                </div>
-                              </div>
-                              <p className=" card-text">
-                                Lorem ipsum, dolor sit amet consectetur.
-                              </p>
-
-                              <p>
-                                <strong>Color:</strong> {product.color}
-                              </p>
-                              <div className="d-flex gap-2">
-                                <i className="d-inline-block fa-solid fa-door-closed"></i>
-                                <p className=" passengers">
-                                  {product.passengers} Passengers
+                                <p className=" card-text">
+                                  Lorem ipsum, dolor sit amet consectetur.
                                 </p>
+
+                                <p>
+                                  <strong>Color:</strong> {product.color}
+                                </p>
+                                <div className="d-flex gap-4">
+                                  <div className="d-flex gap-2">
+                                    <i className="fa-solid fa-car-side"></i>{" "}
+                                    <p className=" passengers">
+                                      {product.passengers} Passengers
+                                    </p>
+                                  </div>
+                                  <div className="d-flex gap-2">
+                                    <i className="fa-solid fa-gas-pump"></i>
+                                    <p className=" gas"> Gas</p>
+                                  </div>
+                                  <div className="d-flex gap-2">
+                                    <i className="fa-solid fa-door-closed"></i>
+                                    <p className=" doors"> doors</p>
+                                  </div>
+                                </div>
                               </div>
-                            </div>
-                            <div className="col-lg-3 d-flex flex-column justify-content-end text-center">
-                              <p className="d-flex price m-0 align-items-center justify-content-center fw-medium">
-                                <strong>${product.price}</strong>
-                                <span className="d-inline-block ml-3">
-                                  /total
-                                </span>
-                              </p>
+                              <div className="col-lg-3 d-flex flex-column justify-content-end text-center">
+                                <p className="d-flex price m-0 align-items-center justify-content-center fw-medium">
+                                  <strong>${product.price}</strong>
+                                  <span className="d-inline-block ml-3">
+                                    /total
+                                  </span>
+                                </p>
 
-                              <p className="">
-                                ${(product.price / 2).toFixed(0)} /day
-                              </p>
+                                <p className="">
+                                  ${(product.price / 2).toFixed(0)} /day
+                                </p>
 
-                              <button className="btn btn-primary py-2 px-4 text-white fs-5 fw-medium rounded-1">
-                                Book Now
-                              </button>
+                                <button className="btn btn-primary py-2 px-4 text-white fs-5 fw-medium rounded-1 ">
+                                  Book Now
+                                </button>
+                              </div>
+                              {/* column 2 */}
                             </div>
-                            {/* column 2 */}
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             );
           })}
         </div>

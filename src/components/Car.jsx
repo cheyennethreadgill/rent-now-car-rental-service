@@ -5,12 +5,15 @@ import { useParams } from "react-router-dom";
 import products from "../components/Products/productList";
 
 const Car = () => {
-  console.log(useParams());
+  // console.log(useParams());
   const { productId } = useParams();
   const product = products.find((product) => product.id === productId);
-  const { name, price, singleImg, brand, color } = product;
+  const { name, price, singleImg, brand, color, facilities } = product;
 
-  console.log(name);
+  console.log(product.facilities.audio);
+  // for (prop in products) {
+  //   console.log(prop[key])
+  // }
 
   return (
     <section className="car">
@@ -29,11 +32,17 @@ const Car = () => {
       </div>
       <div className="container position-relative">
         <div className="jumbotron_info position-absolute z-3 d-flex flex-column">
-          <h1>{brand} </h1>
+          <h1 className="fw-bold">{brand} </h1>
           <p className="lead">Mauris semper nisl a massa convallis</p>
-          <div>
+          <div className="d-flex gap-4">
             <p>
-              <i className="fa-solid fa-door-closed"></i> Passengers
+              <i me="fa-solid fa-car-side"></i> Passengers
+            </p>
+            <p>
+              <i me="fa-solid fa-door-closed"></i> Doors
+            </p>
+            <p>
+              <i me="fa-solid fa-gas-pump"></i> Gas
             </p>
           </div>
         </div>
@@ -44,7 +53,7 @@ const Car = () => {
         <section className="bg-white py-5 position-relative ">
           <div className="row container m-0 m-auto text-black">
             <div className="col">
-              <div className="rounded-1 car_info_btn btn bg-primary text-white px-4 py-2 position-absolute top-0">
+              <div className="rounded-1 car_info_btn bg-primary text-white px-4 py-2 position-absolute top-0">
                 <p className="m-0">From</p>
                 <p className="m-0">
                   {/* <span className="fs-2 fw-bold">${cars[0].price}</span> /day */}
@@ -91,7 +100,7 @@ const Car = () => {
                   Check Availability
                 </h5>
                 <div className="input-group px-4 ">
-                  <i class="fa-solid fa-location-dot input-group-text"></i>
+                  <i className="fa-solid fa-location-dot input-group-text"></i>
                   <input
                     type="text"
                     className="form-control "
@@ -100,7 +109,7 @@ const Car = () => {
                 </div>
                 {/* input end */}
                 <div className="input-group px-4 ">
-                  <i class="fa-solid fa-location-dot input-group-text"></i>
+                  <i className="fa-solid fa-location-dot input-group-text"></i>
                   <input
                     type="text"
                     className="form-control"
@@ -109,7 +118,7 @@ const Car = () => {
                 </div>
                 {/* input end */}
                 <div className="input-group px-4 ">
-                  <i class="fa-solid fa-location-dot input-group-text"></i>
+                  <i className="fa-solid fa-location-dot input-group-text"></i>
                   <input
                     type="date"
                     className="form-control"
@@ -123,7 +132,7 @@ const Car = () => {
                 </div>
                 {/* input end */}
                 <div className="input-group px-4 ">
-                  <i class="fa-solid fa-location-dot input-group-text"></i>
+                  <i className="fa-solid fa-location-dot input-group-text"></i>
                   <input
                     type="date"
                     className="form-control"
@@ -151,30 +160,138 @@ const Car = () => {
             {/* Check Avail Card End */}
           </div>
         </section>
-        <section className="bg-white pb-5">
+        <section className="bg-white pb-5 facilities">
           <div className="row container text-black m-0 m-auto">
             <div className="col">
               <h3>Facilities</h3>
               <ul className="row">
                 <div className="col">
-                  <li> Audio Input</li>
-                  <li> Audio Input</li>
-                  <li> Audio Input</li>
+                  <li>
+                    <i
+                      className={
+                        product.facilities.audio === true
+                          ? "fa-solid fa-check"
+                          : "fa-solid fa-xmark"
+                      }
+                    ></i>
+                    Audio
+                  </li>
+                  <li>
+                    <i
+                      className={
+                        product.facilities.bluetooth === true
+                          ? "fa-solid fa-check"
+                          : "fa-solid fa-xmark"
+                      }
+                    ></i>
+                    Bluetooth
+                  </li>
+                  <li>
+                    <i
+                      className={
+                        product.facilities.heated === true
+                          ? "fa-solid fa-check"
+                          : "fa-solid fa-xmark"
+                      }
+                    ></i>
+                    Heated seats
+                  </li>
                 </div>
                 <div className="col">
-                  <li> Audio Input</li>
-                  <li> Audio Input</li>
-                  <li> Audio Input</li>
+                  <li>
+                    <i
+                      className={
+                        product.facilities.allwheel === true
+                          ? "fa-solid fa-check"
+                          : "fa-solid fa-xmark"
+                      }
+                    ></i>
+                    All wheel drive
+                  </li>
+                  <li>
+                    <i
+                      className={
+                        product.facilities.usb === true
+                          ? "fa-solid fa-check"
+                          : "fa-solid fa-xmark"
+                      }
+                    ></i>
+                    USB input
+                  </li>
+                  <li>
+                    <i
+                      className={
+                        product.facilities.fmradio === true
+                          ? "fa-solid fa-check"
+                          : "fa-solid fa-xmark"
+                      }
+                    ></i>
+                    Fm radio
+                  </li>
                 </div>
                 <div className="col">
-                  <li> Audio Input</li>
-                  <li> Audio Input</li>
-                  <li> Audio Input</li>
+                  <li>
+                    <i
+                      className={
+                        product.facilities.gps === true
+                          ? "fa-solid fa-check"
+                          : "fa-solid fa-xmark"
+                      }
+                    ></i>
+                    GPS Navigation
+                  </li>
+                  <li>
+                    <i
+                      className={
+                        product.facilities.safe === true
+                          ? "fa-solid fa-check"
+                          : "fa-solid fa-xmark"
+                      }
+                    ></i>
+                    Safe
+                  </li>
+                  <li>
+                    <i
+                      className={
+                        product.facilities.air === true
+                          ? "fa-solid fa-check"
+                          : "fa-solid fa-xmark"
+                      }
+                    ></i>
+                    Air conditioner
+                  </li>
                 </div>
                 <div className="col">
-                  <li> Audio Input</li>
-                  <li> Audio Input</li>
-                  <li> Audio Input</li>
+                  <li>
+                    <i
+                      className={
+                        product.facilities.parkingsensors === true
+                          ? "fa-solid fa-check"
+                          : "fa-solid fa-xmark"
+                      }
+                    ></i>
+                    Parking sensors
+                  </li>
+                  <li>
+                    <i
+                      className={
+                        product.facilities.wifi === true
+                          ? "fa-solid fa-check"
+                          : "fa-solid fa-xmark"
+                      }
+                    ></i>
+                    Wifi
+                  </li>
+                  <li>
+                    <i
+                      className={
+                        product.facilities.sunroof === true
+                          ? "fa-solid fa-check"
+                          : "fa-solid fa-xmark"
+                      }
+                    ></i>
+                    Sunroof
+                  </li>
                 </div>
               </ul>
             </div>
