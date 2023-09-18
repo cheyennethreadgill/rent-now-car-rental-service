@@ -12156,12 +12156,15 @@ input[type=time]::-webkit-datetime-edit {
   flex-grow: 1;
 }
 
+.car i {
+  color: #00D231;
+}
+.car i:hover {
+  color: rgba(26, 215, 70, 0.4509803922);
+}
 .car .jumbotron {
-  background-image: url("https://demo.kitthemes.com/html/rentnow/assets/images/single-car-thumb.jpg");
   width: 100%;
-  height: 90vh;
-  background-size: cover;
-  background-repeat: no-repeat;
+  height: 100%;
   z-index: -3;
 }
 .car .jumbotron::after {
@@ -12171,6 +12174,15 @@ input[type=time]::-webkit-datetime-edit {
   height: 90vh;
   position: absolute;
   top: 0;
+  left: 0;
+  z-index: 0;
+}
+.car .jumbotron img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -100;
 }
 .car .jumbotron_info {
   padding-top: 18rem;
@@ -12186,6 +12198,52 @@ input[type=time]::-webkit-datetime-edit {
 }
 .car_info .check .card {
   filter: drop-shadow(0rem 1rem 0.9rem rgba(128, 128, 128, 0.221));
+}
+.car_info .check .card .input-group .input-group-text {
+  background-color: transparent;
+  border-bottom: solid 0.1px rgb(136, 136, 136);
+  border-top: solid 0.1px rgb(136, 136, 136);
+  border-right: none;
+  border-left: solid 0.1px rgb(136, 136, 136);
+  color: rgb(136, 136, 136);
+}
+.car_info .check .card .input-group .form-control {
+  border-bottom: solid 0.1px rgb(136, 136, 136);
+  border-top: solid 0.1px rgb(136, 136, 136);
+  border-left: solid 0.1px rgb(136, 136, 136);
+  border-right: solid 0.1px rgb(136, 136, 136);
+  background: transparent;
+  color: rgb(136, 136, 136);
+}
+.car_info .check .card .input-group .form-control::-moz-placeholder {
+  color: rgb(136, 136, 136) !important;
+}
+.car_info .check .card .input-group .form-control::placeholder {
+  color: rgb(136, 136, 136) !important;
+}
+.car_info .check .card input[type=time]::-webkit-datetime-edit {
+  color: rgb(136, 136, 136) !important;
+}
+.car_info .check .card input[type=date]::-webkit-calendar-picker-indicator {
+  border-radius: 4px;
+  margin-right: 2px;
+  filter: invert(100%);
+}
+.car_info .check .card input[type=date]::-webkit-calendar-picker-indicator::placeholder {
+  color: rgb(136, 136, 136) !important;
+}
+.car_info .check .card input[type=date] .form-control {
+  border-bottom: solid 0.1px rgb(136, 136, 136);
+  border-top: solid 0.1px rgb(136, 136, 136);
+  border-left: none;
+  border-right: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.638);
+}
+.car_info .check .card input[type=time] {
+  background: transparent !important;
+  border: solid rgb(136, 136, 136) 0.1px;
+  color: rgb(136, 136, 136);
 }
 .car_info .check .share {
   margin-top: 2.8em;

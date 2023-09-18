@@ -32,7 +32,7 @@ https://demo.kitthemes.com/html/rentnow/assets/images/payments@2x.png
 <i className="fa-light fa-gas-pump"></i>
 
 <!-- doors -->
-<i className="fa-light fa-door-closed"></i>
+<i className="fa-solid fa-door-closed"></i>
 
 fs6 0.92857rem
 fs5 1rem

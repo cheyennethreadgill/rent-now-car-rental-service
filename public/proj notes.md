@@ -40,3 +40,9 @@ Create filter function
 Set const tocategories and filter (each catItem) and return  the catItem that’s equal to the filterinput 
 
 update the state in the cards component based on the filter result
+
+<!-- Go to car details page -->
+https://www.youtube.com/watch?v=oVE6cx3UEpM 
+
+   > products
+   > car

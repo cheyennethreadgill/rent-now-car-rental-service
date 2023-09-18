@@ -1,14 +1,17 @@
 .car {
 
+    i {
+        color: $primary;
+
+        &:hover {
+            color: #1ad74673;
+        }
+    }
     .jumbotron {
-        background-image: url('https://demo.kitthemes.com/html/rentnow/assets/images/single-car-thumb.jpg');
         width: 100%;
-        height: 90vh;
-        background-size: cover;
-        background-repeat: no-repeat;
+        height: 100%;
         z-index: -3;
-        
-        
+
         &::after {
             content: '';
             background-color: $blue-opacity-5;
@@ -16,7 +19,18 @@
             height: 90vh;
             position: absolute;
             top: 0;
+            left: 0;
+            z-index: 0;
         }
+
+        img {
+            width: 100%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;
+            z-index: -100;
+        }
+       
     }
 
     .jumbotron_info {
@@ -41,6 +55,64 @@
             .card {
                 
                 filter: drop-shadow(0rem 1rem 0.9rem rgba(128, 128, 128, 0.221));
+                .input-group {
+    
+                    .input-group-text {
+                        background-color: transparent;
+                        border-bottom: solid 0.1px rgb(136, 136, 136);
+                        border-top: solid 0.1px rgb(136, 136, 136);
+                        border-right: none;
+                        border-left: solid 0.1px rgb(136, 136, 136);
+                        color: rgb(136, 136, 136);
+                    }
+                    
+                    .form-control {
+                        border-bottom: solid 0.1px rgb(136, 136, 136);
+                        border-top: solid 0.1px rgb(136, 136, 136);
+                        border-left: solid 0.1px rgb(136, 136, 136);
+                        border-right: solid 0.1px rgb(136, 136, 136);
+                        background: transparent;
+                        color: rgb(136, 136, 136);
+                        
+                        &::placeholder {
+                            color: rgb(136, 136, 136) !important;
+                        }
+                    }
+                }
+                
+
+input[type=time]::-webkit-datetime-edit {
+    color:  rgb(136, 136, 136) !important;
+}
+                input[type="date"]::-webkit-calendar-picker-indicator {
+                    border-radius: 4px;
+                    margin-right: 2px;
+                    filter: invert(100%);
+                
+                    &::placeholder {
+                        color: rgb(136, 136, 136) !important;
+                    }
+                }
+                input[type="date"] 
+                .form-control {
+                    border-bottom: solid 0.1px rgb(136, 136, 136);
+                    border-top: solid 0.1px rgb(136, 136, 136);
+                    border-left:  none;
+                    border-right: none;
+                    background: transparent;
+                    color: rgba(255, 255, 255, 0.638);
+
+                    
+                }
+                  
+                  
+                input[type="time"] {
+                    background: transparent !important;
+                    border:  solid rgb(136, 136, 136) 0.1px;
+                    color: rgb(136, 136, 136);
+                
+                    
+                }
             }
 
             .share {

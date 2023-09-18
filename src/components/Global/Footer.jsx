@@ -9,12 +9,13 @@ const Footer = () => {
         <div className="row border-bottom py-5 d-flex justify-content-between gap-5">
           <div className="col-lg-5 footer_about d-flex flex-column gap-2">
             <h4 className="pb-4 fs-3 fw-semibold"> About Us</h4>
-
-            <img
-              src={Logo}
-              alt="Rent now logo"
-              width="170"
-            />
+            <Link to="/">
+              <img
+                src={Logo}
+                alt="Rent now logo"
+                width="170"
+              />
+            </Link>
 
             <p className="mt-3 fs-5">
               Sed sit amet ligula ac nulla finibus euismod nec nec diam. Lorem

@@ -7,12 +7,17 @@ import Home from "./components/Home/Home"
 import CarSearch from "./components/Car Search/CarSearch"
 import Contact from "./components/Contact/Contact"
 import Car from "./components/Car"
+import cars from "./components/Car";
 
-const root = ReactDOM.createRoot(document.getElementById("root"))
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
+        <Route
+          path="/Products/:productId"
+          element={<Car />}
+        ></Route>
         <Route
           path="/"
           element={<Home />}
@@ -33,4 +38,4 @@ root.render(
     </BrowserRouter>
     {/* <App /> */}
   </React.StrictMode>
-)
+);

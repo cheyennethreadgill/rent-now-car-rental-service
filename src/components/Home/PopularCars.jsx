@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import Product from "../Products/Product";
+import Product from "../Products/Products";
 
 function PopularCars() {
   return (

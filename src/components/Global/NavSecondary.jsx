@@ -48,10 +48,12 @@ function NavSecondary() {
               href="#"
               className="text-decoration-none"
             >
-              <img
-                src={logo}
-                alt="Rent Now Logo"
-              />
+              <Link to="/">
+                <img
+                  src={logo}
+                  alt="Rent Now Logo"
+                />
+              </Link>
             </address>
           </div>
           <ul className="col">

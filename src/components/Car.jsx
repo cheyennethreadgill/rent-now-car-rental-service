@@ -1,25 +1,41 @@
 import NavSecondary from "./Global/NavSecondary";
 import Footer from "./Global/Footer";
 import SocialIcons from "./Global/SocialIcons";
-import { useState } from "react";
 import { useParams } from "react-router-dom";
-import cars from "../components/Products/productList";
+import products from "../components/Products/productList";
 
 const Car = () => {
-  const { carID } = useParams();
-  const car = cars.find((car) => car.id === carID);
+  console.log(useParams());
+  const { productId } = useParams();
+  const product = products.find((product) => product.id === productId);
+  const { name, price, singleImg, brand, color } = product;
 
-  const { name } = car;
+  console.log(name);
 
   return (
     <section className="car">
       <NavSecondary />
-
-      <div className="jumbotron bg-primary position-fixed text-primary"></div>
+      <div
+        className="
+          jumbotron"
+      >
+        <img
+          className="
+          bg-primary
+          text-primary
+          position-fixed"
+          src={singleImg}
+        ></img>
+      </div>
       <div className="container position-relative">
         <div className="jumbotron_info position-absolute z-3 d-flex flex-column">
-          <h1>{name}</h1>
+          <h1>{brand} </h1>
           <p className="lead">Mauris semper nisl a massa convallis</p>
+          <div>
+            <p>
+              <i className="fa-solid fa-door-closed"></i> Passengers
+            </p>
+          </div>
         </div>
       </div>
       <div className=" car_info ">
@@ -28,9 +44,13 @@ const Car = () => {
         <section className="bg-white py-5 position-relative ">
           <div className="row container m-0 m-auto text-black">
             <div className="col">
-              <button className="car_info_btn btn bg-primary text-white px-4 py-4 position-absolute top-0">
-                From $/day
-              </button>
+              <div className="rounded-1 car_info_btn btn bg-primary text-white px-4 py-2 position-absolute top-0">
+                <p className="m-0">From</p>
+                <p className="m-0">
+                  {/* <span className="fs-2 fw-bold">${cars[0].price}</span> /day */}
+                  <span className="fs-2 fw-bold">${price}</span> /day
+                </p>
+              </div>
 
               <p className="mt-5">
                 Praesent quis risus maximus arcu luctus egestas. Aliquam rhoncus
