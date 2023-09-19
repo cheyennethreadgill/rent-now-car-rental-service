@@ -35,8 +35,8 @@ function CarFilter() {
     <section>
       <section className="car-filter bg-light py-5 text-black">
         <div className="container-fluid w-75 pt-4">
-          <div className="row car-filter_cards">
-            <div className="col d-flex align-items-center gap-2 p-0">
+          <div className="row gap-4 car-filter_cards">
+            <div className="col-sm-12 col-lg  d-flex align-items-center gap-2 p-0">
               <p className=" m-0 ">Car Brand:</p>
               <select
                 onChange={(e) => filterBrand(e.target.value)}
@@ -52,7 +52,7 @@ function CarFilter() {
               </select>
             </div>
 
-            <div className="col d-flex align-items-center gap-2 p-0">
+            <div className="col-lg d-flex gap-2 p-0 align-items-center">
               <p className=" m-0 ">Passengers:</p>
               <select
                 onChange={(e) => filterPassengers(e.target.value)}
@@ -69,7 +69,7 @@ function CarFilter() {
               </select>
             </div>
 
-            <div className="col d-flex align-items-center justify-content-end gap-2 p-0">
+            <div className="col-sm-12 col-lg d-flex align-items-center gap-2 p-0">
               <p className=" m-0">Color</p>
               <div className="car-filter_color-input d-flex justify-content-between gap-2">
                 <div className="d-flex car-filter_color-input_blue">
@@ -116,7 +116,7 @@ function CarFilter() {
           </div>
         </div>
       </section>
-      {/* cars */}
+      {/* cars --------------------------------*/}
       <section className="cards text-black bg-light">
         <div className="container w-75 pb-5">
           {products.map((product, key) => {
@@ -124,7 +124,7 @@ function CarFilter() {
               <Link to={`/CarSearch/Products/${product.id}`}>
                 <div
                   key={product.id}
-                  className="col"
+                  className="col "
                 >
                   <div className="row pb-5">
                     <div className="card">
@@ -142,8 +142,10 @@ function CarFilter() {
                           <div className="card-body">
                             <div className="row">
                               <div className="col">
-                                <h4 className="card-title">{product.brand}</h4>
-                                <div className="d-flex gap-5">
+                                <h4 className="card-title fw-semibold">
+                                  {product.brand}
+                                </h4>
+                                <div className="d-md-flex gap-3">
                                   <div className="">
                                     <i className="fa-solid fa-star"></i>
                                     <i className="fa-solid fa-star"></i>
@@ -178,8 +180,8 @@ function CarFilter() {
                                   </div>
                                 </div>
                               </div>
-                              <div className="col-lg-3 d-flex flex-column justify-content-end text-center">
-                                <p className="d-flex price m-0 align-items-center justify-content-center fw-medium">
+                              <div className="col-lg-3 d-flex flex-column justify-content-end  pt-sm-5">
+                                <p className="d-flex price m-0 align-items-center  fw-medium">
                                   <strong>${product.price}</strong>
                                   <span className="d-inline-block ml-3">
                                     /total

@@ -20,12 +20,12 @@ function Header() {
               Maecenas viverra porta eros, id tincidunt lorem rhoncus eget.
               Aliquam erat volutpat. Sed ultricies elementum egestas.
             </p>
-            <Button className="fw-semibold fs-4 btn btn-lg btn-primary text-white px-5 py-2 rounded-1 ">
+            <Button className="d-none d-lg-inline fw-semibold fs-4 btn btn-lg btn-primary text-white px-5 py-2 rounded-1 ">
               Book Now
             </Button>
           </div>
         </Carousel.Item>
-        <Carousel.Item>
+        {/* <Carousel.Item>
           <img
             style={{ width: "100%" }}
             src={Slide2Image}
@@ -37,7 +37,7 @@ function Header() {
               Maecenas viverra porta eros, id tincidunt lorem rhoncus eget.
               Aliquam erat volutpat. Sed ultricies elementum egestas.
             </p>
-            <Button className=" fw-semibold fs-4 btn btn-lg btn-primary text-white px-5 py-2 rounded-1">
+            <Button className="d-none d-lg-inline  fw-semibold fs-4 btn btn-lg btn-primary text-white px-5 py-2 rounded-1">
               Book Now
             </Button>
           </div>
@@ -54,11 +54,11 @@ function Header() {
               Maecenas viverra porta eros, id tincidunt lorem rhoncus eget.
               Aliquam erat volutpat. Sed ultricies elementum egestas.
             </p>
-            <Button className=" fw-semibold fs-4 btn btn-lg text-white btn-primary px-5 py-2 rounded-1">
+            <Button className="d-none d-lg-inline  fw-semibold fs-4 btn btn-lg text-white btn-primary px-5 py-2 rounded-1">
               Book Now
             </Button>
           </div>
-        </Carousel.Item>
+        </Carousel.Item> */}
       </Carousel>
       {/* <div className="carousel-inner">
         <div className="carousel-item d-block w-100">
@@ -85,7 +85,7 @@ function Header() {
         Maecenas viverra porta eros, id tincidunt lorem rhoncus eget. Aliquam
         erat volutpat. Sed ultricies elementum egestas.
       </p>
-      <Button className="btn btn-primary"> Book Now </Button> */}
+      <Button className="d-none d-lg-inline btn btn-primary"> Book Now </Button> */}
     </header>
   );
 }

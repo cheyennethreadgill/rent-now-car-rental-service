@@ -3,7 +3,7 @@ function PageHeaders(props) {
     <section>
       <div className="page-header jumbotron position-relative">
         <img
-          className="position-fixed top-0 left-0 height-inherit"
+          className="position-fixed top-0 left-0 img-fluid"
           src={props.src}
           alt="Picture of a road"
         />

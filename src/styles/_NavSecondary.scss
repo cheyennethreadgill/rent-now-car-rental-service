@@ -1,4 +1,15 @@
+.global-nav {
+    @include breakpoints-up (xs) {
+        background-color: $blue;
+    }
+    @include breakpoints-up (sm) {
+        background-color: transparent;
+    }
+
+    
 .nav-info {
+
+   
     &_contact {
         
         a {
@@ -7,7 +18,14 @@
 
         &_icon {
             color: $primary;
+
         }
+        // i.fa-solid.fa-envelope-open.nav-info_contact_icon {
+        //     width: 5em;
+        //     // @include breakpoints-up (md) {
+        //     //     width: 5em;
+        //     // }
+        // }
     }
     &_socials {
         color: white;
@@ -20,5 +38,23 @@
             }
         }
 
+    }
+}
+}
+
+.navbar {
+    &-collapse {
+        @include breakpoints-down (lg) {
+            margin: 0 0 0 60%;
+            background-color: $blue-nav;
+        }
+    }
+    &-toggler {
+        border: none;
+        background-color: $primary;
+
+        &-icon {
+            filter: invert(100);
+        }
     }
 }

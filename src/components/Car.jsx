@@ -8,12 +8,9 @@ const Car = () => {
   // console.log(useParams());
   const { productId } = useParams();
   const product = products.find((product) => product.id === productId);
-  const { name, price, singleImg, brand, color, facilities } = product;
+  const { name, price, singleImg, brand, color } = product;
 
   console.log(product.facilities.audio);
-  // for (prop in products) {
-  //   console.log(prop[key])
-  // }
 
   return (
     <section className="car">
@@ -36,13 +33,13 @@ const Car = () => {
           <p className="lead">Mauris semper nisl a massa convallis</p>
           <div className="d-flex gap-4">
             <p>
-              <i me="fa-solid fa-car-side"></i> Passengers
+              <i className="fa-solid fa-car-side"></i> Passengers
             </p>
             <p>
-              <i me="fa-solid fa-door-closed"></i> Doors
+              <i className="fa-solid fa-door-closed"></i> Doors
             </p>
             <p>
-              <i me="fa-solid fa-gas-pump"></i> Gas
+              <i className="fa-solid fa-gas-pump"></i> Gas
             </p>
           </div>
         </div>

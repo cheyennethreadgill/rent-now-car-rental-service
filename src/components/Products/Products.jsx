@@ -9,7 +9,7 @@ function Product() {
       {products.map((product) => {
         return (
           <div
-            className="card col-lg-3 border-none pb-2 d-flex flex-fill"
+            className="card col-lg-3 col-md-4 border-none pb-2 d-flex flex-fill"
             key={product.id}
           >
             <Link

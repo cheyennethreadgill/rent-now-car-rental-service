@@ -7,7 +7,7 @@ const Footer = () => {
     <section className="footer pt-5">
       <div className="container w-75">
         <div className="row border-bottom py-5 d-flex justify-content-between gap-5">
-          <div className="col-lg-5 footer_about d-flex flex-column gap-2">
+          <div className="col-lg-4 col-md-3 footer_about d-flex flex-column gap-2">
             <h4 className="pb-4 fs-3 fw-semibold"> About Us</h4>
             <Link to="/">
               <img
@@ -25,7 +25,7 @@ const Footer = () => {
 
             <Socials />
           </div>
-          <div className="col footer_quick-links">
+          <div className="col-sm-12 col-md-3 footer_quick-links">
             <h4 className="pb-4 fs-3 fw-semibold"> Quick Links</h4>
 
             <div className="row fs-6">
@@ -101,15 +101,15 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="col footer_contact fs-6">
+          <div className="col-sm-4 col-md-4 col-lg-3 footer_contact fs-6">
             <h4 className="pb-4 fs-3 fw-semibold "> Contact Us </h4>
             <div className="row">
-              <div className="col d-flex flex-column justify-content-between">
+              <div className="col-sm-1 d-flex flex-column justify-content-between">
                 <i className="fs-4 fa-solid fa-envelope-open"></i>
                 <i className="fs-4 fa-solid fa-square-phone"></i>
                 <i className="fs-4 fa-solid fa-location-dot"></i>
               </div>
-              <div className="col-lg-10">
+              <div className="col-lg-10 col-sm-10 ">
                 <address>
                   support@exapmple.com <br></br>
                 </address>

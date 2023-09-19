@@ -50,4 +50,7 @@ https://www.youtube.com/watch?v=oVE6cx3UEpM
 <!-- displaying facilities -->
 
 if car has certain facility, show check symbol
-if car doesnt have a certain facility, show x
+if car doesnt have a certain facility, show 
+
+<!-- add map API -->
+<!-- fine tune car filter options -->

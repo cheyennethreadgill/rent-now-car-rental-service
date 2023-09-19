@@ -2,4 +2,8 @@
     &_date {
         flex-grow: 1;
     }
+    input[type="time" i]::-webkit-calendar-picker-indicator {
+        filter: invert(100);
+    }  
+    
 }

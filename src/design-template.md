@@ -1,4 +1,9 @@
-socials
+
+<!-- nav -->
+<i class="fa-solid fa-chevron-down"></i>
+
+
+<!-- socials -->
 <i className="fa fa-facebook"></i>
 
 <i className="fa fa-twitter"></i>
@@ -38,6 +43,7 @@ https://demo.kitthemes.com/html/rentnow/assets/images/payments@2x.png
 <!-- facilities -->
 <i class="fa-solid fa-check"></i>
 <i class="fa-solid fa-xmark"></i>
+
 
 fs6 0.92857rem
 fs5 1rem

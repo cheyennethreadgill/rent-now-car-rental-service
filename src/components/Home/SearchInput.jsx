@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 
 const SearchInput = () => {
   return (
-    <section className="bg-primary p-5 text-center row">
-      <div className="container-fluid">
+    <section className="bg-primary py-5 text-center row ">
+      <div className="px-4 px-md-5">
         <h2 className="mb-5 fs-2 fw-semibold">Search & Hire Cars</h2>
-        <div className="car-search-form row">
-          <div className="input-group col">
+        <div className="car-search-form row gap-3 gap-lg-0">
+          <div className="input-group col-sm">
             <i class="input-group-text h-100 fa-solid fa-location-dot"></i>
             <input
               className="form-control"
@@ -15,7 +15,7 @@ const SearchInput = () => {
             />
           </div>
 
-          <div className="input-group col">
+          <div className="input-group col-sm">
             <i class="input-group-text h-100 fa-solid fa-location-dot"></i>
 
             <input
@@ -25,7 +25,7 @@ const SearchInput = () => {
             />
           </div>
 
-          <div className="input-group car-search-form_date col">
+          <div className="input-group car-search-form_date col-md-12 col-lg">
             <input
               className="form-control"
               type="date"
@@ -38,7 +38,7 @@ const SearchInput = () => {
             />
           </div>
 
-          <div className="input-group col">
+          <div className="input-group col-md-12 col-lg">
             <input
               type="date"
               className="form-control"

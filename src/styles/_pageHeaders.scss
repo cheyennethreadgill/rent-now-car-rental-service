@@ -1,5 +1,5 @@
 .page-header {
-    height: 65vh;
+    // height: 65vh;
 
     .container {
         padding-top: 13rem;
@@ -7,10 +7,10 @@
     
     img {
         z-index: -5;
-        width: 100%;
-        height: 100%;
         transform: translateY(-3rem);
         position: relative;
+        background-size: cover;
+        width: 100%;
     }
         
     &::after {

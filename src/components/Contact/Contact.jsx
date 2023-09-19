@@ -17,9 +17,9 @@ function Contact() {
         name={pageList[1].name}
       />
       <section className="bg-white text-black py-4">
-        <div className="container contact py-5 w-75">
+        <div className="container contact py-5">
           <div className="row gap-4 ">
-            <div className="col contact_message">
+            <div className="col-md-12 col-lg contact_message ">
               <h4 className="mb-4 ">Send Message</h4>
               <div className="row">
                 <div className="col ">
@@ -65,7 +65,7 @@ function Contact() {
               </div>
             </div>
             {/* Message Ends--------------- */}
-            <div className="col contact_info pb-5">
+            <div className="col-md-12 col-lg contact_info pt-sm-4 pt-lg-0 pb-5">
               <h4 className="">Contact Info</h4>
               <div className="row">
                 <div className="col d-flex mt-4 gap-3">

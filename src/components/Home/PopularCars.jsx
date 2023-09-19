@@ -4,7 +4,7 @@ import Product from "../Products/Products";
 
 function PopularCars() {
   return (
-    <section className="text-black popular-cars py-4 bg-light">
+    <section className="text-black popular-cars p-4 bg-light">
       <div className="container">
         <h2 className="text-center mt-5 fw-bold">Popular Cars</h2>
         <p className="text-center mb-5">

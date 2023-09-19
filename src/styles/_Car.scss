@@ -16,7 +16,7 @@
             content: '';
             background-color: $blue-opacity-5;
             width: inherit;
-            height: 90vh;
+            height: 100vh;
             position: absolute;
             top: 0;
             left: 0;
@@ -24,10 +24,11 @@
         }
 
         img {
-            width: 100%;
             background-size: cover;
             background-repeat: no-repeat;
             position: relative;
+            // transform: translateY(-20rem);
+            background-position-x: -5rem;
             z-index: -100;
         }
        
@@ -50,11 +51,17 @@
         }
 
         .check {
-            margin-top: -9rem;
+            @include breakpoints-up (lg) {
+                margin-top: -9rem;
+            }
+            @include breakpoints-down (lg) {
+                margin-top: 2rem;
+            }
 
             .card {
                 
-                filter: drop-shadow(0rem 1rem 0.9rem rgba(128, 128, 128, 0.221));
+                filter: drop-shadow(0rem 1rem 0.5rem rgba(128, 128, 128, 0.221));
+
                 .input-group {
     
                     .input-group-text {
@@ -79,7 +86,7 @@
                         }
                     }
                 }
-                
+                        
 
 input[type=time]::-webkit-datetime-edit {
     color:  rgb(136, 136, 136) !important;
