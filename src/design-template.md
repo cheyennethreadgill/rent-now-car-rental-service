@@ -15,7 +15,7 @@
 <i className="fa-solid fa-envelope-open"></i>
 <i className="fa-solid fa-location-dot"></i>
 
-<!-- cta -->
+<!-- search -->
 <i className="fa-solid fa-magnifying-glass"></i>
 
 

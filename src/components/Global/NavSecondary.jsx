@@ -48,6 +48,7 @@ function NavSecondary() {
       </div>
       {/* info end --------------------------------------------------------------------*/}
       <div className="border-bottom"></div>
+
       {/* Main Navigation---------------------- */}
       <section className="container pt-3">
         <nav class="navbar navbar-expand-xl justify-content-between">

@@ -13,52 +13,52 @@ const Car = () => {
   console.log(product.facilities.audio);
 
   return (
-    <section className="car">
+    <section className='car'>
       <NavSecondary />
       <div
-        className="
-          jumbotron"
+        className='
+          jumbotron'
       >
         <img
-          className="
+          className='
           bg-primary
           text-primary
-          position-fixed"
+          position-fixed'
           src={singleImg}
         ></img>
       </div>
-      <div className="container position-relative">
-        <div className="jumbotron_info position-absolute z-3 d-flex flex-column">
-          <h1 className="fw-bold">{brand} </h1>
-          <p className="lead">Mauris semper nisl a massa convallis</p>
-          <div className="d-flex gap-4">
+      <div className='container position-relative'>
+        <div className='jumbotron_info position-absolute z-3 d-flex flex-column'>
+          <h1 className='fw-bold'>{brand} </h1>
+          <p className='lead'>Mauris semper nisl a massa convallis</p>
+          <div className='d-flex gap-4'>
             <p>
-              <i className="fa-solid fa-car-side"></i> Passengers
+              <i className='fa-solid fa-car-side'></i> Passengers
             </p>
             <p>
-              <i className="fa-solid fa-door-closed"></i> Doors
+              <i className='fa-solid fa-door-closed'></i> Doors
             </p>
             <p>
-              <i className="fa-solid fa-gas-pump"></i> Gas
+              <i className='fa-solid fa-gas-pump'></i> Gas
             </p>
           </div>
         </div>
       </div>
-      <div className=" car_info ">
-        <div className="container"></div>
+      <div className=' car_info '>
+        <div className='container'></div>
 
-        <section className="bg-white py-5 position-relative ">
-          <div className="row container m-0 m-auto text-black">
-            <div className="col">
-              <div className="rounded-1 car_info_btn bg-primary text-white px-4 py-2 position-absolute top-0">
-                <p className="m-0">From</p>
-                <p className="m-0">
+        <section className='bg-white py-5 position-relative '>
+          <div className='row container m-0 m-auto text-black'>
+            <div className='col'>
+              <div className='rounded-1 car_info_btn bg-primary text-white px-4 py-2 position-absolute top-0'>
+                <p className='m-0'>From</p>
+                <p className='m-0'>
                   {/* <span className="fs-2 fw-bold">${cars[0].price}</span> /day */}
-                  <span className="fs-2 fw-bold">${price}</span> /day
+                  <span className='fs-2 fw-bold'>${price}</span> /day
                 </p>
               </div>
 
-              <p className="mt-5">
+              <p className='mt-5'>
                 Praesent quis risus maximus arcu luctus egestas. Aliquam rhoncus
                 metus eu dui aliquet, ut imperdiet metus fringilla. Nulla non
                 purus et odio varius condimentum. Maecenas et elit eu lectus
@@ -91,65 +91,65 @@ const Car = () => {
                 ornare neque euismod.
               </p>
             </div>
-            <div className="check col-lg-4">
-              <div className="card pb-4 gap-4 ">
-                <h5 className="card-title w-100 bg-primary text-white py-4 text-center">
+            <div className='check col-lg-4'>
+              <div className='card pb-4 gap-4 '>
+                <h5 className='card-title w-100 bg-primary text-white py-4 text-center'>
                   Check Availability
                 </h5>
-                <div className="input-group px-4 ">
-                  <i className="fa-solid fa-location-dot input-group-text"></i>
+                <div className='input-group px-4 '>
+                  <i className='fa-solid fa-location-dot input-group-text'></i>
                   <input
-                    type="text"
-                    className="form-control "
-                    placeholder="Pickup Location"
+                    type='text'
+                    className='form-control '
+                    placeholder='Pickup Location'
                   />
                 </div>
                 {/* input end */}
-                <div className="input-group px-4 ">
-                  <i className="fa-solid fa-location-dot input-group-text"></i>
+                <div className='input-group px-4 '>
+                  <i className='fa-solid fa-location-dot input-group-text'></i>
                   <input
-                    type="text"
-                    className="form-control"
-                    placeholder="Drop Location"
+                    type='text'
+                    className='form-control'
+                    placeholder='Drop Location'
                   />
                 </div>
                 {/* input end */}
-                <div className="input-group px-4 ">
-                  <i className="fa-solid fa-location-dot input-group-text"></i>
+                <div className='input-group px-4 '>
+                  <i className='fa-solid fa-location-dot input-group-text'></i>
                   <input
-                    type="date"
-                    className="form-control"
-                    placeholder="Pickup Date"
+                    type='date'
+                    className='form-control'
+                    placeholder='Pickup Date'
                   />
                   <input
-                    type="time"
-                    name="time"
-                    className="form-control"
+                    type='time'
+                    name='time'
+                    className='form-control'
                   />
                 </div>
                 {/* input end */}
-                <div className="input-group px-4 ">
-                  <i className="fa-solid fa-location-dot input-group-text"></i>
+                <div className='input-group px-4 '>
+                  <i className='fa-solid fa-location-dot input-group-text'></i>
                   <input
-                    type="date"
-                    className="form-control"
-                    placeholder="Drop date"
+                    type='date'
+                    className='form-control'
+                    placeholder='Drop date'
                   />
                   <input
-                    type="time"
-                    name="time"
-                    className="form-control"
+                    type='time'
+                    name='time'
+                    className='form-control'
                   />
                 </div>
-                <button className=" btn btn-primary py-3 text-white mx-4">
+                <button className=' btn btn-primary py-3 text-white mx-4'>
                   Check Now
                 </button>
               </div>
               {/* input end */}
 
-              <div className="share d-flex gap-2 align-items-center">
+              <div className='share d-flex gap-2 align-items-center'>
                 <p>Share this car: </p>
-                <div className="">
+                <div className=''>
                   <SocialIcons />
                 </div>
               </div>
@@ -157,18 +157,18 @@ const Car = () => {
             {/* Check Avail Card End */}
           </div>
         </section>
-        <section className="bg-white pb-5 facilities">
-          <div className="row container text-black m-0 m-auto">
-            <div className="col">
+        <section className='bg-white pb-5 facilities'>
+          <div className='row container text-black m-0 m-auto'>
+            <div className='col'>
               <h3>Facilities</h3>
-              <ul className="row">
-                <div className="col">
+              <ul className='row  justify-content-center'>
+                <div className='col-5 col-md'>
                   <li>
                     <i
                       className={
                         product.facilities.audio === true
-                          ? "fa-solid fa-check"
-                          : "fa-solid fa-xmark"
+                          ? 'fa-solid fa-check'
+                          : 'fa-solid fa-xmark'
                       }
                     ></i>
                     Audio
@@ -177,8 +177,8 @@ const Car = () => {
                     <i
                       className={
                         product.facilities.bluetooth === true
-                          ? "fa-solid fa-check"
-                          : "fa-solid fa-xmark"
+                          ? 'fa-solid fa-check'
+                          : 'fa-solid fa-xmark'
                       }
                     ></i>
                     Bluetooth
@@ -187,20 +187,20 @@ const Car = () => {
                     <i
                       className={
                         product.facilities.heated === true
-                          ? "fa-solid fa-check"
-                          : "fa-solid fa-xmark"
+                          ? 'fa-solid fa-check'
+                          : 'fa-solid fa-xmark'
                       }
                     ></i>
                     Heated seats
                   </li>
                 </div>
-                <div className="col">
+                <div className='col-5 col-md'>
                   <li>
                     <i
                       className={
                         product.facilities.allwheel === true
-                          ? "fa-solid fa-check"
-                          : "fa-solid fa-xmark"
+                          ? 'fa-solid fa-check'
+                          : 'fa-solid fa-xmark'
                       }
                     ></i>
                     All wheel drive
@@ -209,8 +209,8 @@ const Car = () => {
                     <i
                       className={
                         product.facilities.usb === true
-                          ? "fa-solid fa-check"
-                          : "fa-solid fa-xmark"
+                          ? 'fa-solid fa-check'
+                          : 'fa-solid fa-xmark'
                       }
                     ></i>
                     USB input
@@ -219,20 +219,20 @@ const Car = () => {
                     <i
                       className={
                         product.facilities.fmradio === true
-                          ? "fa-solid fa-check"
-                          : "fa-solid fa-xmark"
+                          ? 'fa-solid fa-check'
+                          : 'fa-solid fa-xmark'
                       }
                     ></i>
                     Fm radio
                   </li>
                 </div>
-                <div className="col">
+                <div className='col-5 col-md'>
                   <li>
                     <i
                       className={
                         product.facilities.gps === true
-                          ? "fa-solid fa-check"
-                          : "fa-solid fa-xmark"
+                          ? 'fa-solid fa-check'
+                          : 'fa-solid fa-xmark'
                       }
                     ></i>
                     GPS Navigation
@@ -241,8 +241,8 @@ const Car = () => {
                     <i
                       className={
                         product.facilities.safe === true
-                          ? "fa-solid fa-check"
-                          : "fa-solid fa-xmark"
+                          ? 'fa-solid fa-check'
+                          : 'fa-solid fa-xmark'
                       }
                     ></i>
                     Safe
@@ -251,20 +251,20 @@ const Car = () => {
                     <i
                       className={
                         product.facilities.air === true
-                          ? "fa-solid fa-check"
-                          : "fa-solid fa-xmark"
+                          ? 'fa-solid fa-check'
+                          : 'fa-solid fa-xmark'
                       }
                     ></i>
                     Air conditioner
                   </li>
                 </div>
-                <div className="col">
+                <div className='col-5 col-md'>
                   <li>
                     <i
                       className={
                         product.facilities.parkingsensors === true
-                          ? "fa-solid fa-check"
-                          : "fa-solid fa-xmark"
+                          ? 'fa-solid fa-check'
+                          : 'fa-solid fa-xmark'
                       }
                     ></i>
                     Parking sensors
@@ -273,8 +273,8 @@ const Car = () => {
                     <i
                       className={
                         product.facilities.wifi === true
-                          ? "fa-solid fa-check"
-                          : "fa-solid fa-xmark"
+                          ? 'fa-solid fa-check'
+                          : 'fa-solid fa-xmark'
                       }
                     ></i>
                     Wifi
@@ -283,8 +283,8 @@ const Car = () => {
                     <i
                       className={
                         product.facilities.sunroof === true
-                          ? "fa-solid fa-check"
-                          : "fa-solid fa-xmark"
+                          ? 'fa-solid fa-check'
+                          : 'fa-solid fa-xmark'
                       }
                     ></i>
                     Sunroof

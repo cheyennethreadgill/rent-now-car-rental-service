@@ -58,3 +58,14 @@
         }
     }
 }
+
+.nav-second {
+    .form-control {
+        border-width: 3px;
+        background: transparent;
+    
+        &::placeholder {
+            color: rgb(255, 0, 0);
+        }
+    }
+}

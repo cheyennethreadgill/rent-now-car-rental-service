@@ -10,7 +10,7 @@ body, button {
 //     background-color: rgba(1, 1, 1, 0.767);
 // }
 h1 {
-    font-size: 3.57143rem;
+    font-size: 3.3rem;
 }
 h1, h2, h3, h4, h5, a {
     font-family: $font-family-heading;
@@ -35,23 +35,49 @@ a {
         font-size: initial;
     }
 }
-
-.input-group {
+// Accents---------------------
+h2 {
+    display: flex;
     
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    span {
+        position: absolute;
+        font-size: 4rem;
+        font-weight: 800;
+        opacity: .1;
+    }
+}
+
+// form control only
+.form-control {
+    border-width: 3px;
+    background: transparent;
+
+    &::placeholder {
+        color: white;
+    }
+}
+
+// Form Control with icon
+.input-group {
     .input-group-text {
         background-color: transparent;
-        border-bottom: solid 0.1px white;
-        border-top: solid 0.1px white;
+        border-bottom: solid 0.1px rgba(255, 255, 255, 0.517);
+        border-top: solid 0.1px rgba(255, 255, 255, 0.517);
         border-right: none;
-        border-left: solid 0.1px white;
+        border-left: solid 0.1px rgba(255, 255, 255, 0.517);
         color: white;
+        padding: .7rem;
     }
     
     .form-control {
-        border-bottom: solid 0.1px white;
-        border-top: solid 0.1px white;
-        border-left: solid 0.1px white;
-        border-right: solid 0.1px white;
+        border-bottom: solid 0.1px rgba(255, 255, 255, 0.517);
+        border-top: solid 0.1px rgba(255, 255, 255, 0.517);
+        border-left: none;
+        border-right: solid 0.1px rgba(255, 255, 255, 0.517);
         background: transparent;
         color: rgba(255, 255, 255, 0.638);
         
@@ -61,31 +87,57 @@ a {
     }
 }
 
+// date icon
 input[type="date"]::-webkit-calendar-picker-indicator {
     border-radius: 4px;
     margin-right: 2px;
     filter: invert(100%);
+    
 
 }
-input[type="date"] 
-.form-control {
-    border-bottom: solid 0.1px white;
-    border-top: solid 0.1px white;
-    border-left:  none;
-    border-right: none;
-    background: transparent;
-    color: rgba(255, 255, 255, 0.638);
+// date input
+input[type="date"] {
+    border-left: solid 0.1px rgba(255, 255, 255, 0.517) !important;
+
+    .form-control {
+        border-bottom: solid 0.1px rgba(255, 255, 255, 0.517);
+        border-top: solid 0.1px rgba(255, 255, 255, 0.517);
+        border-right: none;
+        background: transparent;
+        color: rgba(255, 255, 255, 0.638);
+    }
 }
   
-  
+// time input
 input[type="time"] {
     background: transparent !important;
-    border:  solid white 0.1px;
+    border:  solid rgba(255, 255, 255, 0.517) 0.1px;
     color: white;
 
+    &::placeholder {
+        color: white;
+    }
     
 }
 
 input[type="time"]::-webkit-datetime-edit {
     color: white !important;
+}
+
+// input feedback
+.was-validated .form-control:invalid {
+    border-color: rgba(255, 255, 255, 0.517);
+}
+.was-validated .form-control:valid, .form-control.is-valid  {
+    border-color: rgba(255, 255, 255, 0.517);
+}
+.invalid-feedback {
+    display: none;
+    width: 100%;
+    margin-top: .25rem;
+    font-size: .875em;
+    color: white;
+    background-color: #d24242;
+    padding: 1rem, 0;
+    margin-top: 1rem;
 }
