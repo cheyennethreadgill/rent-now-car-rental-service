@@ -3,6 +3,8 @@ import Footer from "./Global/Footer";
 import SocialIcons from "./Global/SocialIcons";
 import { useParams } from "react-router-dom";
 import products from "../components/Products/productList";
+import { useState } from 'react';
+import Form from 'react-bootstrap/Form';
 
 const Car = () => {
   // console.log(useParams());
@@ -10,7 +12,19 @@ const Car = () => {
   const product = products.find((product) => product.id === productId);
   const { name, price, singleImg, brand, color } = product;
 
-  console.log(product.facilities.audio);
+  // console.log(product.facilities.audio);
+
+  const [validated, setValidated] = useState(false);
+
+  const handleSubmit = (event) => {
+    const form = event.currentTarget;
+    if (form.checkValidity() === false) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+
+    setValidated(true);
+  };
 
   return (
     <section className='car'>
@@ -23,7 +37,8 @@ const Car = () => {
           className='
           bg-primary
           text-primary
-          position-fixed'
+          position-fixed
+          img-fluid'
           src={singleImg}
         ></img>
       </div>
@@ -91,57 +106,105 @@ const Car = () => {
                 ornare neque euismod.
               </p>
             </div>
-            <div className='check col-lg-4'>
+            <Form
+              noValidate
+              validated={validated}
+              onSubmit={handleSubmit}
+              className='check col-lg-4'
+            >
               <div className='card pb-4 gap-4 '>
                 <h5 className='card-title w-100 bg-primary text-white py-4 text-center'>
                   Check Availability
                 </h5>
-                <div className='input-group px-4 '>
-                  <i className='fa-solid fa-location-dot input-group-text'></i>
+                <div
+                  hasValidation
+                  className='input-group px-4 '
+                >
+                  <i className='fa-solid fa-location-dot input-group-text-light '></i>
                   <input
                     type='text'
-                    className='form-control '
+                    className='form-control-light 
+                    required'
                     placeholder='Pickup Location'
                   />
+                  <Form.Control.Feedback type='invalid'>
+                    Please enter a pickup location.
+                  </Form.Control.Feedback>
                 </div>
                 {/* input end */}
-                <div className='input-group px-4 '>
-                  <i className='fa-solid fa-location-dot input-group-text'></i>
+                <div
+                  hasValidation
+                  className='input-group px-4 '
+                >
+                  <i className='fa-solid fa-location-dot input-group-text-light '></i>
                   <input
                     type='text'
-                    className='form-control'
+                    className='form-control-light'
+                    required
                     placeholder='Drop Location'
                   />
+                  <Form.Control.Feedback type='invalid'>
+                    Please enter a drop location.
+                  </Form.Control.Feedback>
                 </div>
                 {/* input end */}
-                <div className='input-group px-4 '>
-                  <i className='fa-solid fa-location-dot input-group-text'></i>
+                <div
+                  hasValidation
+                  className='input-group px-4 '
+                >
+                  <i className='fa-solid fa-location-dot input-group-text-light '></i>
                   <input
                     type='date'
-                    className='form-control'
+                    className='form-control-light'
+                    required
                     placeholder='Pickup Date'
                   />
+                  <Form.Control.Feedback type='invalid'>
+                    Please enter a pickup date.
+                  </Form.Control.Feedback>
+
                   <input
                     type='time'
                     name='time'
-                    className='form-control'
+                    value='12:00'
+                    className='form-control-light'
+                    required
                   />
+                  <Form.Control.Feedback type='invalid'>
+                    Please enter a pickup time.
+                  </Form.Control.Feedback>
                 </div>
                 {/* input end */}
-                <div className='input-group px-4 '>
-                  <i className='fa-solid fa-location-dot input-group-text'></i>
+                <div
+                  hasValidation
+                  className='input-group px-4 '
+                >
+                  <i className='fa-solid fa-location-dot input-group-text-light '></i>
                   <input
                     type='date'
-                    className='form-control'
+                    className='form-control-light'
+                    required
                     placeholder='Drop date'
                   />
+                  <Form.Control.Feedback type='invalid'>
+                    Please enter a dropoff time.
+                  </Form.Control.Feedback>
+
                   <input
                     type='time'
                     name='time'
-                    className='form-control'
+                    value='12:00'
+                    className='form-control-light'
+                    required
                   />
+                  <Form.Control.Feedback type='invalid'>
+                    Please enter a location.
+                  </Form.Control.Feedback>
                 </div>
-                <button className=' btn btn-primary py-3 text-white mx-4'>
+                <button
+                  type='submit'
+                  className=' btn btn-primary py-3 text-white mx-4'
+                >
                   Check Now
                 </button>
               </div>
@@ -153,16 +216,16 @@ const Car = () => {
                   <SocialIcons />
                 </div>
               </div>
-            </div>
+            </Form>
             {/* Check Avail Card End */}
           </div>
         </section>
         <section className='bg-white pb-5 facilities'>
           <div className='row container text-black m-0 m-auto'>
             <div className='col'>
-              <h3>Facilities</h3>
+              <h3 className='my-5'>Facilities</h3>
               <ul className='row  justify-content-center'>
-                <div className='col-5 col-md'>
+                <div className='col-12 col-md-3'>
                   <li>
                     <i
                       className={
@@ -194,7 +257,7 @@ const Car = () => {
                     Heated seats
                   </li>
                 </div>
-                <div className='col-5 col-md'>
+                <div className='col-12 col-md-3'>
                   <li>
                     <i
                       className={
@@ -226,7 +289,7 @@ const Car = () => {
                     Fm radio
                   </li>
                 </div>
-                <div className='col-5 col-md'>
+                <div className='col-12 col-md-3'>
                   <li>
                     <i
                       className={
@@ -258,7 +321,7 @@ const Car = () => {
                     Air conditioner
                   </li>
                 </div>
-                <div className='col-5 col-md'>
+                <div className='col-12 col-md-3'>
                   <li>
                     <i
                       className={

@@ -116,7 +116,7 @@ function CarFilter() {
           </div>
         </div>
       </section>
-      {/* cars --------------------------------*/}
+      {/* cars -----------------------------------------------------------------------*/}
       <section className='cards text-black bg-white'>
         <div className='container w-75 pb-5'>
           {products.map((product, key) => {
@@ -139,7 +139,7 @@ function CarFilter() {
 
                         {/* column 1 */}
                         <div className='col-lg-9 py-4'>
-                          <div className='card-body'>
+                          <div className='card-body text-center text-lg-start'>
                             <div className='row'>
                               <div className='col'>
                                 <h4 className='card-title fw-semibold'>
@@ -163,7 +163,7 @@ function CarFilter() {
                                 <p>
                                   <strong>Color:</strong> {product.color}
                                 </p>
-                                <div className='d-flex gap-4'>
+                                <div className='d-flex align-items-center gap-lg-4 flex-column flex-lg-row'>
                                   <div className='d-flex gap-2'>
                                     <i className='fa-solid fa-car-side'></i>{' '}
                                     <p className=' passengers'>
@@ -180,17 +180,19 @@ function CarFilter() {
                                   </div>
                                 </div>
                               </div>
-                              <div className='col-lg-3 d-flex flex-column justify-content-end  pt-sm-5'>
-                                <p className='d-flex price m-0 align-items-center  fw-medium'>
-                                  <strong>${product.price}</strong>
-                                  <span className='d-inline-block ml-3'>
-                                    /total
-                                  </span>
-                                </p>
-
-                                <p className=''>
-                                  ${(product.price / 2).toFixed(0)} /day
-                                </p>
+                              <div className='col-lg-3 d-flex flex-column justify-content-between pt-5 pt-lg-0'>
+                                <div>
+                                  {' '}
+                                  <p className='d-flex price m-0 align-items-center fw-medium justify-content-center justify-content-lg-start'>
+                                    <strong>${product.price}</strong>
+                                    <span className='d-inline-block ml-3'>
+                                      /total
+                                    </span>
+                                  </p>
+                                  <p className=''>
+                                    ${(product.price / 2).toFixed(0)} /day
+                                  </p>
+                                </div>
 
                                 <button className='btn btn-primary py-2 px-4 text-white fs-5 fw-medium rounded-1 '>
                                   Book Now

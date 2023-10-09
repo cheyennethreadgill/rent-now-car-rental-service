@@ -105,7 +105,7 @@ const SearchInput = () => {
                 required
                 type='time'
                 className=''
-                value='2:00'
+                value='12:00'
               />
               <Form.Control.Feedback type='invalid'>
                 Pick a drop-off date & Time.
@@ -115,8 +115,8 @@ const SearchInput = () => {
           </div>
           {/* Row End */}
           <Button
-            to='/CarSearch'
             type='submit'
+            href='/CarSearch'
             className='btn btn-secondary px-5 py-3 mt-4 fw-semibold fs-4 text-light'
           >
             <span className='me-1'>

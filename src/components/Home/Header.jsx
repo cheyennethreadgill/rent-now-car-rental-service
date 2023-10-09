@@ -4,18 +4,18 @@ import Slide2Image from "../../../src/images/slide2.jpg";
 import Slide3Image from "../../../src/images/slide3.jpg";
 import { Overlay } from "react-bootstrap";
 
+
 function Header() {
   return (
     <header className='home-header z-1 position-relative'>
       <Carousel className='home-header_carousel'>
         <Carousel.Item>
           <img
-            className='img-fluid'
-            style={{ width: '100%' }}
+            className=''
             src={Slide1Image}
             alt='Slide 1'
           />
-          <div className='carousel-caption translate-middle-y z-2'>
+          <div className='carousel-caption  z-2'>
             <h1 className='fw-semibold'> #1 Car Rent Service In Your City </h1>
             <p className=''>
               Maecenas viverra porta eros, id tincidunt lorem rhoncus eget.
@@ -28,12 +28,11 @@ function Header() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className='img-fluid'
-            style={{ width: '100%' }}
+            className=''
             src={Slide2Image}
             alt='Slide 2'
           />
-          <div className='carousel-caption translate-middle-y z-2'>
+          <div className='carousel-caption  z-2'>
             <h1 className='fw-semibold'>24/7 Customer Support Guarantee</h1>
             <p>
               Maecenas viverra porta eros, id tincidunt lorem rhoncus eget.
@@ -46,12 +45,11 @@ function Header() {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            className='img-fluid'
-            style={{ width: '100%' }}
+            className=''
             src={Slide3Image}
             alt='Slide 3'
           />
-          <div className='carousel-caption translate-middle-y z-2'>
+          <div className='carousel-caption  z-2'>
             <h1 className='fw-semibold'>Quality Cars with Unlimited Miles</h1>
             <p>
               Maecenas viverra porta eros, id tincidunt lorem rhoncus eget.
