@@ -105,18 +105,12 @@ const Footer = () => {
           <div className='col-sm-4 col-md-4 col-lg-3 footer_contact fs-6'>
             <h4 className='pb-4 fs-3 fw-semibold '> Contact Us </h4>
             <div className='row'>
-              <Col
-                sm='1'
-                className='d-flex flex-column justify-content-center justify-content-lg-between align-items-center gap-4 gap-lg-0'
-              >
-                <i className='fs-1 fs-lg-5 fa-solid fa-envelope-open'></i>
-                <i className='fs-1 fs-lg-5 fa-solid fa-square-phone'></i>
-                <i className='fs-1 fs-lg-5 fa-solid fa-location-dot'></i>
+              <Col className='col-1 d-flex flex-column justify-content-center justify-content-lg-between align-items-center gap-4 gap-lg-0'>
+                <i className='  fs-3 fs-lg-5 fa-solid fa-envelope-open'></i>
+                <i className='fs-3 fs-lg-5 fa-solid fa-square-phone'></i>
+                <i className='fs-3 fs-lg-5 fa-solid fa-location-dot'></i>
               </Col>
-              <Col
-                sm='10'
-                className=' d-flex flex-column gap-3'
-              >
+              <Col className='col-10 d-flex flex-column gap-3'>
                 <a>
                   support@exapmple.com <br></br>
                 </a>

@@ -8,6 +8,10 @@
 
         &-caption {
             bottom: 21.25rem;
+
+            @include breakpoints-down (md) {
+                bottom: 14.25rem;
+            }
         }
         &-inner {
             width: 100%;

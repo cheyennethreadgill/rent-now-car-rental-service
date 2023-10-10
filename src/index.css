@@ -1,10 +1,15 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+.text-ofwhite {
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
 :root,
 [data-bs-theme=light] {
   --bs-blue: #112e3b;
@@ -12022,12 +12027,14 @@ h2, .h2 {
   justify-content: center;
   align-items: center;
   position: relative;
+  z-index: 1;
 }
 h2 span, .h2 span {
   position: absolute;
   font-size: 4rem;
   font-weight: 800;
   opacity: 0.1;
+  z-index: -1;
 }
 
 .form-control, input[type=date] .form-control-light, .input-group .form-control-light {
@@ -12249,6 +12256,11 @@ input[type=time]::-webkit-datetime-edit {
 }
 .home-header .carousel-caption {
   bottom: 21.25rem;
+}
+@media screen and (max-width: 768px) {
+  .home-header .carousel-caption {
+    bottom: 14.25rem;
+  }
 }
 .home-header .carousel-inner {
   width: 100%;
