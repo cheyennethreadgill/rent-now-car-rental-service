@@ -25,7 +25,7 @@ function Home() {
               {/* <div className="dot"></div> */}
               <li className='col-md-5 col-sm-12 col-lg'>
                 <h5 className='text-black'>Best Price Guarantee</h5>
-                <p className='fs-5'>
+                <p className='fs-6'>
                   Duis placerat tempus odio vel pretium. Vestibulum mattis
                   viverra justo vel consequat.
                 </p>
@@ -35,7 +35,7 @@ function Home() {
                 <p className=''>
                   <h5 className='text-black'>Personal Driver</h5>
                 </p>
-                <p className='fs-5'>
+                <p className='fs-6'>
                   Duis placerat tempus odio vel pretium. Vestibulum mattis
                   viverra justo vel consequat.
                 </p>
@@ -45,7 +45,7 @@ function Home() {
                 <p className=''>
                   <h5 className='text-black'>No Cancellation Fees</h5>
                 </p>
-                <p className='fs-5'>
+                <p className='fs-6'>
                   Duis placerat tempus odio vel pretium. Vestibulum mattis
                   viverra justo vel consequat.
                 </p>
@@ -55,7 +55,7 @@ function Home() {
                 <p className=''>
                   <h5 className='text-black'>Unlimited Miles</h5>
                 </p>
-                <p className='fs-5'>
+                <p className='fs-6'>
                   Duis placerat tempus odio vel pretium. Vestibulum mattis
                   viverra justo vel consequat.
                 </p>
@@ -67,7 +67,7 @@ function Home() {
                 <p className=''>
                   <h5 className='text-black'>Best Quality Cars</h5>
                 </p>
-                <p className='fs-5'>
+                <p className='fs-6'>
                   Duis placerat tempus odio vel pretium. Vestibulum mattis
                   viverra justo vel consequat.
                 </p>
@@ -77,7 +77,7 @@ function Home() {
                 <p className=''>
                   <h5 className='text-black'>City to City</h5>
                 </p>
-                <p className='fs-5'>
+                <p className='fs-6'>
                   Duis placerat tempus odio vel pretium. Vestibulum mattis
                   viverra justo vel consequat.
                 </p>
@@ -87,7 +87,7 @@ function Home() {
                 <p className=''>
                   <h5 className='text-black'>Reservation Anytime</h5>
                 </p>
-                <p className='fs-5'>
+                <p className='fs-6'>
                   Duis placerat tempus odio vel pretium. Vestibulum mattis
                   viverra justo vel consequat.
                 </p>
@@ -97,7 +97,7 @@ function Home() {
                 <p className=''>
                   <h5 className='text-black'>24/7 Customer Support</h5>
                 </p>
-                <p className='fs-5'>
+                <p className='fs-6'>
                   Duis placerat tempus odio vel pretium. Vestibulum mattis
                   viverra justo vel consequat.
                 </p>

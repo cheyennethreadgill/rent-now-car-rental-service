@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Logo from "../../images/logo.svg";
 import Socials from "../Global/SocialIcons";
+import { Col } from 'react-bootstrap';
 
 const Footer = () => {
   return (
@@ -104,12 +105,18 @@ const Footer = () => {
           <div className='col-sm-4 col-md-4 col-lg-3 footer_contact fs-6'>
             <h4 className='pb-4 fs-3 fw-semibold '> Contact Us </h4>
             <div className='row'>
-              <div className='col-sm-1 d-flex flex-lg-column justify-content-lg-between me-lg-3 gap-4 gap-lg-0'>
-                <i className='fs-5 fa-solid fa-envelope-open'></i>
-                <i className='fs-5 fa-solid fa-square-phone'></i>
-                <i className='fs-5 fa-solid fa-location-dot'></i>
-              </div>
-              <div className='col-lg-10 col-sm-10 '>
+              <Col
+                sm='1'
+                className='d-flex flex-column justify-content-center justify-content-lg-between align-items-center  gap-4 gap-lg-0'
+              >
+                <i className='fs-3 fs-lg-5 fa-solid fa-envelope-open'></i>
+                <i className='fs-3 fs-lg-5 fa-solid fa-square-phone'></i>
+                <i className='fs-3 fs-lg-5 fa-solid fa-location-dot'></i>
+              </Col>
+              <Col
+                sm='10'
+                className=' d-flex flex-column gap-3'
+              >
                 <a>
                   support@exapmple.com <br></br>
                 </a>
@@ -117,7 +124,7 @@ const Footer = () => {
                   (909) 555-5555 <br></br>
                 </a>
                 <a>1425 Pointe Lane, Miami Florida – 33169, USA</a>
-              </div>
+              </Col>
             </div>
           </div>
         </div>

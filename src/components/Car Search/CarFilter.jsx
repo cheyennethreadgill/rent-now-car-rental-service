@@ -7,6 +7,7 @@ function CarFilter() {
   const [products, setProducts] = useState(cars);
   // console.log(cars);
 
+  // ---------------------------------------------------Select Input------------
   const filterBrand = (brandValue) => {
     let brandResult = cars.filter((car) => {
       return car.brand === brandValue;
@@ -22,6 +23,7 @@ function CarFilter() {
     console.log(passResult);
   };
 
+  // ------------------------------------------------------------Radio----------
   const filterColor = (colorValue) => {
     let filterResult = cars.filter((car) => {
       return car.color === colorValue;
@@ -182,7 +184,6 @@ function CarFilter() {
                               </div>
                               <div className='col-lg-3 d-flex flex-column justify-content-between pt-5 pt-lg-0'>
                                 <div>
-                                  {' '}
                                   <p className='d-flex price m-0 align-items-center fw-medium justify-content-center justify-content-lg-start'>
                                     <strong>${product.price}</strong>
                                     <span className='d-inline-block ml-3'>

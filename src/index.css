@@ -11985,12 +11985,6 @@ input[type=date] .form-floating > .form-control-light:not(:placeholder-shown) ~ 
     display: none !important;
   }
 }
-*, ::before, ::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 body, button {
   color: white;
 }
@@ -12013,7 +12007,7 @@ a {
 }
 
 .border-bottom {
-  border-bottom: solid 0.5px rgba(134, 134, 134, 0.395) !important;
+  border-bottom: solid 0.3px rgba(134, 134, 134, 0.235) !important;
 }
 
 .price {
@@ -12075,13 +12069,13 @@ h2 span, .h2 span {
   border-left: none;
   border-right: solid 0.1px rgba(255, 255, 255, 0.517);
   background: transparent;
-  color: rgba(255, 255, 255, 0.638);
+  color: white;
 }
 .input-group .form-control::-moz-placeholder, .input-group .form-control-light::-moz-placeholder {
-  color: white !important;
+  color: white;
 }
 .input-group .form-control::placeholder, .input-group .form-control-light::placeholder {
-  color: white !important;
+  color: white;
 }
 .input-group .form-control-light {
   border-bottom: solid 0.1px rgba(162, 162, 162, 0.514) !important;
@@ -12174,30 +12168,32 @@ input[type=time]::-webkit-datetime-edit {
   margin-top: 1rem;
 }
 
-@media screen and (min-width: 0) {
-  .global-nav {
-    background-color: #112e3b;
-  }
+.nav-secondary {
+  background-color: #0d2732;
 }
-@media screen and (min-width: 576px) {
-  .global-nav {
-    background-color: transparent;
-  }
-}
-.global-nav .nav-info_contact a {
+
+.navbar .nav-info_contact a {
   font-size: 0.82857rem;
 }
-.global-nav .nav-info_contact_icon {
+.navbar .nav-info_contact_icon {
   color: #00D231;
 }
-.global-nav .nav-info_socials {
+.navbar .nav-info_socials {
   color: white;
 }
-.global-nav .nav-info_socials i:hover {
+.navbar .nav-info_socials i:hover {
   color: #00D231;
   cursor: pointer;
 }
 
+.navbar {
+  position: relative;
+}
+.navbar-collapse {
+  position: absolute;
+  top: 55.1px;
+  right: 0%;
+}
 @media screen and (max-width: 1200px) {
   .navbar-collapse {
     margin: 0 0 0 60%;
