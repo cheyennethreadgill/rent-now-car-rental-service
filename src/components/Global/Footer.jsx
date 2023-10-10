@@ -107,11 +107,11 @@ const Footer = () => {
             <div className='row'>
               <Col
                 sm='1'
-                className='d-flex flex-column justify-content-center justify-content-lg-between align-items-center  gap-4 gap-lg-0'
+                className='d-flex flex-column justify-content-center justify-content-lg-between align-items-center gap-4 gap-lg-0'
               >
-                <i className='fs-3 fs-lg-5 fa-solid fa-envelope-open'></i>
-                <i className='fs-3 fs-lg-5 fa-solid fa-square-phone'></i>
-                <i className='fs-3 fs-lg-5 fa-solid fa-location-dot'></i>
+                <i className='fs-1 fs-lg-5 fa-solid fa-envelope-open'></i>
+                <i className='fs-1 fs-lg-5 fa-solid fa-square-phone'></i>
+                <i className='fs-1 fs-lg-5 fa-solid fa-location-dot'></i>
               </Col>
               <Col
                 sm='10'

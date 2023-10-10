@@ -49,7 +49,7 @@ function NavSecondary() {
         </div>
       </div>
       {/*---------------------------------------------- info end--*/}
-      <div className='border-bottom'></div>
+      <div className='border-bottom '></div>
 
       {/* -----------------------------------------------------------------------------Main Navigation----- */}
       <section className='container pt-3'>
@@ -89,7 +89,7 @@ function NavSecondary() {
             id='navbarNav'
           >
             <Nav className='justify-content-end '>
-              <Nav.Item className='border-bottom'>
+              <Nav.Item className=''>
                 <Nav.Link
                   href='/'
                   className=' mx-sm-3 m-md-0 text-decoration-none ps-4 pb-3'
@@ -97,10 +97,10 @@ function NavSecondary() {
                   Home
                 </Nav.Link>
               </Nav.Item>
-              <Nav.Item className='border-bottom'>
+              <Nav.Item className=''>
                 <Nav.Link
                   href='/CarSearch'
-                  className=' mx-sm-3 m-md-0 text-decoration-none ps-4 py-3'
+                  className=' mx-sm-3 m-md-0 text-decoration-none ps-4 py-3 py-lg-2'
                 >
                   Search Cars
                 </Nav.Link>
