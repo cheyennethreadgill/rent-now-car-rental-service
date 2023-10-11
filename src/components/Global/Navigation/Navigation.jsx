@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom"
-import logo from "../../../src/images/logo.svg"
-import Socials from "../Global/SocialIcons";
+import { Link } from 'react-router-dom';
+import Socials from '../SocialIcons';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import { CompanyInfo } from '../companyInfo';
+import logo from '../../../../src/images/logo.svg';
 
-function NavSecondary() {
+const Navigation = () => {
   return (
     <section className='position-absolute z-2 w-100 nav-secondary'>
       <div className='row nav-info py-xs-2 py-sm-2 py-md-2 container m-0 m-auto justify-content-center align-items-center'>
@@ -12,46 +13,14 @@ function NavSecondary() {
           <Socials />
         </div>
         <div className='col-sm-8 nav-info_contact justify-content-center'>
-          <div className='row align-items-center'>
-            <div className='col d-flex align-items-center gap-3'>
-              <i className='d-none d-md-block fa-solid fa-square-phone nav-info_contact_icon '></i>
-              <address
-                href='#'
-                className='nav-info_contact_info text-decoration-none fs-6'
-              >
-                (954) 555-5555 <br></br>
-                (954) 555-6565
-              </address>
-            </div>
-            {/* first col end*/}
-            <div className='col d-flex align-items-center gap-3'>
-              <i className='d-none d-md-block fa-solid fa-envelope-open nav-info_contact_icon'></i>
-              <address
-                href='#'
-                className='nav-info_contact_info text-decoration-none fs-6'
-              >
-                support@example.coms <br />
-                sale@example.com
-              </address>
-            </div>
-            {/* second col end */}
-            <div className='col d-none d-lg-flex align-items-center gap-3'>
-              <i className='d-xs-none d-sm-none d-md-none d-lg-block fa-solid fa-location-dot nav-info_contact_icon'></i>
-              <address
-                href='#'
-                className='nav-info_contact_info text-decoration-none fs-6'
-              >
-                1425 Pointe Lane, Miami Florida – 33169, USA
-              </address>
-            </div>
-          </div>
-          {/* third col end */}
+          <CompanyInfo />
         </div>
       </div>
       {/*---------------------------------------------- info end--*/}
       <div className='border-bottom '></div>
 
       {/* -----------------------------------------------------------------------------Main Navigation----- */}
+
       <section className='container pt-3'>
         <Navbar
           expand='xl'
@@ -72,7 +41,6 @@ function NavSecondary() {
           </Navbar.Brand>
           {/* -----------------------------------------------------------------------------BRAND LOGO- */}
 
-          {/* ---------------------------------------------------------------  --------Navbar collapse- */}
           <button
             class='navbar-toggler'
             type='button'
@@ -84,8 +52,10 @@ function NavSecondary() {
           >
             <span class='navbar-toggler-icon'></span>
           </button>
+
+          {/* ---------------------------------------------------------------  --------Navbar collapse- */}
           <Navbar.Collapse
-            className=' justify-content-end w-50 py-3'
+            className=' justify-content-end w-50'
             id='navbarNav'
           >
             <Nav className='justify-content-end '>
@@ -114,12 +84,11 @@ function NavSecondary() {
                 </Nav.Link>
               </Nav.Item>
             </Nav>
-            {/* hamburger------------ */}
           </Navbar.Collapse>
         </Navbar>
       </section>
     </section>
   );
-}
+};
 
-export default NavSecondary
+export default Navigation;

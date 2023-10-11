@@ -1,11 +1,10 @@
 import { Carousel, Button } from "react-bootstrap";
 import Slide1Image from "../../../src/images/slide1.jpg";
 import Slide2Image from "../../../src/images/slide2.jpg";
-import Slide3Image from "../../../src/images/slide3.jpg";
-import { Overlay } from "react-bootstrap";
+import Slide3Image from '../../../src/images/slide3.jpg';
 import Image from 'react-bootstrap/Image';
 
-function Header() {
+const Header = () => {
   return (
     <header className='home-header z-1 position-relative'>
       <Carousel
@@ -20,8 +19,7 @@ function Header() {
           />
           <Carousel.Caption className=' z-2'>
             <h1 className='fw-semibold animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
-              {' '}
-              #1 Car Rent Service In Your City{' '}
+              #1 Car Rent Service In Your City
             </h1>
             <p className='animate__animated animate__fadeInUp animate__slow animate__delay-1s'>
               Maecenas viverra porta eros, id tincidunt lorem rhoncus eget.
@@ -73,6 +71,6 @@ function Header() {
       </Carousel>
     </header>
   );
-}
+};
 
 export default Header;

@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
-import Logo from "../../images/logo.svg";
-import Socials from "../Global/SocialIcons";
+import { QuickLinks } from './QuickLinks';
+import { Link } from 'react-router-dom';
+import Logo from '../../images/logo.svg';
+import Socials from '../Global/SocialIcons';
 import { Col } from 'react-bootstrap';
 
 const Footer = () => {
@@ -26,82 +27,7 @@ const Footer = () => {
 
             <Socials />
           </div>
-          <div className='col-sm-12 col-md-3 footer_quick-links'>
-            <h4 className='pb-4 fs-3 fw-semibold'> Quick Links</h4>
-
-            <div className='row fs-6'>
-              <div className='col d-flex flex-column gap-2 '>
-                <a
-                  className='text-decoration-none'
-                  href='#'
-                >
-                  About us
-                </a>
-                <a
-                  className='text-decoration-none'
-                  href='#'
-                >
-                  Contact us
-                </a>
-                <a
-                  className='text-decoration-none'
-                  href='#'
-                >
-                  Support
-                </a>
-                <a
-                  className='text-decoration-none'
-                  href='#'
-                >
-                  View Booking
-                </a>
-                <a
-                  className='text-decoration-none'
-                  href='#'
-                >
-                  Affiliate
-                </a>
-                <a
-                  className='text-decoration-none'
-                  href='#'
-                >
-                  Marketplace
-                </a>
-              </div>
-              <div className='col d-flex flex-column gap-2'>
-                <a
-                  className='text-decoration-none'
-                  href='#'
-                >
-                  Site Map
-                </a>
-                <a
-                  className='text-decoration-none'
-                  href='#'
-                >
-                  Careers
-                </a>
-                <a
-                  className='text-decoration-none'
-                  href='#'
-                >
-                  Press
-                </a>
-                <a
-                  className='text-decoration-none'
-                  href='#'
-                >
-                  Get a reciept
-                </a>
-                <a
-                  className='text-decoration-none'
-                  href='#'
-                >
-                  Community
-                </a>
-              </div>
-            </div>
-          </div>
+          <QuickLinks />
           <div className='col-sm-4 col-md-4 col-lg-3 footer_contact fs-6'>
             <h4 className='pb-4 fs-3 fw-semibold '> Contact Us </h4>
             <div className='row'>
@@ -122,7 +48,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        {/* Copyright -------------------*/}
+        {/* ----------------------------------------------------------------------------------------------------Copyright -*/}
         <div className='row copyright py-4 d-flex align-items-center fs-6'>
           <div className='col col-lg-8'>
             <p className=''>Copyright © RentNow 2023. All rights reserved.</p>

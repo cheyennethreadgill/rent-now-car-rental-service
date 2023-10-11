@@ -1,8 +1,8 @@
-import NavSecondary from "./Global/NavSecondary";
-import Footer from "./Global/Footer";
-import SocialIcons from "./Global/SocialIcons";
-import { useParams } from "react-router-dom";
-import products from "../components/Products/productList";
+import Navigation from '../Global/Navigation/Navigation';
+import Footer from '../Global/Footer';
+import SocialIcons from '../Global/SocialIcons';
+import { useParams } from 'react-router-dom';
+import products from '../data/Products/productList';
 import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
 
@@ -28,7 +28,7 @@ const Car = () => {
 
   return (
     <section className='car'>
-      <NavSecondary />
+      <Navigation />
       <div
         className='
           jumbotron'

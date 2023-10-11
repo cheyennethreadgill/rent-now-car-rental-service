@@ -1,17 +1,17 @@
-import NavSecondary from "../Global/NavSecondary";
-import PageHeaders from "../Global/PageHeaders";
-import Footer from "../Global/Footer";
-import { Button } from "react-bootstrap";
-import siteImages from "../Global/siteImages";
-import { useState } from "react";
-import pageList from "../Global/pageList";
+import { ContactForm } from '../Global/ContactForm';
+import Navigation from '../Global/Navigation/Navigation';
+import PageHeaders from '../Global/PageHeaders';
+import Footer from '../Global/Footer';
+import siteImages from '../data/siteImages';
+import { useState } from 'react';
+import pageList from '../data/pageList';
 
 function Contact() {
   const [HeaderImg, setHeaderImg] = useState(siteImages);
-  // console.log(pageList[1].name)
+
   return (
     <section className='contact '>
-      <NavSecondary />
+      <Navigation />
       <PageHeaders
         src={HeaderImg[1].img}
         name={pageList[1].name}
@@ -20,51 +20,9 @@ function Contact() {
         <div className='container contact py-5'>
           <div className='row gap-4 '>
             <div className='col-md-12 col-lg contact_message '>
-              <h4 className='mb-4 '>Send Message</h4>
-              <div className='row'>
-                <div className='col '>
-                  <div className='input-group d-flex '>
-                    <i class='fa-regular fa-user input-group-text align-self-center py-3'></i>
-                    <input
-                      type='text'
-                      className='rounded-1 form-control-light'
-                      placeholder='Enter username...'
-                    />
-                  </div>
-                </div>
-                <div className='col'>
-                  <div className='input-group d-flex'>
-                    <i class='fa-regular fa-envelope input-group-text align-self-center py-3'></i>
-                    <input
-                      type='text'
-                      className='rounded-1 form-control-light'
-                      placeholder='Enter email...'
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className='row col mt-3'>
-                <div className='col'>
-                  <div className='input-group d-flex'>
-                    <i class='fa-regular fa-message input-group-text align-self-start pb-5'></i>
-                    <textarea
-                      type='text'
-                      className='form-control-light'
-                      placeholder='Your Message'
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className='col d-flex justify-content-end'>
-                <Button
-                  type='submit'
-                  className='btn btn-primary text-white mt-4 px-5 py-2 fs-5 rounded-1'
-                >
-                  Send Message
-                </Button>
-              </div>
+              <ContactForm />
+              {/* --------------------------------------------------------------------------------------------Contact form Ends--- */}
             </div>
-            {/* Message Ends--------------- */}
             <div className='col-md-12 col-lg contact_info pt-sm-4 pt-lg-0 pb-5'>
               <h4 className=''>Contact Info</h4>
               <div className='row'>
