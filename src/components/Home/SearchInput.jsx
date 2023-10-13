@@ -34,13 +34,14 @@ const SearchInput = () => {
               className=' col-sm'
             >
               <InputGroup.Text>
-                {' '}
-                <i class='fs-4 h-100 fa-solid fa-location-dot'></i>
+                <i className='fs-4 h-100 fa-solid fa-location-dot'></i>
               </InputGroup.Text>
+              <Form.Label htmlFor='pickup-location'></Form.Label>
               <Form.Control
                 required
                 className=''
                 type='text'
+                id='pickup-location'
                 placeholder='Enter location...'
               />
               <Form.Control.Feedback type='invalid'>
@@ -54,14 +55,14 @@ const SearchInput = () => {
               className=' col-sm'
             >
               <InputGroup.Text>
-                {' '}
-                <i class='fs-4 h-100 fa-solid fa-location-dot'></i>
+                <i className='fs-4 h-100 fa-solid fa-location-dot'></i>
               </InputGroup.Text>
-
+              <Form.Label htmlFor='drop-location'></Form.Label>
               <Form.Control
                 required
                 className=''
                 type='text'
+                id='drop-location'
                 placeholder='Drop location...'
               />
               <Form.Control.Feedback type='invalid'>
@@ -84,7 +85,7 @@ const SearchInput = () => {
               <Form.Control
                 required
                 type='time'
-                value='12:00'
+                defaultValue='12:00'
               />
               <Form.Control.Feedback type='invalid'>
                 Pick a pickup date & Time.
@@ -105,7 +106,7 @@ const SearchInput = () => {
                 required
                 type='time'
                 className=''
-                value='12:00'
+                defaultValue='12:00'
               />
               <Form.Control.Feedback type='invalid'>
                 Pick a drop-off date & Time.

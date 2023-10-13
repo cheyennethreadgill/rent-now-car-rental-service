@@ -11,9 +11,12 @@ export function ContactForm({}) {
         <div className='col '>
           <InputGroup className='input-group d-flex '>
             <InputGroup.Text>
-              <i class='fa-regular fa-user align-self-center py-3'></i>
+              <i className='fa-regular fa-user align-self-center py-3'></i>
             </InputGroup.Text>
+            <Form.Label htmlFor='username'></Form.Label>
             <Form.Control
+              autoComplete='true'
+              id='username'
               type='text'
               className='rounded-1 form-control-light'
               placeholder='Enter username...'
@@ -23,9 +26,12 @@ export function ContactForm({}) {
         <div className='col'>
           <InputGroup className=' d-flex'>
             <InputGroup.Text>
-              <i class='fa-regular fa-envelope align-self-center py-3'></i>
+              <i className='fa-regular fa-envelope align-self-center py-3'></i>
             </InputGroup.Text>
+            <Form.Label htmlFor='email'></Form.Label>
             <Form.Control
+              autoComplete='true'
+              id='email'
               type='text'
               className='rounded-1 form-control-light'
               placeholder='Enter email...'
@@ -37,9 +43,12 @@ export function ContactForm({}) {
         <div className='col'>
           <InputGroup className='d-flex'>
             <InputGroup.Text>
-              <i class='fa-regular fa-message align-self-start pb-5'></i>
+              <i className='fa-regular fa-message align-self-start pb-5'></i>
             </InputGroup.Text>
+            <Form.Label htmlFor='message'></Form.Label>
             <Form.Control
+              autoComplete='true'
+              id='message'
               as='textarea'
               type='text'
               className='form-control-light'

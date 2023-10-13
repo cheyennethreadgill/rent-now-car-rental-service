@@ -1,6 +1,7 @@
 import { Link, useParams } from 'react-router-dom';
 import { useState } from 'react';
 import products from './productList';
+import { Image } from 'react-bootstrap';
 
 function Product() {
   const [product, setProduct] = useState(products);
@@ -18,15 +19,16 @@ function Product() {
             >
               <div className='d-flex justify-content-end decoration-none'>
                 <div className='flex-fill fw-semibold gap-2 d-flex align-items-center text-white bg-secondary py-1 px-3 rounded-1 mt-3 justify-self-end'>
-                  <i class='fs-6 fa-solid fa-star'></i>
+                  <i className='fs-6 fa-solid fa-star'></i>
                   {product.rating}
                 </div>
               </div>
-              <img
+              <Image
                 className='card-img'
                 src={product.img}
                 alt='Picture of a Black Sedan'
-                width=''
+                width='auto'
+                height='auto'
               />
               <div className='card-body text-primary'>
                 <h4 className='card-title text-black fs-3 fw-semibold'>

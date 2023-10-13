@@ -3,6 +3,7 @@ import Socials from '../SocialIcons';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { CompanyInfo } from '../companyInfo';
+import { Image } from 'react-bootstrap';
 import logo from '../../../../src/images/logo.svg';
 
 const Navigation = () => {
@@ -26,23 +27,23 @@ const Navigation = () => {
           expand='xl'
           data-bs-theme='light'
           bg=''
-          class='  justify-content-between'
+          className='justify-content-between'
         >
           <Navbar.Brand
             href='#'
             className='text-decoration-none'
           >
-            <Link to='/'>
-              <img
-                src={logo}
-                alt='Rent Now Logo'
-              />
-            </Link>
+            <Image
+              src={logo}
+              alt='Rent Now Logo'
+              width='100%'
+              height='100%'
+            />
           </Navbar.Brand>
           {/* -----------------------------------------------------------------------------BRAND LOGO- */}
 
           <button
-            class='navbar-toggler'
+            className='navbar-toggler'
             type='button'
             data-bs-toggle='collapse'
             data-bs-target='#navbarNav'
@@ -50,7 +51,7 @@ const Navigation = () => {
             aria-expanded='false'
             aria-label='Toggle navigation'
           >
-            <span class='navbar-toggler-icon'></span>
+            <span className='navbar-toggler-icon'></span>
           </button>
 
           {/* ---------------------------------------------------------------  --------Navbar collapse- */}

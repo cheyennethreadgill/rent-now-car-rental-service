@@ -41,11 +41,6 @@
     &_info {
         padding-top: 41.2em;
 
-        // .row {
-        //     position: relative;
-            // z-index: 2;
-        // }
-
         &_btn {
             margin-top: -2rem;
         }
@@ -62,41 +57,38 @@
                 
                 filter: drop-shadow(0rem 1rem 0.5rem rgba(128, 128, 128, 0.221));
 
-              
-                        
-
-input[type=time]::-webkit-datetime-edit {
-    color:  rgb(136, 136, 136) !important;
-}
-                input[type="date"]::-webkit-calendar-picker-indicator {
-                    border-radius: 4px;
-                    margin-right: 2px;
-                    filter: invert(100%);
-                
-                    &::placeholder {
-                        color: rgb(136, 136, 136) !important;
+                input[type="time" i]::-webkit-calendar-picker-indicator {
+                        border-radius: 4px;
+                        margin-right: 2px;
+                        opacity: .4;
+                    
+                        &::placeholder {
+                            color: rgb(136, 136, 136) !important;
+                        }
                     }
-                }
-                input[type="date"] 
-                .form-control {
-                    border-bottom: solid 0.1px rgb(136, 136, 136);
-                    border-top: solid 0.1px rgb(136, 136, 136);
-                    border-left:  none;
-                    border-right: none;
-                    background: transparent;
-                    color: rgba(255, 255, 255, 0.638);
+                    input[type=date]::-webkit-calendar-picker-indicator {
 
+                    }
+                    input[type="time"] {
+                        background: transparent !important;
+                        border:  solid rgb(136, 136, 136) 0.1px;
+                        color: rgb(136, 136, 136);
                     
-                }
-                  
-                  
-                input[type="time"] {
-                    background: transparent !important;
-                    border:  solid rgb(136, 136, 136) 0.1px;
-                    color: rgb(136, 136, 136);
-                
-                    
-                }
+                    }
+                    input[type=time]::-webkit-datetime-edit {
+                        color:  rgb(136, 136, 136) !important;
+                    }
+                                    
+                    input[type="date"] 
+                    .form-control {
+                        border-bottom: solid 0.1px rgb(136, 136, 136);
+                        border-top: solid 0.1px rgb(136, 136, 136);
+                        border-left:  none;
+                        border-right: none;
+                        background: transparent;
+                        color: rgba(255, 255, 255, 0.638);
+                    }
+                        
             }
 
             .share {

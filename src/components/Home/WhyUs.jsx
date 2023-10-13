@@ -23,9 +23,8 @@ export function WhyUs({}) {
             </li>
             {/* <div className="dot"></div> */}
             <li className='col-md-5 col-sm-12 col-lg'>
-              <p className=''>
-                <h5 className='text-black'>Personal Driver</h5>
-              </p>
+              <h5 className='text-black'>Personal Driver</h5>
+
               <p className='fs-6'>
                 Duis placerat tempus odio vel pretium. Vestibulum mattis viverra
                 justo vel consequat.
@@ -33,9 +32,8 @@ export function WhyUs({}) {
             </li>
             {/* <div className="dot"></div> */}
             <li className='col-md-5 col-sm-12 col-lg'>
-              <p className=''>
-                <h5 className='text-black'>No Cancellation Fees</h5>
-              </p>
+              <h5 className='text-black'>No Cancellation Fees</h5>
+
               <p className='fs-6'>
                 Duis placerat tempus odio vel pretium. Vestibulum mattis viverra
                 justo vel consequat.
@@ -43,9 +41,8 @@ export function WhyUs({}) {
             </li>
             {/* <div className="dot"></div> */}
             <li className='col-md-5 col-sm-12 col-lg'>
-              <p className=''>
-                <h5 className='text-black'>Unlimited Miles</h5>
-              </p>
+              <h5 className='text-black'>Unlimited Miles</h5>
+
               <p className='fs-6'>
                 Duis placerat tempus odio vel pretium. Vestibulum mattis viverra
                 justo vel consequat.
@@ -55,9 +52,8 @@ export function WhyUs({}) {
           <div className='row gap-4 justify-content-between'>
             {/* <div className="dot"></div> */}
             <li className='col-md-5 col-sm-12 col-lg'>
-              <p className=''>
-                <h5 className='text-black'>Best Quality Cars</h5>
-              </p>
+              <h5 className='text-black'>Best Quality Cars</h5>
+
               <p className='fs-6'>
                 Duis placerat tempus odio vel pretium. Vestibulum mattis viverra
                 justo vel consequat.
@@ -65,9 +61,8 @@ export function WhyUs({}) {
             </li>
             {/* <div className="dot"></div> */}
             <li className='col-md-5 col-sm-12 col-lg'>
-              <p className=''>
-                <h5 className='text-black'>City to City</h5>
-              </p>
+              <h5 className='text-black'>City to City</h5>
+
               <p className='fs-6'>
                 Duis placerat tempus odio vel pretium. Vestibulum mattis viverra
                 justo vel consequat.
@@ -75,9 +70,8 @@ export function WhyUs({}) {
             </li>
             {/* <div className="dot"></div> */}
             <li className='col-md-5 col-sm-12 col-lg'>
-              <p className=''>
-                <h5 className='text-black'>Reservation Anytime</h5>
-              </p>
+              <h5 className='text-black'>Reservation Anytime</h5>
+
               <p className='fs-6'>
                 Duis placerat tempus odio vel pretium. Vestibulum mattis viverra
                 justo vel consequat.
@@ -85,9 +79,8 @@ export function WhyUs({}) {
             </li>
             {/* <div className="dot"></div> */}
             <li className='col-md-5 col-sm-12 col-lg'>
-              <p className=''>
-                <h5 className='text-black'>24/7 Customer Support</h5>
-              </p>
+              <h5 className='text-black'>24/7 Customer Support</h5>
+
               <p className='fs-6'>
                 Duis placerat tempus odio vel pretium. Vestibulum mattis viverra
                 justo vel consequat.

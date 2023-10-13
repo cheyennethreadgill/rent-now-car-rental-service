@@ -1,7 +1,7 @@
 import { Carousel, Button } from "react-bootstrap";
-import Slide1Image from "../../../src/images/slide1.jpg";
-import Slide2Image from "../../../src/images/slide2.jpg";
-import Slide3Image from '../../../src/images/slide3.jpg';
+import Slide1Image from '../../../src/images/slide1.jpg.webp';
+import Slide2Image from '../../../src/images/slide2.jpg.webp';
+import Slide3Image from '../../../src/images/slide3.jpg.webp';
 import Image from 'react-bootstrap/Image';
 
 const Header = () => {

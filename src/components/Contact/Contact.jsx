@@ -28,7 +28,7 @@ function Contact() {
               <div className='row'>
                 <div className='col d-flex mt-4 gap-3'>
                   <span>
-                    <i class='fs-4 fa-solid fa-location-dot'></i>
+                    <i className='fs-4 fa-solid fa-location-dot'></i>
                   </span>
                   <div>
                     <h5 className=''>Head Office</h5>
@@ -37,7 +37,7 @@ function Contact() {
                 </div>
                 <div className='col d-flex mt-4 gap-3'>
                   <span>
-                    <i class='fs-4 fa-solid fa-envelope-open'></i>
+                    <i className='fs-4 fa-solid fa-envelope-open'></i>
                   </span>
                   <div>
                     <h5 className=''>Email</h5>
@@ -48,7 +48,7 @@ function Contact() {
               <div className='row'>
                 <div className='col d-flex mt-4 gap-3 mt-4 '>
                   <span>
-                    <i class='fs-4 fa-solid fa-square-phone'></i>
+                    <i className='fs-4 fa-solid fa-square-phone'></i>
                   </span>
                   <div className=''>
                     <h5 className=''>Phone</h5>

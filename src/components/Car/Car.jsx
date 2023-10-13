@@ -1,3 +1,4 @@
+import { Facilities } from './Facilities';
 import Navigation from '../Global/Navigation/Navigation';
 import Footer from '../Global/Footer';
 import SocialIcons from '../Global/SocialIcons';
@@ -5,6 +6,8 @@ import { useParams } from 'react-router-dom';
 import products from '../data/Products/productList';
 import { useState } from 'react';
 import Form from 'react-bootstrap/Form';
+import { InputGroup } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image';
 
 const Car = () => {
   // console.log(useParams());
@@ -33,14 +36,17 @@ const Car = () => {
         className='
           jumbotron'
       >
-        <img
+        <Image
+          fluid
           className='
           bg-primary
           text-primary
-          position-fixed
-          img-fluid'
+          position-fixed'
           src={singleImg}
-        ></img>
+          alt={brand}
+          width='100%'
+          height='100%'
+        ></Image>
       </div>
       <div className='container position-relative'>
         <div className='jumbotron_info position-absolute z-3 d-flex flex-column'>
@@ -116,91 +122,106 @@ const Car = () => {
                 <h5 className='card-title w-100 bg-primary text-white py-4 text-center'>
                   Check Availability
                 </h5>
-                <div
-                  hasValidation
-                  className='input-group px-4 '
-                >
-                  <i className='fa-solid fa-location-dot input-group-text-light '></i>
-                  <input
-                    type='text'
-                    className='form-control-light 
-                    required'
-                    placeholder='Pickup Location'
-                  />
+                <InputGroup className=' px-4 '>
+                  <InputGroup.Text className='input-group-text-light'>
+                    <i className='fa-solid fa-location-dot '></i>
+                  </InputGroup.Text>
+                  <Form.Label htmlFor='pickup'>
+                    <Form.Control
+                      id='pickup'
+                      required
+                      type='text'
+                      className='form-control-light 
+                    '
+                      placeholder='Pickup Location'
+                    />
+                  </Form.Label>
                   <Form.Control.Feedback type='invalid'>
                     Please enter a pickup location.
                   </Form.Control.Feedback>
-                </div>
+                </InputGroup>
                 {/* input end */}
-                <div
-                  hasValidation
-                  className='input-group px-4 '
-                >
-                  <i className='fa-solid fa-location-dot input-group-text-light '></i>
-                  <input
-                    type='text'
-                    className='form-control-light'
-                    required
-                    placeholder='Drop Location'
-                  />
+                <InputGroup className='px-4'>
+                  <InputGroup.Text className='input-group-text-light'>
+                    <i className='fa-solid fa-location-dot '></i>
+                  </InputGroup.Text>
+                  <Form.Label htmlFor='drop-off'>
+                    <Form.Control
+                      type='text'
+                      className='form-control-light'
+                      id='drop-off'
+                      required
+                      placeholder='Drop Location'
+                    />
+                  </Form.Label>
                   <Form.Control.Feedback type='invalid'>
                     Please enter a drop location.
                   </Form.Control.Feedback>
-                </div>
+                </InputGroup>
                 {/* input end */}
-                <div
-                  hasValidation
-                  className='input-group px-4 '
-                >
-                  <i className='fa-solid fa-location-dot input-group-text-light '></i>
-                  <input
-                    type='date'
-                    className='form-control-light'
-                    required
-                    placeholder='Pickup Date'
-                  />
+
+                <InputGroup className='px-4'>
+                  <Form.Label htmlFor='pick-up'>
+                    <Form.Control
+                      id='pick-up'
+                      type='date'
+                      className='form-control-light'
+                      required
+                      placeholder='Pickup Date'
+                    />
+                  </Form.Label>
+
                   <Form.Control.Feedback type='invalid'>
                     Please enter a pickup date.
                   </Form.Control.Feedback>
 
-                  <input
-                    type='time'
-                    name='time'
-                    value='12:00'
-                    className='form-control-light'
-                    required
-                  />
+                  <Form.Label htmlFor='pickup-time'>
+                    <Form.Control
+                      id='pickup-time'
+                      type='time'
+                      defaultValue='12:00'
+                      className='form-control-light'
+                      required
+                    />
+                  </Form.Label>
+
                   <Form.Control.Feedback type='invalid'>
                     Please enter a pickup time.
                   </Form.Control.Feedback>
-                </div>
+                </InputGroup>
+
                 {/* input end */}
-                <div
-                  hasValidation
-                  className='input-group px-4 '
-                >
-                  <i className='fa-solid fa-location-dot input-group-text-light '></i>
-                  <input
-                    type='date'
-                    className='form-control-light'
-                    required
-                    placeholder='Drop date'
-                  />
+
+                <InputGroup className='px-4'>
+                  <Form.Label htmlFor='date'>
+                    <Form.Control
+                      id='date'
+                      type='date'
+                      className='form-control-light'
+                      required
+                      placeholder='Drop date'
+                    />
+                  </Form.Label>
+
                   <Form.Control.Feedback type='invalid'>
                     Please enter a dropoff time.
                   </Form.Control.Feedback>
 
-                  <input
-                    type='time'
-                    name='time'
-                    value='12:00'
-                    className='form-control-light'
-                    required
-                  />
+                  <Form.Label htmlFor='drop-off-time'>
+                    <Form.Control
+                      id='drop-off-time'
+                      type='time'
+                      defaultValue='12:00'
+                      className='form-control-light'
+                      required
+                    />
+                  </Form.Label>
+
                   <Form.Control.Feedback type='invalid'>
                     Please enter a location.
                   </Form.Control.Feedback>
-                </div>
+                </InputGroup>
+
                 <button
                   type='submit'
                   className=' btn btn-primary py-3 text-white mx-4'
@@ -220,143 +241,7 @@ const Car = () => {
             {/* Check Avail Card End */}
           </div>
         </section>
-        <section className='bg-white pb-5 facilities'>
-          <div className='row container text-black m-0 m-auto'>
-            <div className='col'>
-              <h3 className='my-5'>Facilities</h3>
-              <ul className='row  justify-content-center'>
-                <div className='col-12 col-md-3'>
-                  <li>
-                    <i
-                      className={
-                        product.facilities.audio === true
-                          ? 'fa-solid fa-check'
-                          : 'fa-solid fa-xmark'
-                      }
-                    ></i>
-                    Audio
-                  </li>
-                  <li>
-                    <i
-                      className={
-                        product.facilities.bluetooth === true
-                          ? 'fa-solid fa-check'
-                          : 'fa-solid fa-xmark'
-                      }
-                    ></i>
-                    Bluetooth
-                  </li>
-                  <li>
-                    <i
-                      className={
-                        product.facilities.heated === true
-                          ? 'fa-solid fa-check'
-                          : 'fa-solid fa-xmark'
-                      }
-                    ></i>
-                    Heated seats
-                  </li>
-                </div>
-                <div className='col-12 col-md-3'>
-                  <li>
-                    <i
-                      className={
-                        product.facilities.allwheel === true
-                          ? 'fa-solid fa-check'
-                          : 'fa-solid fa-xmark'
-                      }
-                    ></i>
-                    All wheel drive
-                  </li>
-                  <li>
-                    <i
-                      className={
-                        product.facilities.usb === true
-                          ? 'fa-solid fa-check'
-                          : 'fa-solid fa-xmark'
-                      }
-                    ></i>
-                    USB input
-                  </li>
-                  <li>
-                    <i
-                      className={
-                        product.facilities.fmradio === true
-                          ? 'fa-solid fa-check'
-                          : 'fa-solid fa-xmark'
-                      }
-                    ></i>
-                    Fm radio
-                  </li>
-                </div>
-                <div className='col-12 col-md-3'>
-                  <li>
-                    <i
-                      className={
-                        product.facilities.gps === true
-                          ? 'fa-solid fa-check'
-                          : 'fa-solid fa-xmark'
-                      }
-                    ></i>
-                    GPS Navigation
-                  </li>
-                  <li>
-                    <i
-                      className={
-                        product.facilities.safe === true
-                          ? 'fa-solid fa-check'
-                          : 'fa-solid fa-xmark'
-                      }
-                    ></i>
-                    Safe
-                  </li>
-                  <li>
-                    <i
-                      className={
-                        product.facilities.air === true
-                          ? 'fa-solid fa-check'
-                          : 'fa-solid fa-xmark'
-                      }
-                    ></i>
-                    Air conditioner
-                  </li>
-                </div>
-                <div className='col-12 col-md-3'>
-                  <li>
-                    <i
-                      className={
-                        product.facilities.parkingsensors === true
-                          ? 'fa-solid fa-check'
-                          : 'fa-solid fa-xmark'
-                      }
-                    ></i>
-                    Parking sensors
-                  </li>
-                  <li>
-                    <i
-                      className={
-                        product.facilities.wifi === true
-                          ? 'fa-solid fa-check'
-                          : 'fa-solid fa-xmark'
-                      }
-                    ></i>
-                    Wifi
-                  </li>
-                  <li>
-                    <i
-                      className={
-                        product.facilities.sunroof === true
-                          ? 'fa-solid fa-check'
-                          : 'fa-solid fa-xmark'
-                      }
-                    ></i>
-                    Sunroof
-                  </li>
-                </div>
-              </ul>
-            </div>
-          </div>
-        </section>
+        <Facilities product={product} />
       </div>
       {/* Car Info End */}
       <Footer />

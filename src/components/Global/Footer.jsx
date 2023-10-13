@@ -56,7 +56,8 @@ const Footer = () => {
           <div className='col '>
             <p>We Accept</p>
             <img
-              width='200'
+              width='200px'
+              height='100%'
               src='https://demo.kitthemes.com/html/rentnow/assets/images/payments@2x.png'
               alt='Payment Methods'
             />

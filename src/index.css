@@ -12057,15 +12057,16 @@ h2 span, .h2 span {
   border-right: none;
   border-left: solid 0.1px rgba(255, 255, 255, 0.517);
   color: rgb(255, 255, 255);
-  padding: 0.7rem;
-  border-radius: 3px;
   padding: 1rem auto;
+  border-radius: 3px;
 }
 .input-group .input-group-text-light {
   border-bottom: solid 0.1px rgba(162, 162, 162, 0.514) !important;
   border-top: solid 0.1px rgba(162, 162, 162, 0.514) !important;
   border-right: none;
   border-left: solid 0.1px rgba(162, 162, 162, 0.514) !important;
+}
+.input-group .input-group-text-light i {
   color: rgba(162, 162, 162, 0.514) !important;
 }
 .input-group .form-control, .input-group input[type=date] .form-control-light, input[type=date] .input-group .form-control-light, .input-group .form-control-light {
@@ -12245,11 +12246,11 @@ input[type=time]::-webkit-datetime-edit {
 }
 
 .home-header {
-  width: 100%;
-  height: 88vh;
+  width: 100vw;
+  height: 80vh;
 }
 .home-header .carousel {
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 .home-header .carousel-caption {
@@ -12261,15 +12262,15 @@ input[type=time]::-webkit-datetime-edit {
   }
 }
 .home-header .carousel-inner {
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 .home-header .carousel-inner-item {
-  width: 100%;
+  width: 100vw;
   height: 100%;
 }
 .home-header .carousel-inner-item img {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -12374,15 +12375,20 @@ input[type=time]::-webkit-datetime-edit {
 .car_info .check .card {
   filter: drop-shadow(0rem 1rem 0.5rem rgba(128, 128, 128, 0.221));
 }
-.car_info .check .card input[type=time]::-webkit-datetime-edit {
-  color: rgb(136, 136, 136) !important;
-}
-.car_info .check .card input[type=date]::-webkit-calendar-picker-indicator {
+.car_info .check .card input[type=time i]::-webkit-calendar-picker-indicator {
   border-radius: 4px;
   margin-right: 2px;
-  filter: invert(100%);
+  opacity: 0.4;
 }
-.car_info .check .card input[type=date]::-webkit-calendar-picker-indicator::placeholder {
+.car_info .check .card input[type=time i]::-webkit-calendar-picker-indicator::placeholder {
+  color: rgb(136, 136, 136) !important;
+}
+.car_info .check .card input[type=time] {
+  background: transparent !important;
+  border: solid rgb(136, 136, 136) 0.1px;
+  color: rgb(136, 136, 136);
+}
+.car_info .check .card input[type=time]::-webkit-datetime-edit {
   color: rgb(136, 136, 136) !important;
 }
 .car_info .check .card input[type=date] .form-control, .car_info .check .card input[type=date] .form-control-light {
@@ -12392,11 +12398,6 @@ input[type=time]::-webkit-datetime-edit {
   border-right: none;
   background: transparent;
   color: rgba(255, 255, 255, 0.638);
-}
-.car_info .check .card input[type=time] {
-  background: transparent !important;
-  border: solid rgb(136, 136, 136) 0.1px;
-  color: rgb(136, 136, 136);
 }
 .car_info .check .share {
   margin-top: 2.8em;

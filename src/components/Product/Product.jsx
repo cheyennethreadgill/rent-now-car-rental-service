@@ -1,12 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Image } from 'react-bootstrap';
 
 export function Product({ products, key }) {
   return (
     <div className='container w-75 pb-5'>
+      {/* -------------------------------------------------------------------------------------------------------------HOME */}
+      {/* -------------------------------------------------Instead of mapping from product list, map from api */}
       {products.map((product, key) => {
         return (
-          <Link to={`/CarSearch/Products/${product.id}`}>
+          <Link
+            to={`/CarSearch/Products/${product.id}`}
+            key={product.id}
+          >
             <div
               key={product.id}
               className='col '
@@ -15,10 +21,12 @@ export function Product({ products, key }) {
                 <div className='card'>
                   <div className='row'>
                     <div className='col d-flex align-items-center'>
-                      <img
+                      <Image
                         src={product.img}
                         alt=''
                         className='card-img '
+                        width='auto'
+                        height='auto'
                       />
                     </div>
 

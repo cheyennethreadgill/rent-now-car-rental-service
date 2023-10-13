@@ -1,6 +1,8 @@
 import { Product } from '../../Product/Product';
 import { useState } from 'react';
 import cars from '../../data/Products/productList';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
 
 function CarFilter() {
   const [products, setProducts] = useState(cars);
@@ -71,9 +73,10 @@ function CarFilter() {
               <p className=' m-0'>Color</p>
               <div className='car-filter_color-input d-flex justify-content-between gap-2'>
                 <div className='d-flex car-filter_color-input_blue'>
+                  <Form.Label htmlFor='blue'></Form.Label>
                   <input
                     name=''
-                    id=''
+                    id='blue'
                     type='checkbox'
                     value='blue'
                     onClick={(e) => filterColor(e.target.value)}
@@ -81,9 +84,10 @@ function CarFilter() {
                 </div>
 
                 <div className='d-flex car-filter_color-input_white'>
+                  <Form.Label htmlFor='white'></Form.Label>
                   <input
                     name=''
-                    id=''
+                    id='white'
                     type='checkbox'
                     value='white'
                     onClick={(e) => filterColor(e.target.value)}
@@ -91,9 +95,10 @@ function CarFilter() {
                 </div>
 
                 <div className='d-flex car-filter_color-input_gray'>
+                  <Form.Label htmlFor='gray'></Form.Label>
                   <input
                     name=''
-                    id=''
+                    id='gray'
                     type='checkbox'
                     value='gray'
                     onClick={(e) => filterColor(e.target.value)}
@@ -101,9 +106,10 @@ function CarFilter() {
                 </div>
 
                 <div className='car-filter_color-input_black'>
+                  <Form.Label htmlFor='black'></Form.Label>
                   <input
                     name=''
-                    id=''
+                    id='black'
                     type='checkbox'
                     value='black'
                     onClick={(e) => filterColor(e.target.value)}

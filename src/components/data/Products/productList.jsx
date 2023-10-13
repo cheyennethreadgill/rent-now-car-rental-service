@@ -6,8 +6,8 @@ export default [
     brand: 'Lexus',
     passengers: '5',
     color: 'black',
-    img: require('../../../images/black-car-2.jpg'),
-    singleImg: require('../../../images/black-sport-coupe-car-drive-highway.jpg'),
+    img: require('../../../images/black-car-2.jpg.webp'),
+    singleImg: require('../../../images/black-sport-coupe-car-drive-highway.jpg.webp'),
     rating: 3.8,
     price: 650,
     facilities: {
@@ -32,8 +32,8 @@ export default [
     brand: 'BMW',
     passengers: '4',
     color: 'white',
-    img: require('../../../images/gray-car-1.jpg'),
-    singleImg: require('../../../images/single-car-thumb.jpg'),
+    img: require('../../../images/gray-car-1.jpg.webp'),
+    singleImg: require('../../../images/single-car-thumb.jpg.webp'),
     rating: 3.5,
     price: 785,
     facilities: {
@@ -58,8 +58,8 @@ export default [
     brand: 'Nissan',
     passengers: '4',
     color: 'blue',
-    img: require('../../../images/blue-car-3.jpg'),
-    singleImg: require('../../../images/blue car-single-product.jpg'),
+    img: require('../../../images/blue-car-3.jpg.webp'),
+    singleImg: require('../../../images/blue car-single-product.jpg.webp'),
     rating: 4.9,
     price: 800,
     facilities: {
@@ -83,7 +83,7 @@ export default [
     brand: 'Tesla',
     passengers: '2',
     color: 'black',
-    img: require('../../../images/black-car-2.jpg'),
+    img: require('../../../images/black-car-2.jpg.webp'),
     rating: 4.5,
     price: 500,
     facilities: {
@@ -107,8 +107,8 @@ export default [
     brand: 'Tesla',
     passengers: 4,
     color: 'gray',
-    img: require('../../../images/car-7.jpg'),
-    singleImg: require('../../../images/grey-metallic-color-sport-car-front-view-road.jpg'),
+    img: require('../../../images/car-7.jpg.webp'),
+    singleImg: require('../../../images/grey-metallic-color-sport-car-front-view-road.jpg.webp'),
     rating: 3.2,
     price: 1500,
     facilities: {
@@ -132,7 +132,7 @@ export default [
     brand: 'Carolla',
     passengers: 4,
     color: 'black',
-    img: require('../../../images/black-car-2.jpg'),
+    img: require('../../../images/black-car-2.jpg.webp'),
     rating: 3.7,
     price: 900,
     facilities: {
