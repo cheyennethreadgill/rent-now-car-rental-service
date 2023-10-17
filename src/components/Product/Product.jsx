@@ -1,6 +1,5 @@
 // @flow
 /* eslint-disable react/prop-types */
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Col, Row } from 'react-bootstrap';
@@ -20,9 +19,9 @@ const Product = ({ products }) => {
             key={id}
           >
             <Col key={id}>
-              <Row className='pb-5'>
-                <Card className='card'>
-                  <Row>
+              <Card className='card'>
+                <Row>
+                  <Col lg='3'>
                     <Card.Img
                       // eslint-disable-next-line global-require
                       src={img}
@@ -31,78 +30,73 @@ const Product = ({ products }) => {
                       width='inherit'
                       height='inherit'
                     />
-                    <Col
-                      lg='9'
-                      className='py-4'
-                    >
-                      <Card.Body className='text-center text-lg-start'>
-                        <Col>
-                          <Card.Title className='fw-semibold'>
-                            {brand}
-                          </Card.Title>
-                          <div className='d-md-flex gap-3'>
-                            <div>
-                              <i className='fa-solid fa-star' />
-                              <i className='fa-solid fa-star' />
-                              <i className='fa-solid fa-star' />
-                              <i className='fa-solid fa-star' />
-                            </div>
-                            <div>
-                              <p className='rating'>3 Reviews</p>
-                            </div>
-                          </div>
-                          <Card.Text>
-                            Lorem ipsum, dolor sit amet consectetur.
-                          </Card.Text>
-
-                          <p>
-                            <strong>Color:</strong>
-                            {color}
-                          </p>
-                          <div className='d-flex align-items-center gap-lg-4 flex-column flex-lg-row'>
-                            <div className='d-flex gap-2'>
-                              <i className='fa-solid fa-car-side' />
-                              <p className='passengers'>
-                                {passengers} {}
-                                Passengers
-                              </p>
-                            </div>
-                            <div className='d-flex gap-2'>
-                              <i className='fa-solid fa-gas-pump' />
-                              <p className='gas'> Gas</p>
-                            </div>
-                            <div className='d-flex gap-2'>
-                              <i className='fa-solid fa-door-closed' />
-                              <p className='doors'> doors</p>
-                            </div>
-                          </div>
-                        </Col>
-                        <Col
-                          lg='3'
-                          className='d-flex flex-column justify-content-between pt-5 pt-lg-0'
-                        >
+                  </Col>
+                  <Col
+                    lg='9'
+                    className='py-4'
+                  >
+                    <Card.Body className='class="text-center text-lg-start card-body d-flex justify-content-around"'>
+                      <Col lg='9'>
+                        <Card.Title className='fw-semibold'>{brand}</Card.Title>
+                        <div className='d-md-flex gap-3'>
                           <div>
-                            <p className='d-flex price m-0 align-items-center fw-medium justify-content-center justify-content-lg-start'>
-                              <strong>${price}</strong>
-                              <span className='d-inline-block ml-3'>
-                                /total
-                              </span>
-                            </p>
-                            <p className=''>${(price / 2).toFixed(0)} /day</p>
+                            <i className='fa-solid fa-star' />
+                            <i className='fa-solid fa-star' />
+                            <i className='fa-solid fa-star' />
+                            <i className='fa-solid fa-star' />
                           </div>
+                          <div>
+                            <p className='rating'>3 Reviews</p>
+                          </div>
+                        </div>
+                        <Card.Text>
+                          Lorem ipsum, dolor sit amet consectetur.
+                        </Card.Text>
 
-                          <button
-                            type='submit'
-                            className='btn btn-primary py-2 px-4 text-white fs-5 fw-medium rounded-1 '
-                          >
-                            Book Now
-                          </button>
-                        </Col>
-                      </Card.Body>
-                    </Col>
-                  </Row>
-                </Card>
-              </Row>
+                        <p>
+                          <strong>Color:</strong>
+                          {color}
+                        </p>
+                        <div className='d-flex align-items-center gap-lg-4 flex-column flex-lg-row'>
+                          <div className='d-flex gap-2'>
+                            <i className='fa-solid fa-car-side' />
+                            <p className='passengers'>
+                              {passengers} {}
+                              Passengers
+                            </p>
+                          </div>
+                          <div className='d-flex gap-2'>
+                            <i className='fa-solid fa-gas-pump' />
+                            <p className='gas'>Gas</p>
+                          </div>
+                          <div className='d-flex gap-2'>
+                            <i className='fa-solid fa-door-closed' />
+                            <p className='doors'> Doors</p>
+                          </div>
+                        </div>
+                      </Col>
+
+                      <Col
+                        lg='3'
+                        className='d-flex flex-column justify-content-between pt-5 pt-lg-0'
+                      >
+                        <p className='d-flex price m-0 align-items-center fw-medium justify-content-center justify-content-lg-start'>
+                          <strong>${price}</strong>
+                          <span className='d-inline-block ml-3'>/total</span>
+                        </p>
+                        <p className=''>${(price / 2).toFixed(0)} /day</p>
+
+                        <button
+                          type='submit'
+                          className='btn btn-primary py-2 px-4 text-white fs-5 fw-medium rounded-1 '
+                        >
+                          Book Now
+                        </button>
+                      </Col>
+                    </Card.Body>
+                  </Col>
+                </Row>
+              </Card>
             </Col>
           </Link>
         );
