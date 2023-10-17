@@ -1,68 +1,75 @@
-import { ContactForm } from '../Global/ContactForm';
-import Navigation from '../Global/Navigation/Navigation';
-import PageHeaders from '../Global/PageHeaders';
-import Footer from '../Global/Footer';
+import React from 'react';
+import { Row, Col, Container } from 'react-bootstrap';
 import siteImages from '../data/siteImages';
-import { useState } from 'react';
 import pageList from '../data/pageList';
+import PageHeaders from '../Global/PageHeaders';
+import ContactForm from '../Global/Forms/ContactForm';
+import Navigation from '../Global/Navigation/Navigation';
+import Footer from '../Global/Footer';
 
-function Contact() {
-  const [HeaderImg, setHeaderImg] = useState(siteImages);
-
+const Contact = () => {
   return (
-    <section className='contact '>
+    <section className='contact'>
       <Navigation />
       <PageHeaders
-        src={HeaderImg[1].img}
+        src={siteImages[1].img}
         name={pageList[1].name}
       />
       <section className='bg-white text-black py-4'>
-        <div className='container contact py-5'>
-          <div className='row gap-4 '>
-            <div className='col-md-12 col-lg contact_message '>
+        <Container className='container py-5'>
+          <Row className='gap-4 '>
+            <Col
+              md='12'
+              lg='5'
+              className='contact_message '
+            >
               <ContactForm />
               {/* --------------------------------------------------------------------------------------------Contact form Ends--- */}
-            </div>
-            <div className='col-md-12 col-lg contact_info pt-sm-4 pt-lg-0 pb-5'>
-              <h4 className=''>Contact Info</h4>
-              <div className='row'>
-                <div className='col d-flex mt-4 gap-3'>
+            </Col>
+            <Col
+              lg='6'
+              md='12'
+              className='contact_info pt-sm-4 pt-lg-0 pb-5'
+            >
+              <h4>Contact Info</h4>
+              <Row>
+                <Col className='d-flex mt-4 gap-3'>
                   <span>
-                    <i className='fs-4 fa-solid fa-location-dot'></i>
+                    <i className='fs-4 fa-solid fa-location-dot' />
                   </span>
                   <div>
-                    <h5 className=''>Head Office</h5>
+                    <h5>Head Office</h5>
                     <p>125 Main St</p>
                   </div>
-                </div>
-                <div className='col d-flex mt-4 gap-3'>
+                </Col>
+                <Col className='d-flex mt-4 gap-3'>
                   <span>
-                    <i className='fs-4 fa-solid fa-envelope-open'></i>
+                    <i className='fs-4 fa-solid fa-envelope-open' />
                   </span>
                   <div>
-                    <h5 className=''>Email</h5>
+                    <h5>Email</h5>
                     <p>rentnow@main.com</p>
                   </div>
-                </div>
-              </div>
-              <div className='row'>
-                <div className='col d-flex mt-4 gap-3 mt-4 '>
+                </Col>
+              </Row>
+              <Row>
+                <Col className='d-flex mt-4 gap-3 mt-4 '>
                   <span>
-                    <i className='fs-4 fa-solid fa-square-phone'></i>
+                    <i className='fs-4 fa-solid fa-square-phone' />
                   </span>
-                  <div className=''>
-                    <h5 className=''>Phone</h5>
+                  <div>
+                    <h5>Phone</h5>
                     <p>(901) 111-1111</p>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Container>
       </section>
       <Footer />
     </section>
   );
-}
+};
 
 export default Contact;

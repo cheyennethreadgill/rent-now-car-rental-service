@@ -1,8 +1,7 @@
-import { Link } from "react-router-dom";
-import { Button } from 'react-bootstrap';
+import React, { useState } from 'react';
+import { Button, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import { useState } from 'react';
 
 const SearchInput = () => {
   const [validated, setValidated] = useState(false);
@@ -17,7 +16,7 @@ const SearchInput = () => {
     setValidated(true);
   };
   return (
-    <section className='bg-primary py-5 text-center row '>
+    <Row className='bg-primary py-5 text-center'>
       <div className='px-4 px-md-5 py-5'>
         <Form
           noValidate
@@ -28,18 +27,17 @@ const SearchInput = () => {
             Search & Hire Cars <span>Search & Hire Cars</span>
           </h2>
 
-          <div className='car-search-form row gap-3 gap-lg-0'>
+          <Row className='car-search-form row gap-3 gap-lg-0'>
             <InputGroup
               hasValidation
               className=' col-sm'
             >
               <InputGroup.Text>
-                <i className='fs-4 h-100 fa-solid fa-location-dot'></i>
+                <i className='fs-4 h-100 fa-solid fa-location-dot' />
               </InputGroup.Text>
-              <Form.Label htmlFor='pickup-location'></Form.Label>
+              <Form.Label htmlFor='pickup-location' />
               <Form.Control
                 required
-                className=''
                 type='text'
                 id='pickup-location'
                 placeholder='Enter location...'
@@ -52,15 +50,14 @@ const SearchInput = () => {
 
             <InputGroup
               hasValidation
-              className=' col-sm'
+              className='col-sm'
             >
               <InputGroup.Text>
-                <i className='fs-4 h-100 fa-solid fa-location-dot'></i>
+                <i className='fs-4 h-100 fa-solid fa-location-dot' />
               </InputGroup.Text>
-              <Form.Label htmlFor='drop-location'></Form.Label>
+              <Form.Label htmlFor='drop-location' />
               <Form.Control
                 required
-                className=''
                 type='text'
                 id='drop-location'
                 placeholder='Drop location...'
@@ -75,15 +72,17 @@ const SearchInput = () => {
               hasValidation
               className=' car-search-form_date col-md-12 col-lg'
             >
+              <Form.Label htmlFor='pickup-date' />
               <Form.Control
                 required
-                className=''
+                id='pickup-date'
                 type='date'
                 placeholder='Pick a date'
               />
-
+              <Form.Label htmlFor='pickup-time' />
               <Form.Control
                 required
+                id='pickup-time'
                 type='time'
                 defaultValue='12:00'
               />
@@ -97,15 +96,17 @@ const SearchInput = () => {
               hasValidation
               className=' col-md-12 col-lg'
             >
+              <Form.Label htmlFor='dropoff-date' />
               <Form.Control
                 required
+                id='dropoff-date'
                 type='date'
-                className=''
               />
+              <Form.Label htmlFor='dropoff-time' />
               <Form.Control
                 required
+                id='dropoff-time'
                 type='time'
-                className=''
                 defaultValue='12:00'
               />
               <Form.Control.Feedback type='invalid'>
@@ -113,7 +114,7 @@ const SearchInput = () => {
               </Form.Control.Feedback>
               <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </InputGroup>
-          </div>
+          </Row>
           {/* Row End */}
           <Button
             type='submit'
@@ -121,13 +122,13 @@ const SearchInput = () => {
             className='btn btn-secondary px-5 py-3 mt-4 fw-semibold fs-4 text-light'
           >
             <span className='me-1'>
-              <i className='fa-solid fa-magnifying-glass'></i>
+              <i className='fa-solid fa-magnifying-glass' />
             </span>
             Find Now
           </Button>
         </Form>
       </div>
-    </section>
+    </Row>
   );
 };
 

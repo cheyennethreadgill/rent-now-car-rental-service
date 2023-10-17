@@ -1,19 +1,22 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
+import { Button, Row, Col } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
-export function ContactForm({}) {
+const ContactForm = () => {
   return (
     <Form>
       <h4 className='mb-4 '>Send Message</h4>
-      <div className='row'>
-        <div className='col '>
-          <InputGroup className='input-group d-flex '>
+      <Row className='row'>
+        <Col
+          sm='12'
+          lg='6'
+        >
+          <InputGroup className='input-group d-flex pb-3 pb-lg-0'>
             <InputGroup.Text>
-              <i className='fa-regular fa-user align-self-center py-3'></i>
+              <i className='fa-regular fa-user align-self-center py-3' />
             </InputGroup.Text>
-            <Form.Label htmlFor='username'></Form.Label>
+            <Form.Label htmlFor='username' />
             <Form.Control
               autoComplete='true'
               id='username'
@@ -22,13 +25,16 @@ export function ContactForm({}) {
               placeholder='Enter username...'
             />
           </InputGroup>
-        </div>
-        <div className='col'>
-          <InputGroup className=' d-flex'>
+        </Col>
+        <Col
+          sm='12'
+          lg='6'
+        >
+          <InputGroup className='d-flex'>
             <InputGroup.Text>
-              <i className='fa-regular fa-envelope align-self-center py-3'></i>
+              <i className='fa-regular fa-envelope align-self-center py-3' />
             </InputGroup.Text>
-            <Form.Label htmlFor='email'></Form.Label>
+            <Form.Label htmlFor='email' />
             <Form.Control
               autoComplete='true'
               id='email'
@@ -37,15 +43,15 @@ export function ContactForm({}) {
               placeholder='Enter email...'
             />
           </InputGroup>
-        </div>
-      </div>
-      <div className='row col mt-3'>
-        <div className='col'>
+        </Col>
+      </Row>
+      <Row className='col mt-3'>
+        <Col>
           <InputGroup className='d-flex'>
             <InputGroup.Text>
-              <i className='fa-regular fa-message align-self-start pb-5'></i>
+              <i className='fa-regular fa-message align-self-start pb-5' />
             </InputGroup.Text>
-            <Form.Label htmlFor='message'></Form.Label>
+            <Form.Label htmlFor='message' />
             <Form.Control
               autoComplete='true'
               id='message'
@@ -55,16 +61,18 @@ export function ContactForm({}) {
               placeholder='Your Message'
             />
           </InputGroup>
-        </div>
-      </div>
-      <div className='col d-flex justify-content-end'>
+        </Col>
+      </Row>
+      <Col className='d-flex justify-content-end'>
         <Button
           type='submit'
           className='btn btn-primary text-white mt-4 px-5 py-2 fs-5 rounded-1'
         >
           Send Message
         </Button>
-      </div>
+      </Col>
     </Form>
   );
-}
+};
+
+export default ContactForm;

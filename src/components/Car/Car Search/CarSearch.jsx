@@ -1,19 +1,18 @@
+import React from 'react';
 import Navigation from '../../Global/Navigation/Navigation';
 import Footer from '../../Global/Footer';
 import SearchInput from '../../Home/SearchInput';
-import CarFilter from './Filter';
+import CarFilter from './CarFilter';
 import PageHeaders from '../../Global/PageHeaders';
-import { useState } from 'react';
 import siteImages from '../../data/siteImages';
 import pageList from '../../data/pageList';
 
-function CarSearch() {
-  const [searchImg, setsearchImg] = useState(siteImages);
+const CarSearch = () => {
   return (
     <section>
       <Navigation />
       <PageHeaders
-        src={searchImg[0].img}
+        src={siteImages[0].img}
         name={pageList[0].name}
       />
       <SearchInput />
@@ -21,6 +20,6 @@ function CarSearch() {
       <Footer />
     </section>
   );
-}
+};
 
 export default CarSearch;

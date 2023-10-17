@@ -11994,10 +11994,6 @@ body, button {
   color: white;
 }
 
-h1, .h1 {
-  font-size: 3.3rem;
-}
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, a {
   font-family: "Raleway", sans-serif;
 }
@@ -12177,7 +12173,18 @@ input[type=time]::-webkit-datetime-edit {
 }
 
 .nav-secondary {
-  background-color: #0d2732;
+  width: 100vw;
+}
+@media screen and (min-width: 768px) {
+  .nav-secondary {
+    position: absolute;
+    background-color: transparent;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nav-secondary {
+    background-color: #0d2732;
+  }
 }
 
 .navbar .nav-info_contact a {
@@ -12245,40 +12252,25 @@ input[type=time]::-webkit-datetime-edit {
   display: inline;
 }
 
-.home-header {
-  width: 100vw;
-  height: 80vh;
-}
 .home-header .carousel {
   width: 100vw;
   height: 100%;
 }
 .home-header .carousel-caption {
-  bottom: 21.25rem;
+  right: 5%;
+  left: 5%;
 }
-@media screen and (max-width: 768px) {
-  .home-header .carousel-caption {
-    bottom: 14.25rem;
-  }
+.home-header .carousel-control-prev, .home-header .carousel-control-next {
+  display: none;
 }
 .home-header .carousel-inner {
   width: 100vw;
   height: 100%;
 }
-.home-header .carousel-inner-item {
-  width: 100vw;
-  height: 100%;
-}
-.home-header .carousel-inner-item img {
-  width: 100vw;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .home-header::after {
   content: "";
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -12289,11 +12281,11 @@ input[type=time]::-webkit-datetime-edit {
 }
 
 .page-header {
-  height: 65vh;
-  width: 100%;
+  height: 100%;
+  width: 100vw;
 }
 .page-header .container {
-  padding-top: 13rem;
+  padding: 18rem 0;
 }
 .page-header_img {
   width: inherit;

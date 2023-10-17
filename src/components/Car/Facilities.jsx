@@ -1,13 +1,15 @@
+/* eslint-disable react/prop-types */
 import React from 'react';
+import { Col, Row } from 'react-bootstrap';
 
-export function Facilities({ product }) {
+const Facilities = ({ product }) => {
   return (
     <section className='bg-white pb-5 facilities'>
-      <div className='row container text-black m-0 m-auto'>
-        <div className='col'>
+      <Row className='container text-black m-0 m-auto'>
+        <Col>
           <h3 className='my-5'>Facilities</h3>
-          <div className='row justify-content-center'>
-            <div className='col-12 col-md-3'>
+          <Row className='justify-content-center'>
+            <Col md='3'>
               <ul>
                 <li>
                   <i
@@ -16,7 +18,7 @@ export function Facilities({ product }) {
                         ? 'fa-solid fa-check'
                         : 'fa-solid fa-xmark'
                     }
-                  ></i>
+                  />
                   Audio
                 </li>
                 <li>
@@ -26,7 +28,7 @@ export function Facilities({ product }) {
                         ? 'fa-solid fa-check'
                         : 'fa-solid fa-xmark'
                     }
-                  ></i>
+                  />
                   Bluetooth
                 </li>
                 <li>
@@ -36,12 +38,12 @@ export function Facilities({ product }) {
                         ? 'fa-solid fa-check'
                         : 'fa-solid fa-xmark'
                     }
-                  ></i>
+                  />
                   Heated seats
                 </li>
               </ul>
-            </div>
-            <div className='col-12 col-md-3'>
+            </Col>
+            <Col md='3'>
               <ul>
                 <li>
                   <i
@@ -50,7 +52,7 @@ export function Facilities({ product }) {
                         ? 'fa-solid fa-check'
                         : 'fa-solid fa-xmark'
                     }
-                  ></i>
+                  />
                   All wheel drive
                 </li>
                 <li>
@@ -60,7 +62,7 @@ export function Facilities({ product }) {
                         ? 'fa-solid fa-check'
                         : 'fa-solid fa-xmark'
                     }
-                  ></i>
+                  />
                   USB input
                 </li>
                 <li>
@@ -70,14 +72,13 @@ export function Facilities({ product }) {
                         ? 'fa-solid fa-check'
                         : 'fa-solid fa-xmark'
                     }
-                  ></i>
+                  />
                   Fm radio
                 </li>
               </ul>
-            </div>
-            <div className='col-12 col-md-3'>
+            </Col>
+            <Col md='3'>
               <ul>
-                {' '}
                 <li>
                   <i
                     className={
@@ -85,7 +86,7 @@ export function Facilities({ product }) {
                         ? 'fa-solid fa-check'
                         : 'fa-solid fa-xmark'
                     }
-                  ></i>
+                  />
                   GPS Navigation
                 </li>
                 <li>
@@ -95,7 +96,7 @@ export function Facilities({ product }) {
                         ? 'fa-solid fa-check'
                         : 'fa-solid fa-xmark'
                     }
-                  ></i>
+                  />
                   Safe
                 </li>
                 <li>
@@ -105,12 +106,12 @@ export function Facilities({ product }) {
                         ? 'fa-solid fa-check'
                         : 'fa-solid fa-xmark'
                     }
-                  ></i>
+                  />
                   Air conditioner
                 </li>
               </ul>
-            </div>
-            <div className='col-12 col-md-3'>
+            </Col>
+            <Col md='3'>
               <ul>
                 <li>
                   <i
@@ -119,7 +120,7 @@ export function Facilities({ product }) {
                         ? 'fa-solid fa-check'
                         : 'fa-solid fa-xmark'
                     }
-                  ></i>
+                  />
                   Parking sensors
                 </li>
                 <li>
@@ -129,7 +130,7 @@ export function Facilities({ product }) {
                         ? 'fa-solid fa-check'
                         : 'fa-solid fa-xmark'
                     }
-                  ></i>
+                  />
                   Wifi
                 </li>
                 <li>
@@ -139,14 +140,48 @@ export function Facilities({ product }) {
                         ? 'fa-solid fa-check'
                         : 'fa-solid fa-xmark'
                     }
-                  ></i>
+                  />
                   Sunroof
                 </li>
               </ul>
-            </div>
-          </div>
-        </div>
-      </div>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
     </section>
   );
-}
+};
+
+// Facilities.propTypes = {
+//   product: PropTypes.shape({
+//     id: PropTypes.string,
+//     name: PropTypes.string,
+//     brand: PropTypes.string,
+//     passengers: PropTypes.string,
+//     color: PropTypes.string,
+//     img: PropTypes.string,
+//     singleImg: PropTypes.string,
+//     rating: PropTypes.number,
+//     price: PropTypes.number,
+//     facilities: {
+//       audio: PropType.boolean,
+//       bluetooth: PropType.boolean,
+//       heated: PropType.boolean,
+//       allwheel: PropType.boolean,
+//       usb: PropType.boolean,
+//       fmradio: PropType.boolean,
+//       gps: PropType.boolean,
+//       safe: PropType.boolean,
+//       air: PropType.boolean,
+//       parkingsensors: PropType.boolean,
+//       wifi: PropType.boolean,
+//       sunroof: PropType.boolean,
+//     },
+//   }),
+// };
+
+// Facilities.defaultProps = {
+//   product: null,
+// };
+
+export default Facilities;

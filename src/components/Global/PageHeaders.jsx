@@ -1,10 +1,12 @@
+import React from 'react';
 import Image from 'react-bootstrap/Image';
+import PropTypes from 'prop-types';
 
-function PageHeaders({ src, name }) {
+const PageHeaders = ({ src, name }) => {
   return (
     <section>
       <div className='page-header position-relative'>
-        <div className='page-header_img position-fixed'>
+        <div className='page-header_img position-fixed top-0'>
           <Image
             className=' '
             src={src}
@@ -21,6 +23,11 @@ function PageHeaders({ src, name }) {
       </div>
     </section>
   );
-}
+};
+
+PageHeaders.propTypes = {
+  src: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+};
 
 export default PageHeaders;

@@ -1,19 +1,21 @@
-import Product from '../data/Products/Products';
+import React from 'react';
+import { Container } from 'react-bootstrap';
+import Products from '../data/Products/Products';
 
-function PopularCars() {
+const PopularCars = () => {
   return (
     <section className='text-black popular-cars p-4 bg-light'>
-      <div className='container'>
+      <Container>
         <h2 className='text-center mt-5 fw-bold'>
           Popular Cars <span className='text-ofwhite'>Popular Cars</span>
         </h2>
-        <p className='text-center mb-5'>
+        <p className='text-center mb-5 position-relative z-3'>
           Inbecilloque elegans errorem concedo etsi electram.
         </p>
-        <Product />
-      </div>
+        <Products />
+      </Container>
     </section>
   );
-}
+};
 
 export default PopularCars;

@@ -1,56 +1,49 @@
 .nav-secondary {
-    background-color: $blue-nav;
+    width: 100vw;
+
+    @include breakpoints-up (md) {
+        position: absolute;
+        background-color: transparent;
+    }
+    @include breakpoints-down (md) {
+        background-color: $blue-nav;
+    }
 }
-
-
 
 .navbar {
-    // .nav {
-    //     &-item {
-    //         &:active {
-    //             background-color: $primary;
-    //         }
-    //     }
-    // }
-    
-.nav-info {
+    .nav-info {
 
-    &_contact {
-        
-        a {
-            font-size: $font-size-comp-info;
-
-           
-        }
-
-        &_icon {
-            color: $primary;
-
-        }
-        // i.fa-solid.fa-envelope-open.nav-info_contact_icon {
-        //     width: 5em;
-        //     // @include breakpoints-up (md) {
-        //     //     width: 5em;
-        //     // }
-        // }
-    }
-    &_socials {
-        color: white;
-
-        i {
+        &_contact {
             
-            &:hover {
+            a {
+                font-size: $font-size-comp-info;
+
+            
+            }
+
+            &_icon {
                 color: $primary;
-                cursor: pointer;
+
             }
         }
+        &_socials {
+            color: white;
 
+            i {
+                
+                &:hover {
+                    color: $primary;
+                    cursor: pointer;
+                }
+            }
+
+        }
     }
-}
 }
 
 .navbar {
     position: relative;
+    
     &-collapse {
         @include breakpoints-down (lg) {
             

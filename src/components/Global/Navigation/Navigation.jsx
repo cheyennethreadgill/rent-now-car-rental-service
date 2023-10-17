@@ -1,14 +1,14 @@
-import { Link } from 'react-router-dom';
-import Socials from '../SocialIcons';
+import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import { CompanyInfo } from '../companyInfo';
 import { Image } from 'react-bootstrap';
-import logo from '../../../../src/images/logo.svg';
+import CompanyInfo from '../companyInfo';
+import Socials from '../SocialIcons';
+import logo from '../../../images/logo.svg';
 
 const Navigation = () => {
   return (
-    <section className='position-absolute z-2 w-100 nav-secondary'>
+    <section className='d-block z-2 nav-secondary'>
       <div className='row nav-info py-xs-2 py-sm-2 py-md-2 container m-0 m-auto justify-content-center align-items-center'>
         <div className='col d-none d-sm-block'>
           <Socials />
@@ -17,12 +17,12 @@ const Navigation = () => {
           <CompanyInfo />
         </div>
       </div>
-      {/*---------------------------------------------- info end--*/}
-      <div className='border-bottom '></div>
+      {/* ---------------------------------------------- info end--*/}
+      <div className='border-bottom ' />
 
       {/* -----------------------------------------------------------------------------Main Navigation----- */}
 
-      <section className='container pt-3'>
+      <section className='container'>
         <Navbar
           expand='xl'
           data-bs-theme='light'
@@ -51,7 +51,7 @@ const Navigation = () => {
             aria-expanded='false'
             aria-label='Toggle navigation'
           >
-            <span className='navbar-toggler-icon'></span>
+            <span className='navbar-toggler-icon' />
           </button>
 
           {/* ---------------------------------------------------------------  --------Navbar collapse- */}

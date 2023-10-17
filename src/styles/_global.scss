@@ -1,16 +1,5 @@
-// *, ::before, ::after {
-//     box-sizing: border-box;
-//     margin: 0;
-//     padding: 0;
-// }
 body, button {
     color: white;
-}
-// body {
-//     background-color: rgba(1, 1, 1, 0.767);
-// }
-h1 {
-    font-size: 3.3rem;
 }
 h1, h2, h3, h4, h5, a {
     font-family: $font-family-heading;
@@ -103,7 +92,6 @@ h2 {
         
         &::placeholder {
             color: white;
-            // color: rgba(255, 255, 255, 0.638) !important;
         }
     }
     .form-control-light {
@@ -153,7 +141,7 @@ input[type="date"] {
     }
 }
   
-// ---------------------------------------------------------------------time input
+// ---------------------------------------------------------------------------time input
 input[type="time"] {
     background: transparent !important;
     border:  solid rgba(255, 255, 255, 0.517) 0.1px;
@@ -170,13 +158,11 @@ input[type="time"] {
             color: grey;
         }
     }
-    
 }
-// ---------------------------------------------------------------------time input icon
+// ------------------------------------------------------------------------time input icon
 input[type="time"]::-webkit-datetime-edit {
     color: white !important;
 }
-
 //------------------------------------------------------------------------- input feedback
 .was-validated .form-control:invalid {
     border-color: rgba(255, 255, 255, 0.517);

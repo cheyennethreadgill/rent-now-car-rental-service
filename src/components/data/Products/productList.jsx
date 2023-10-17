@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 // create array of cars the show in dom
 export default [
   {

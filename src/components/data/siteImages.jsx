@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 const siteImages = [
   {
     img: require('../../images/car-search.jpg.webp'),
@@ -7,4 +8,4 @@ const siteImages = [
   },
 ];
 
-export default siteImages
+export default siteImages;
