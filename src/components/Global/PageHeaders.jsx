@@ -1,6 +1,6 @@
 import React from 'react';
-import Image from 'react-bootstrap/Image';
 import PropTypes from 'prop-types';
+import Image from 'react-bootstrap/Image';
 
 const PageHeaders = ({ src, name }) => {
   return (

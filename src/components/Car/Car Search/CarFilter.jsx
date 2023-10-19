@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import cars from '../../data/Products/productList';
-import Product from '../../Product/Product';
+import Product from '../../Product/SingleProductSearch';
 import Filter from '../../Global/Filters/Filter';
 
 const CarFilter = () => {
@@ -37,7 +37,7 @@ const CarFilter = () => {
         filterColor={filterColor}
       />
 
-      <section className='cards text-black bg-white'>
+      <section className="cards text-black bg-white">
         <Product products={products} />
       </section>
     </section>
