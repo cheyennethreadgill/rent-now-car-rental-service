@@ -51,7 +51,7 @@ const Footer = () => {
             <Row>
               <Col
                 lg="1"
-                className="d-flex flex-column justify-content-center justify-content-lg-between align-items-center gap-4 gap-lg-0"
+                className=" col-1 d-flex flex-column justify-content-center justify-content-lg-between align-items-center gap-4 gap-lg-0"
               >
                 <i className="  fs-3 fs-lg-5 fa-solid fa-envelope-open" />
                 <i className="fs-3 fs-lg-5 fa-solid fa-square-phone" />
@@ -59,7 +59,7 @@ const Footer = () => {
               </Col>
               <Col
                 lg="10"
-                className="d-flex flex-column gap-3"
+                className="col-11 d-flex flex-column gap-3"
               >
                 <a
                   aria-label="support@exapmple.com"
