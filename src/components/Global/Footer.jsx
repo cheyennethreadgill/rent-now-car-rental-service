@@ -89,15 +89,16 @@ const Footer = () => {
               rights reserved.
             </p>
           </Col>
-          <Col>
+          {/* <Col>
             <p>We Accept</p>
+            <i className="fa fa-cc-visa"></i>
             <Image
               width="200px"
               height="100%"
-              src="https://demo.kitthemes.com/html/rentnow/assets/images/payments@2x.png"
+              src=""
               alt="Payment Methods"
             />
-          </Col>
+          </Col> */}
         </Row>
       </Container>
     </section>

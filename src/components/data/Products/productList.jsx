@@ -85,6 +85,7 @@ export default [
     passengers: '2',
     color: 'black',
     img: require('../../../images/black-car-2.jpg.webp'),
+    singleImg: require('../../../images/black-sport-coupe-car-drive-highway.jpg.webp'),
     rating: 4.5,
     price: 500,
     facilities: {
@@ -134,6 +135,7 @@ export default [
     passengers: 4,
     color: 'black',
     img: require('../../../images/black-car-2.jpg.webp'),
+    singleImg: require('../../../images/black-sport-coupe-car-drive-highway.jpg.webp'),
     rating: 3.7,
     price: 900,
     facilities: {
