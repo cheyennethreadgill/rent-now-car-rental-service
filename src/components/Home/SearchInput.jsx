@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
-import {
-  Button,
-  Row,
-  Col,
-} from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
 
@@ -131,7 +128,7 @@ const SearchInput = () => {
             </InputGroup>
           </Row>
 
-          <Button
+          <Link
             type="submit"
             href="/CarSearch"
             className="btn btn-secondary px-5 py-3 mt-4 fw-semibold fs-4 text-light"
@@ -140,7 +137,7 @@ const SearchInput = () => {
               <i className="fa-solid fa-magnifying-glass" />
             </span>
             Find Now
-          </Button>
+          </Link>
         </Form>
       </div>
     </Row>
