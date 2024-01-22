@@ -17,6 +17,7 @@
     "web-vitals": "^3.5.1",
     "webpconvert": "^3.0.1"
   },
+  "main": "index.jsx",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
