@@ -72,7 +72,7 @@ const Navigation = () => {
               </Nav.Item>
               <Nav.Item>
                 <Nav.Link
-                  href="https://rentnow.netlify.app/CarSearch"
+                  href="/CarSearch"
                   className=" mx-sm-3 m-md-0 text-decoration-none ps-4 py-3 py-lg-2"
                 >
                   Search Cars
