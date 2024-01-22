@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { Image, Row, Col } from 'react-bootstrap';
@@ -63,28 +64,28 @@ const Navigation = () => {
           >
             <Nav className="justify-content-end">
               <Nav.Item>
-                <Nav.Link
-                  href="/"
+                <Link
+                  to="/"
                   className=" mx-sm-3 m-md-0 text-decoration-none ps-4 pb-3"
                 >
                   Home
-                </Nav.Link>
+                </Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link
-                  href="/CarSearch"
+                <Link
+                  to="/CarSearch"
                   className=" mx-sm-3 m-md-0 text-decoration-none ps-4 py-3 py-lg-2"
                 >
                   Search Cars
-                </Nav.Link>
+                </Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link
-                  href="/Contact"
+                <Link
+                  to="/Contact"
                   className=" mx-sm-3 m-md-0 text-decoration-none ps-4"
                 >
                   Contact
-                </Nav.Link>
+                </Link>
               </Nav.Item>
             </Nav>
           </Navbar.Collapse>
