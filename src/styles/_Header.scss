@@ -1,34 +1,39 @@
 .home-header {
+  .carousel {
+    width: 100vw;
+    height: 100%;
+    padding: 0;
 
-    .carousel {
-        width: 100vw;
-        height: 100%;
-        
-        &-caption {
-            right: 5%;
-            left: 5%;
-        }
-
-        &-control-prev, &-control-next {
-            display: none;
-        }
-        &-inner {
-            width: 100vw;
-            height: 100%;
-        }
-    }
-    
-    &::after {
-        content: '';
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background-color: $blue-opacity-5;
+    @include breakpoints-down(sm) {
+      padding-top: 7rem;
     }
 
-    .carousel-indicators {
-        display: none;
+    &-caption {
+      right: 5%;
+      left: 5%;
     }
+
+    &-control-prev,
+    &-control-next {
+      display: none;
+    }
+    &-inner {
+      width: 100vw;
+      height: 100%;
+    }
+  }
+
+  &::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $blue-opacity-5;
+  }
+
+  .carousel-indicators {
+    display: none;
+  }
 }

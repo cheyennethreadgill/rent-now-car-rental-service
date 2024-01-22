@@ -9,7 +9,7 @@ import logo from '../../../images/logo.svg';
 
 const Navigation = () => {
   return (
-    <section className="d-block z-2 nav-secondary">
+    <section className="z-2 nav-secondary">
       <Row className="nav-info py-xs-2 py-sm-2 py-md-2 container m-0 m-auto justify-content-center align-items-center">
         <Col className="d-none d-sm-block">
           <Socials />

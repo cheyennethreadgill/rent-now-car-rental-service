@@ -12174,10 +12174,10 @@ input[type=time]::-webkit-datetime-edit {
 
 .nav-secondary {
   width: 100vw;
+  position: absolute;
 }
 @media screen and (min-width: 768px) {
   .nav-secondary {
-    position: absolute;
     background-color: transparent;
   }
 }
@@ -12255,6 +12255,12 @@ input[type=time]::-webkit-datetime-edit {
 .home-header .carousel {
   width: 100vw;
   height: 100%;
+  padding: 0;
+}
+@media screen and (max-width: 576px) {
+  .home-header .carousel {
+    padding-top: 7rem;
+  }
 }
 .home-header .carousel-caption {
   right: 5%;

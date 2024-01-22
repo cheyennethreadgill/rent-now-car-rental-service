@@ -1,76 +1,68 @@
 .nav-secondary {
-    width: 100vw;
+  width: 100vw;
+  position: absolute;
 
-    @include breakpoints-up (md) {
-        position: absolute;
-        background-color: transparent;
-    }
-    @include breakpoints-down (md) {
-        background-color: $blue-nav;
-    }
+  @include breakpoints-up(md) {
+    background-color: transparent;
+  }
+  @include breakpoints-down(md) {
+    background-color: $blue-nav;
+  }
 }
 
 .navbar {
-    .nav-info {
+  .nav-info {
+    &_contact {
+      a {
+        font-size: $font-size-comp-info;
+      }
 
-        &_contact {
-            
-            a {
-                font-size: $font-size-comp-info;
-
-            
-            }
-
-            &_icon {
-                color: $primary;
-
-            }
-        }
-        &_socials {
-            color: white;
-
-            i {
-                
-                &:hover {
-                    color: $primary;
-                    cursor: pointer;
-                }
-            }
-
-        }
+      &_icon {
+        color: $primary;
+      }
     }
+    &_socials {
+      color: white;
+
+      i {
+        &:hover {
+          color: $primary;
+          cursor: pointer;
+        }
+      }
+    }
+  }
 }
 
 .navbar {
-    position: relative;
-    
-    &-collapse {
-        @include breakpoints-down (lg) {
-            
-            position: absolute;
-            top: 55.1px;
-            right: 0%;
-            margin: 0 0 0 60%;
-            background-color: $blue-nav;
-        }
-    }
-    &-toggler {
-        border: none;
-        background-color: $primary;
+  position: relative;
 
-        &-icon {
-            filter: invert(100);
-        }
+  &-collapse {
+    @include breakpoints-down(lg) {
+      position: absolute;
+      top: 55.1px;
+      right: 0%;
+      margin: 0 0 0 60%;
+      background-color: $blue-nav;
     }
+  }
+  &-toggler {
+    border: none;
+    background-color: $primary;
+
+    &-icon {
+      filter: invert(100);
+    }
+  }
 }
 
 .nav-second {
-    .form-control {
-        border-width: 3px;
-        background: transparent;
-    
-        &::placeholder {
-            color: rgb(255, 0, 0);
-        }
+  .form-control {
+    border-width: 3px;
+    background: transparent;
+
+    &::placeholder {
+      color: rgb(255, 0, 0);
     }
+  }
 }
